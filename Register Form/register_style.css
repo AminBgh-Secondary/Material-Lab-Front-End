@@ -1,0 +1,464 @@
+
+@font-face
+{
+    font-family: 'yekan';
+    font-style: normal;
+	font-weight: 300;
+    src:url(fonts/Yekan/yekan.eot?#) format('embedded-opentype'),    
+          url(fonts/Yekan/yekan.woff) format('woff'),
+          url(fonts/Yekan/yekan.ttf) format('truetype'); 
+}
+
+@font-face
+{
+    font-family: 'Samim';
+    src: url(fonts/Samim/Samim.eot);
+    src: url(fonts/Samim/Samim.woff2) format('woff2'),
+            url(fonts/Samim/Samim.woff) format('woff');
+}
+
+::placeholder
+{
+    font-size:14px;
+    font-weight:lighter;
+    font-family:Yekan !important;
+    color:rgb(212, 212, 212);
+}
+
+body
+{
+    padding-top:40px !important;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------- fixed menu begins */
+
+.fixed_menu
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color:rgb(255, 255, 255);
+    z-index: 999;
+    padding:0px 100px 0px 100px;
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.fixed_menu_item
+{
+    margin-left:20px;
+    font-family:Yekan;
+    font-weight:900;
+    float:right;
+    height:100%;
+    width:110px;
+    text-align:center;
+    font-size:16px;
+    line-height:60px;
+    direction:rtl;
+    color:rgb(23, 19, 70);
+}
+
+.fixed_menu_item .icon
+{
+    margin-left:5px;
+}
+
+.material_logo
+{
+    float:left;
+    margin-right:30px;
+    height:60px !important;
+    cursor:pointer;
+}
+
+.labaratory_fixed
+{
+    width:130px;
+}
+
+.education_fixed
+{
+    width:140px;
+    padding-bottom:10px !important;
+}
+
+.home_fixed .home.icon
+{
+    color:rgb(13, 121, 54) !important;
+    font-size:21px;
+}
+
+.labaratory_fixed .flask.icon
+{
+    color:goldenrod !important;
+    font-size:21px;
+}
+
+.education_fixed .laptop.icon
+{
+    color:rgb(19, 104, 110);
+    font-size:21px;
+}
+
+.active_fixed
+{
+    font-weight:600 !important;
+    color:black;
+    background-color:rgb(177, 211, 221);
+}
+
+.fixed_menu_item
+{
+    line-height:55px !important;
+}
+
+/* ------------------------------------------------------------------------------- fixed menu ends */
+
+
+
+
+
+
+.main_div
+{
+    /* background-color:cadetblue !important; */
+    width:90%;
+    margin:0 auto 0 !important;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.form_container, .form_picture
+{
+    /* background-color:red; */
+    padding:0px !important;
+    margin:0 auto 0;
+}
+
+.form_picture_container img
+{
+    display:block !important;
+    margin:0 auto 0 !important;
+    width:300px !important;
+}
+
+.form_picture
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form_picture_text
+{
+    padding-top:20px;
+    text-align:center;
+}
+
+.form_picture_container .ui.header, .form_text
+{
+    font-family:'Samim' !important;
+    direction:rtl !important;
+    text-align:right;
+}
+
+
+
+
+
+
+
+
+  
+.switch-button
+{
+    background: #D8E3E9;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    font-family:yekan !important;
+    font-weight:900 !important;
+    letter-spacing: 1px;
+    color: #155FFF;
+    color:cadetblue;
+    position: relative;
+    padding-right: 100px;
+    position: relative;
+    margin-top:20px;
+}
+  
+.switch-button:before
+{
+    content: "دانشجو";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+}
+  
+.switch-button-checkbox
+{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+  
+.switch-button-checkbox:checked + .switch-button-label:before
+{
+    transform: translateX(100px);
+    transition: transform 200ms linear;
+}
+  
+.switch-button-checkbox + .switch-button-label
+{
+    position: relative;
+    padding: 10px 0;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+  
+.switch-button-checkbox + .switch-button-label:before
+{
+    content: "";
+    background: rgb(139, 184, 194);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+    transform: translateX(0);
+    transition: transform 300ms;
+}
+  
+.switch-button-label-span 
+{
+    position: relative;
+}
+
+
+
+.master_or_student
+{
+    margin-top:20px;
+}
+
+
+.master_or_student .ui.header
+{
+    font-family:Yekan !important;
+    text-align:center;
+}
+
+
+/* -------------------Main Form Begins---------------- */
+.main_form
+{
+    width:100%;
+    margin:20px auto 0;
+}
+
+.group_inputs
+{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center !important;
+    direction:rtl !important;
+    font-family:Yekan !important;
+    
+    width:550px !important;
+    margin:20px auto 0 !important;
+}
+
+.item1, .item2
+{
+    width:220px !important;
+    margin:0 auto 0 !important;
+    direction:rtl !important;
+}
+
+.item2
+{
+    width:495px !important;
+}
+
+.individual_input
+{
+    font-family:Yekan !important;
+    width:100%;
+    padding:15px !important;
+    direction:rtl !important;
+    text-align:right !important;
+    border:none;
+    /* border-bottom:2px solid rgb(21, 180, 185); */
+    outline:none;
+    font-size:15px;
+    font-weight:700;
+}
+
+.ui.icon.input.item1 .icon
+{
+    color:rgb(134, 134, 134) !important;
+    opacity:1 !important;
+}
+
+.ui.icon.input.item1 .id.card.icon
+{
+    font-size:18px;
+    position: relative;
+    right:10px;
+}
+
+.ui.icon.input.item1 .graduation.cap.icon, .ui.icon.input.item2 .envelope.icon,
+.ui.icon.input.item1 .calendar.icon, .ui.icon.input.item1 .users.icon,
+.ui.icon.input.item1 .university.icon, .ui.icon.input.item1 .phone.icon
+{
+    font-size:17px;
+    position: relative;
+    right:10px;
+}
+
+.jdp-years, .jdp-months, .jdp-days, .jdp-footer
+{
+    font-family:Samim !important;
+}
+
+.jdp-year
+{
+    padding-top: 5px !important;
+}
+
+jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-container .jdp-year select:hover, jdp-container .jdp-month:hover, jdp-container .jdp-month input:hover, jdp-container .jdp-month select:hover
+{
+    background-color:rgb(228, 228, 228) !important;
+}
+
+input[name = "proposal_date"], input[name = "student_number"], input[name = "national_id"],
+input[name = "email"], input[name = "phone"]
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    direction:ltr !important;
+}
+
+
+
+
+/* --------Email logo Begins ----- */
+.email_lbl
+{
+    border-radius:0px !important;
+    padding:0px !important;
+    padding-top:10px !important;
+
+    background-color:white !important;
+    direction:rtl !important;
+    border-radius:0px !important;  
+}
+
+.email_image
+{
+    position:relative;
+    left:40px;
+}
+
+.email_align
+{
+    text-align : right !important;
+}
+
+.email_align2
+{
+    text-align : center !important;
+}
+/* --------Email logo Ends ----- */
+
+
+
+
+
+
+.btn1
+{
+    font-family:Yekan !important;
+    /* width:60%;
+    min-width:100px;
+    max-width:150px; */
+    width:495px !important;
+    display:block !important;
+    margin:20px auto 25px !important;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    padding-top:10px !important;
+    padding-bottom:12px !important;
+    cursor:pointer;
+    /* color:rgb(18, 112, 15) !important; */
+    color:#425c81 !important;
+    color:#ffffff !important;
+    font-weight:500 !important;
+    /* background-color:rgb(0, 255, 85) !important; */
+    background-color:#a5d4de !important;
+    background-color:#52a7cc !important;
+    text-align:center !important;
+}
+
+.btn1 h4
+{
+    font-family:Yekan !important;
+    
+    /* color:rgb(18, 112, 15) !important;   */
+    color:#425c81 !important;
+    color:#ffffff !important;
+    font-size:16px;
+    text-align:center !important;
+}
+
+.visible.content
+{
+    /* color:rgb(18, 112, 15) !important;   */
+    color:#425c81 !important;
+    color:#ffffff !important;
+    font-size:15px;
+    text-align:center !important;
+}
+
+.btn1 .icon
+{
+    font-size:16px !important;
+}
+
+
+
+/* --------Drop Down Begins ----- */
+.ui.floating.dropdown.labeled.search.icon.button.item1
+{
+    direction:ltr !important;
+}
+/* --------Drop Down Ends ----- */
+
+
+/* -------------------Main Form Ends---------------- */
+

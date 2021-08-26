@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MateriaLab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="register_style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="jalalidatepicker.min.css" />
+        <script type="text/javascript" src="jalalidatepicker.min.js"></script>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <script src="register_js.js"></script>
+    </head>
+
+
+
+
+    <body>
+
+        <!-- ------------------ Fixed Menu Begins -->
+        <div class="fixed_menu">
+
+            <div class="fixed_menu_item home_fixed active_fixed">
+                <i class="home icon"></i>
+                خانه
+            </div>
+
+            <a class="fixed_menu_item labaratory_fixed" href="HOC.html">
+                <i class="flask icon"></i>
+                آزمایشگاه‌ها
+            </a>
+    
+            <a class="fixed_menu_item education_fixed" href="HOC.html">
+                <i class="laptop icon"></i>
+                آموزش
+            </a>
+    
+            <!-- <img src="pic/chemistry-free/Chemistry_perspective_matte_s.png" class="material_logo"> -->
+            
+        </div>
+        <!-- ------------------ Fixed Menu Ends -->
+
+
+        <div class="main_div">
+            <!-- <div class="row"> -->
+
+                <div class="form_picture">
+                    <div class="form_picture_container">
+                        <img class="ui medium image" src="pic/change_1.jpg">
+                        <h3 class="ui header">
+                            بخش مهندسی مواد و متالوژی دانشگاه شیراز
+                        </h3>
+                        <div class="form_text">
+                            برای رزرو آزمایشگاه ها ثبت نام کنید
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_container">
+                    <div class="switch-button">
+                        <input class="switch-button-checkbox" type="checkbox">
+                        <label class="switch-button-label" for="">
+                            <span class="switch-button-label-span">استاد</span>
+                        </label>
+                    </div>
+
+                    <div class="master_or_student">
+                        <h3 class="ui header">
+                            ثبت نام به عنوان استاد
+                        </h3>
+                    </div>
+
+                    <div class="main_form">
+                        
+                        <form action="">
+                            
+                            <div class="group_inputs">
+
+                                <div class="ui icon input item1">
+                                    <i class="user icon"></i>
+                                    <input type="text" class="individual_input" name="first_name" placeholder="نام">
+                                </div>
+
+                                <div class="ui icon input item1">
+                                    <i class="user icon"></i>
+                                    <input type="text" class="individual_input" name="first_name" placeholder="نام خانوادگی">
+                                </div>
+
+                            </div>
+
+
+                            <div class="group_inputs">
+
+                                <div class="ui icon input item1">
+                                    <i class="graduation cap icon"></i>
+                                    <input type="text" class="individual_input" name="student_number" placeholder="شماره دانشجویی">
+                                </div>
+                                
+
+                                <div class="ui icon input item1">
+                                    <i class="id card icon"></i>
+                                    <input type="text" class="individual_input" name="national_id" placeholder="کدملی">
+                                </div>
+
+                            </div>
+
+
+                            <div class="group_inputs">
+
+                                <div class="ui labeled icon input item2">
+                                    <i class="envelope icon"></i>
+                                    <input type="text" class="individual_input" name="email" placeholder="ایمیل">
+
+                                    <div class="ui label email_lbl">
+                                        <!-- <img src="pic/google_logo.png" class="email_image ui medium image"> -->
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="group_inputs">
+
+                                <div class="ui icon input item1">
+                                    <i class="calendar alternate icon"></i>
+                                    <input type="text" data-jdp class="individual_input" name="proposal_date" placeholder="تاریخ دفاع پروپوزال">
+                                </div>
+
+                                <!-- <div class="ui icon input item1">
+                                    <i class="users icon"></i>
+                                    <input type="text" class="individual_input" name="master" placeholder="استاد راهنما">
+                                </div> -->
+
+                                <div class="ui floating dropdown labeled search icon button item1">
+                                    <i class="users icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Arabic</div>
+                                        <div class="item">Chinese</div>
+                                        <div class="item">Danish</div>
+                                        <div class="item">Dutch</div>
+                                        <div class="item">English</div>
+                                        <div class="item">French</div>
+                                        <div class="item">German</div>
+                                    </div>
+                                    <span class="text">Select Language</span>
+                                    <i class="users icon"></i>
+                                  </div>
+
+                            </div>
+
+                            <div class="group_inputs">
+
+                                <div class="ui icon input item1">
+                                    <i class="university icon"></i>
+                                    <input type="text" class="individual_input" name="degree" placeholder="مقطع">
+                                </div>
+
+                                <div class="ui icon input item1">
+                                    <i class="phone icon"></i>
+                                    <input type="text" class="individual_input" name="phone" placeholder="شماره تماس">
+                                </div>
+
+                            </div>
+
+
+                            <button type="submit" class="ui animated button btn1">
+                                <div class="visible content">
+                                    <h4>
+                                        ثبت
+                                    </h4>
+                                </div>
+                                <div class="hidden content">
+                                    <i class="check icon"></i>
+                                </div>
+                            </button>
+                            
+
+                        </form>
+
+                    </div>
+                    
+                </div>
+            
+            <!-- </div> -->
+        </div>
+
+
+    </body>
+
+
+</html>
