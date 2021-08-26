@@ -21,7 +21,7 @@
 {
     font-size:14px;
     font-weight:lighter;
-    font-family:Yekan !important;
+    font-family:"Samim" !important;
     color:rgb(212, 212, 212);
 }
 
@@ -53,7 +53,7 @@ body
 .fixed_menu_item
 {
     margin-left:20px;
-    font-family:Yekan;
+    font-family:"Samim";
     font-weight:900;
     float:right;
     height:100%;
@@ -130,7 +130,7 @@ body
 {
     /* background-color:cadetblue !important; */
     width:90%;
-    margin:0 auto 0 !important;
+    margin:60px auto 0 !important;
     display:flex;
     flex-wrap:wrap;
 }
@@ -185,7 +185,7 @@ body
     width: 200px;
     text-align: center;
     font-size: 14px;
-    font-family:yekan !important;
+    font-family:"Samim" !important;
     font-weight:900 !important;
     letter-spacing: 1px;
     color: #155FFF;
@@ -268,7 +268,7 @@ body
 
 .master_or_student .ui.header
 {
-    font-family:Yekan !important;
+    font-family:"Samim" !important;
     text-align:center;
 }
 
@@ -286,7 +286,7 @@ body
     flex-wrap:wrap;
     text-align:center !important;
     direction:rtl !important;
-    font-family:Yekan !important;
+    font-family:"Samim" !important;
     
     width:550px !important;
     margin:20px auto 0 !important;
@@ -306,7 +306,7 @@ body
 
 .individual_input
 {
-    font-family:Yekan !important;
+    font-family:"Samim" !important;
     width:100%;
     padding:15px !important;
     direction:rtl !important;
@@ -402,7 +402,7 @@ input[name = "email"], input[name = "phone"]
 
 .btn1
 {
-    font-family:Yekan !important;
+    font-family:"Samim" !important;
     /* width:60%;
     min-width:100px;
     max-width:150px; */
@@ -427,7 +427,7 @@ input[name = "email"], input[name = "phone"]
 
 .btn1 h4
 {
-    font-family:Yekan !important;
+    font-family:"Samim" !important;
     
     /* color:rgb(18, 112, 15) !important;   */
     color:#425c81 !important;
@@ -453,10 +453,50 @@ input[name = "email"], input[name = "phone"]
 
 
 /* --------Drop Down Begins ----- */
-.ui.floating.dropdown.labeled.search.icon.button.item1
+.item_drop_down, div.item
 {
-    direction:ltr !important;
+    direction:rtl !important;
+    text-align:right !important;
 }
+
+.item_drop_down
+{
+    width:220px !important;
+    margin:0 auto 0 !important;
+    height:50px !important;
+    border-radius: .28571429rem !important;
+
+    font-family:"Samim";
+    font-family:"Samim";
+    outline:none;
+    
+    padding:17px !important;
+
+
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.font_light
+{
+    font-weight:500 !important;
+}
+
+.font_bold
+{
+    font-weight:700 !important;
+}
+
+.item_drop_down .fas
+{
+    font-size:17px;
+    position: relative;
+    left:8px;
+    color: rgb(134, 134, 134) !important;
+}
+
+
 /* --------Drop Down Ends ----- */
 
 

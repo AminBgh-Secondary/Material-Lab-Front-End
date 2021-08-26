@@ -59,7 +59,7 @@
                     <div class="form_picture_container">
                         <img class="ui medium image" src="pic/change_1.jpg">
                         <h3 class="ui header">
-                            بخش مهندسی مواد و متالورژی دانشگاه شیراز
+                            بخش مهندسی مواد و متالوژی دانشگاه شیراز
                         </h3>
                         <div class="form_text">
                             برای رزرو آزمایشگاه ها ثبت نام کنید
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="form_container">
-                    <div class="switch-button">
+                    <!-- <div class="switch-button">
                         <input class="switch-button-checkbox" type="checkbox">
                         <label class="switch-button-label" for="">
                             <span class="switch-button-label-span">استاد</span>
@@ -79,7 +79,7 @@
                         <h3 class="ui header">
                             ثبت نام به عنوان استاد
                         </h3>
-                    </div>
+                    </div> -->
 
                     <div class="main_form">
                         
@@ -138,25 +138,15 @@
                                     <input type="text" data-jdp class="individual_input" name="proposal_date" placeholder="تاریخ دفاع پروپوزال">
                                 </div>
 
-                                <!-- <div class="ui icon input item1">
-                                    <i class="users icon"></i>
-                                    <input type="text" class="individual_input" name="master" placeholder="استاد راهنما">
-                                </div> -->
-
-                                <div class="ui floating dropdown labeled search icon button item1">
-                                    <i class="users icon"></i>
+                                <div class="ui selection dropdown item_drop_down font_light">
+                                    <input type="hidden" name="master">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <div class="default text">استاد راهنما</div>
                                     <div class="menu">
-                                        <div class="item">Arabic</div>
-                                        <div class="item">Chinese</div>
-                                        <div class="item">Danish</div>
-                                        <div class="item">Dutch</div>
-                                        <div class="item">English</div>
-                                        <div class="item">French</div>
-                                        <div class="item">German</div>
+                                      <div class="item" data-value="1">دکتر فخراحمد</div>
+                                      <div class="item" data-value="0">دکتر کشتکاران</div>
                                     </div>
-                                    <span class="text">Select Language</span>
-                                    <i class="users icon"></i>
-                                  </div>
+                                </div>
 
                             </div>
 
