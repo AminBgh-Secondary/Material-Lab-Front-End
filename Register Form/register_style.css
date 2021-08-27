@@ -106,6 +106,16 @@ body
     display:block !important;
 }
 
+.dashboard_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+
+    padding-top:9px !important;
+    line-height:30px;
+}
+
 .home_fixed .home.icon
 {
     color:rgb(13, 121, 54) !important;
@@ -137,6 +147,13 @@ body
     color:crimson;
     font-size:21px;
     position:relative;
+}
+
+.dashboard_fixed .map.signs.icon
+{
+    color:#425c81;
+    font-size:23px;
+    position:relative;  
 }
 
 .active_fixed
