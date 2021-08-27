@@ -60,7 +60,7 @@ body
     width:110px;
     text-align:center;
     font-size:16px;
-    line-height:60px;
+    line-height:55px;
     direction:rtl;
     color:rgb(23, 19, 70);
 }
@@ -89,6 +89,23 @@ body
     padding-bottom:10px !important;
 }
 
+.login_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+    
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.sign_up_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+}
+
 .home_fixed .home.icon
 {
     color:rgb(13, 121, 54) !important;
@@ -107,16 +124,26 @@ body
     font-size:21px;
 }
 
+.login_fixed .sign-in
+{
+    color:#52a7cc;
+    font-size:26px;
+    position:relative;
+    top:5px;
+}
+
+.sign_up_fixed .user.plus
+{
+    color:crimson;
+    font-size:21px;
+    position:relative;
+}
+
 .active_fixed
 {
     font-weight:600 !important;
     color:black;
     background-color:rgb(177, 211, 221);
-}
-
-.fixed_menu_item
-{
-    line-height:55px !important;
 }
 
 /* ------------------------------------------------------------------------------- fixed menu ends */
@@ -333,7 +360,8 @@ body
 
 .ui.icon.input.item1 .graduation.cap.icon, .ui.icon.input.item2 .envelope.icon,
 .ui.icon.input.item1 .calendar.icon, .ui.icon.input.item1 .users.icon,
-.ui.icon.input.item1 .university.icon, .ui.icon.input.item1 .phone.icon
+.ui.icon.input.item1 .university.icon, .ui.icon.input.item1 .phone.icon,
+.ui.icon.input.item2 .pencil.alternate.icon
 {
     font-size:17px;
     position: relative;
@@ -488,7 +516,7 @@ input[name = "email"], input[name = "phone"]
     font-weight:700 !important;
 }
 
-.item_drop_down .fas
+.item_drop_down .fa-chalkboard-teacher
 {
     font-size:17px;
     position: relative;
@@ -501,4 +529,3 @@ input[name = "email"], input[name = "phone"]
 
 
 /* -------------------Main Form Ends---------------- */
-
