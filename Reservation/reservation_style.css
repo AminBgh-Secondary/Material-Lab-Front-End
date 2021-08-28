@@ -1,0 +1,443 @@
+
+@font-face
+{
+    font-family: 'Samim';
+    src: url(../Static/fonts/Samim/Samim.eot);
+    src: url(../Static/fonts/Samim/Samim.woff2) format('woff2'),
+            url(../Static/fonts/Samim/Samim.woff) format('woff');
+}
+
+::placeholder
+{
+    font-size:14px;
+    font-weight:lighter;
+    font-family:"Samim" !important;
+    color:rgb(212, 212, 212);
+}
+
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+body ::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+/* -----------Jalali Date Begins------------ */
+.jdp-years, .jdp-months, .jdp-days, .jdp-footer
+{
+    font-family:Samim !important;
+}
+
+.jdp-year
+{
+    padding-top: 5px !important;
+}
+
+jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-container .jdp-year select:hover, jdp-container .jdp-month:hover, jdp-container .jdp-month input:hover, jdp-container .jdp-month select:hover
+{
+    background-color:rgb(228, 228, 228) !important;
+}
+
+input[name = "proposal_date"], input[name = "student_number"], input[name = "national_id"],
+input[name = "email"], input[name = "phone"]
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    direction:ltr !important;
+}
+/* -----------Jalali Date Ends------------ */
+
+
+/* ------------------------------------------------------------------------------- fixed menu begins */
+
+.fixed_menu
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color:rgb(255, 255, 255);
+    z-index: 999;
+    padding:0px 100px 0px 100px;
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.fixed_menu_item
+{
+    margin-left:20px;
+    font-family:"Samim";
+    font-weight:900;
+    float:right;
+    height:100%;
+    width:110px;
+    text-align:center;
+    font-size:16px;
+    line-height:55px;
+    direction:rtl;
+    color:rgb(23, 19, 70);
+}
+
+.fixed_menu_item .icon
+{
+    margin-left:5px;
+}
+
+.material_logo
+{
+    float:left;
+    margin-right:30px;
+    height:60px !important;
+    cursor:pointer;
+}
+
+.labaratory_fixed
+{
+    width:130px;
+}
+
+.education_fixed
+{
+    width:140px;
+    padding-bottom:10px !important;
+}
+
+.login_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+    
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.sign_up_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+}
+
+.dashboard_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.home_fixed .home.icon
+{
+    color:rgb(13, 121, 54) !important;
+    font-size:21px;
+}
+
+.labaratory_fixed .flask.icon
+{
+    color:goldenrod !important;
+    font-size:21px;
+}
+
+.education_fixed .laptop.icon
+{
+    color:rgb(19, 104, 110);
+    font-size:21px;
+}
+
+.login_fixed .sign-in
+{
+    color:#52a7cc;
+    font-size:26px;
+    position:relative;
+    top:5px;
+}
+
+.sign_up_fixed .user.plus
+{
+    color:crimson;
+    font-size:21px;
+    position:relative;
+}
+
+.dashboard_fixed .map.signs.icon
+{
+    color:#425c81;
+    font-size:23px;
+    position:relative;  
+}
+
+.active_fixed
+{
+    font-weight:600 !important;
+    color:black;
+    background-color:rgb(177, 211, 221);
+}
+
+/* ------------------------------------------------------------------------------- fixed menu ends */
+
+
+
+
+/* ------------------------Side bar Begins ------------- */
+
+.ui.vertical.menu.sidebar-menu
+{
+  margin-top: 60px !important;
+  max-height: calc(100% - 60px) !important;
+  height: calc(100% - 60px) !important;
+
+  direction:rtl !important;
+  width:250px;
+  box-shadow: 0px 0px 10px 3px #ececec;
+  background-color:#fff;
+}
+
+.ui.vertical.menu.sidebar-menu .item i.icon
+{
+  float: right;
+  margin: 0em 0.5em 0em 10px;
+}
+
+#sidebar div.item
+{
+    /* background-color:blue !important; */
+    padding:20px 5px 20px 0px;
+    font-family:"Samim" !important;
+    font-size:16px;
+    color:black;
+    border-top:2px solid rgb(247, 247, 247);
+
+    transition:0.4s !important;
+    -moz-transition:0.4s !important;
+    -o-transition:0.4s !important;
+    -webkit-transition: 0.4s !important;
+}
+
+#sidebar div.item:hover
+{
+    padding-right:20px;
+    background-color:rgb(214, 214, 214) !important;
+}
+
+#sidebar .user.icon
+{
+    color:rgb(8, 80, 121);
+}
+
+#sidebar .paper.icon
+{
+    color:#0088cc;
+}
+
+#sidebar .calendar.icon
+{
+    color:#ee4c7c;
+}
+
+#sidebar .chart.icon
+{
+    font-size:18px;
+    position:relative;
+    bottom:3px;
+    left:4px;
+    color:#41b3a3;
+}
+
+
+.sidebar_metallogy
+{
+    position: absolute;
+    bottom:10px;
+    width:100%;
+}
+
+.sidebar_metallogy_logo
+{
+    margin:0 auto 0 !important;
+    width:150px !important;
+}
+
+.sidebar_metallogy div
+{
+    font-size:15px !important;
+    text-align:center !important;
+    direction:rtl !important;
+    margin:0px auto 0 !important;
+    font-weight:900;
+}
+
+.sidebar_sp1
+{
+    font-family:"Samim" !important;
+}
+
+
+.ui.vertical.menu.sidebar-menu::-webkit-scrollbar
+{
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.ui.vertical.menu.sidebar-menu
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* ---------Accordion Begins----------- */
+.ui.accordion .title:not(.ui)
+{
+    padding:0px !important;
+}
+
+.ui.accordion:not(.styled) .accordion .title~.content:not(.ui),
+.ui.accordion:not(.styled) .title~.content:not(.ui)
+{
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+}
+
+.accordion_sub_item.transition.visible:hover
+{
+    padding-right:45px;
+}
+
+#sidebar .title.active div.item
+{
+    /* background-color:#0088cc21; */
+    background-color:#14b1ff13;
+}
+
+.accordion_sub_item
+{
+    cursor:pointer;
+    display:block;
+    font-family:"Samim";
+    padding:11px 33px 11px 0px;
+    color:rgb(0, 0, 0) !important;
+    
+    transition:0.4s !important;
+    -moz-transition:0.4s !important;
+    -o-transition:0.4s !important;
+    -webkit-transition: 0.4s !important;
+
+    background-color:#14b1ff0a;
+}
+
+.accordion_sub_item .icon
+{
+    font-size:15px;
+    margin: 0em 0.5em 0em 5px;
+}
+
+.accordion_sub_item .inbox.icon
+{
+    color:#41b3a3;
+}
+
+.accordion_sub_item .bell.icon
+{
+    color:#e8a87c;
+}
+
+.accordion_sub_item .pencil.icon
+{
+    color:#659dbd;
+}
+/* ---------Accordion Ends----------- */
+  
+/* ------------------------Side bar Ends ------------- */
+
+
+
+/* -------------------Main Content Begins------------------------ */
+
+.main-content
+{
+    margin-top:60px;
+    padding-top:20px;
+}
+
+/* --------------Main Form Begins----------- */
+.main_form
+{
+    width:100%;
+    margin:20px auto 0;
+}
+
+.group_inputs
+{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center !important;
+    direction:rtl !important;
+    font-family:"Samim" !important;
+    
+    width:550px !important;
+    margin:20px auto 0 !important;
+}
+
+.item1, .item2
+{
+    width:220px !important;
+    margin:0 auto 0 !important;
+    direction:rtl !important;
+}
+
+.item2
+{
+    width:495px !important;
+}
+
+.individual_input
+{
+    font-family:"Samim" !important;
+    width:100%;
+    padding:15px !important;
+    direction:rtl !important;
+    text-align:right !important;
+    border:none;
+    /* border-bottom:2px solid rgb(21, 180, 185); */
+    outline:none;
+    font-size:15px;
+    font-weight:700;
+}
+
+.ui.icon.input.item1 .icon
+{
+    color:rgb(134, 134, 134) !important;
+    opacity:1 !important;
+}
+/* --------------Main Form Ends----------- */
+
+/* -------------------Main Content Begins------------------------ */
+
+
+
+/* .main-content {
+  margin-top: 60px;
+} */
+
+@media (min-width: 768px) {
+  .ui.vertical.menu.sidebar-menu {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .main-content {
+    /* margin-left: 15rem; */
+    margin-right:250px;
+  }
+  .sidebar-menu-toggler {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,17 +4,17 @@
     font-family: 'yekan';
     font-style: normal;
 	font-weight: 300;
-    src:url(fonts/Yekan/yekan.eot?#) format('embedded-opentype'),    
-          url(fonts/Yekan/yekan.woff) format('woff'),
-          url(fonts/Yekan/yekan.ttf) format('truetype'); 
+    src:url(../Static/fonts/Yekan/yekan.eot?#) format('embedded-opentype'),    
+          url(../Static/fonts/Yekan/yekan.woff) format('woff'),
+          url(../Static/fonts/Yekan/yekan.ttf) format('truetype'); 
 }
 
 @font-face
 {
     font-family: 'Samim';
-    src: url(fonts/Samim/Samim.eot);
-    src: url(fonts/Samim/Samim.woff2) format('woff2'),
-            url(fonts/Samim/Samim.woff) format('woff');
+    src: url(../Static/fonts/Samim/Samim.eot);
+    src: url(../Static/fonts/Samim/Samim.woff2) format('woff2'),
+            url(../Static/fonts/Samim/Samim.woff) format('woff');
 }
 
 ::placeholder
