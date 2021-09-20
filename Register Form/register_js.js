@@ -1,15 +1,15 @@
 
 $(document).ready(function(){
-jalaliDatepicker.startWatch({
-    minDate: "attr",
-    maxDate: "attr"
-  }); 
-  setTimeout(function(){
+    
+    jalaliDatepicker.startWatch({
+        minDate: "attr",
+        maxDate: "attr"
+    }); 
+  
     var elm = $('input[name="proposal_date"]');
-    // elm.focus();
     jalaliDatepicker.hide();
     jalaliDatepicker.show(elm);
-  }, 1000);
+    
 });
 
 
@@ -75,7 +75,6 @@ $(document).ready(function(){
             $(".item_drop_down").removeClass("font_light");
             $(".item_drop_down").removeClass("font_bold");
             $(".item_drop_down").addClass("font_bold");
-            console.log("x is ", x);
         }
     });
 

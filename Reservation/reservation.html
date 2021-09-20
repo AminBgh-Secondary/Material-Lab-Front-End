@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="https://use.fontawesome.com/your-embed-code.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="reservation_js.js"></script>
     </head>
 
@@ -57,6 +58,16 @@
 
         <!-------- sidebar Begins -------->
         <div class="ui sidebar inverted right vertical menu sidebar-menu" id="sidebar">
+            
+            <div class="sidebar_user_image">
+                <img class="ui centered circular image" src="../Static/pic/user2.png">
+                <h4>
+                    دانشجو
+                </h4>
+                <h3>
+                    محمدامین باغبان باشی
+                </h3>
+            </div>
 
             <!-- ----Accordion Begins---- -->
             <div class="ui accordion">
@@ -84,6 +95,7 @@
                     <a class="accordion_sub_item">
                         <i class="inbox icon"></i>
                         صندوق ورودی
+                        <span class="message_number">3</span>
                     </a>
                     <a class="accordion_sub_item">
                         <i class="bell icon"></i>
@@ -122,24 +134,12 @@
             </div>
             <!-- ----Accordion Ends---- -->
 
-            <!-- <div class="ui segment inverted">
-                <div class="ui tiny olive inverted progress">
-                    <div class="bar" style="width: 54%"></div>
-                    <div class="label">Monthly Bandwidth</div>
-                </div>
-
-                <div class="ui tiny teal inverted progress">
-                    <div class="bar" style="width:78%"></div>
-                    <div class="label">Disk Usage</div>
-                </div>
-            </div> -->
-
-            <div class="sidebar_metallogy">
+            <!-- <div class="sidebar_metallogy">
                 <img src="../Static/pic/change_1.jpg" class="ui centered image sidebar_metallogy_logo">
                 <div>
                     <span class="sidebar_sp1">مهندسی مواد و متالوژی</span>
                 </div>
-            </div>
+            </div> -->
 
         </div>
         <!-------- sidebar Ends -------->
@@ -147,15 +147,678 @@
         <div class="pusher">
 
             <div class="main-content">
+
+                <div class="introduction">
+                    <div class="introduction_text">
+                        <div class="object_header">
+                            <h2 class="object_name">
+                                ارلن شیشه ای مدرج
+                            </h2>
+                            <div class="object_rate">
+                                <div class="rate_score">
+                                    <i class="star icon"></i>
+                                    <span class="real_rate">3.5</span>
+                                    از
+                                    <span class="total_rate">5</span>
+                                </div>
+                                
+                                <div class="rate_score">
+                                    <span>از مجموع</span>
+                                    <span class="number_of_rates">2356</span>
+                                    <span>رای</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="technical_specifics">
+                            <h3 class="technical_header">
+                                <i class="cogs icon"></i>
+                                مشخصات فنی
+                            </h3>
+                            <div class="just_border"></div>
+
+                            <div class="technical_overall_text">
+                                <div class="technical_text">
+                                    <i class="circle icon"></i>
+                                    وزن : 3 کیلوگرم
+                                </div>
+                                
+                                <div class="technical_text">
+                                    <i class="circle icon"></i>
+                                    محدوده زوم : 3 تا 6 برابر بزرگنمایی
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="technical_specifics">
+                            <h3 class="technical_header">
+                                <i class="dollar icon"></i>
+                                تعرفه استفاده
+                            </h3>
+                            <div class="just_border"></div>
+
+                            <div class="technical_overall_text">
+                                <div class="technical_text price_sample">
+                                    <span class="price_sample_hour"> 3'000'000 </span>
+                                    تومان برای هر نمونه
+                                </div>
+                                <!-- <div class="technical_text price_sample_not_found">
+                                    تعرفه ای برای نمونه موجود
+                                    <span style = "color:red; font-weight:900;">نیست</span>
+                                </div> -->
+                                
+                                <!-- <div class="technical_text price_hour">
+                                    <span class="price_sample_hour"> 3'000'000 </span>
+                                    تومان برای هر ساعت
+                                </div> -->
+                                <div class="technical_text price_sample_not_found">
+                                    تعرفه ای برای ساعت موجود
+                                    <span style = "color:red; font-weight:900;">نیست</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="descriptions">
+                            <h3 class="descriptions_header">
+                                <i class="info icon"></i>
+                                توضیحات
+                            </h3>
+                            <div class="just_border"></div>
+                            <div class="descriptions_text">
+                                دوربین جدید EOS 4000D از شرکت کانن، جدیدترین دوربین از سری دوربین‌های DSLR رده پایین کانن است که به تازگی و تقریباً 
+                                هم‌زمان با دوربین دیگری از این گروه یعنی EOS 2000D معرفی شد. این دوربین که در بازارهای
+                                آمریکا با نام EOS Rebel T7 شناخته می‌شود، ساده‌ترین و 
+                                ارزان‌ترین دوربین DLSR (سری دوربین‌ها با لنز قابل تعویض) این
+                                شرکت است که به نظر می‌آید 
+                                بیشتر از اینکه یک گام رو به جلو باشد، نوعی نوسازی مدل‌های قدیمی به شمار می‌رود.
+                            </div>
+                        </div>
+
+                        <div class="more_infos">
+                            <div class="made_in">
+                                <h3 class="made_in_header">
+                                    کشور سازنده
+                                </h3>
+                                <div class="made_in_text">
+                                    <i class="france flag"></i>
+                                    فرانسه
+                                </div>
+                            </div>
+                            
+                            <div class="construction_year">
+                                <h3 class="construction_year_header">
+                                    سال ساخت
+                                </h3>
+                                <div class="construction_year_text">
+                                    25 شهریور 1400
+                                </div>
+                            </div>
+
+                            <div class="last_service">
+                                <h3 class="last_service_header">
+                                    آخرین سریس
+                                </h3>
+                                <div class="last_service_text">
+                                    25 شهریور 1400
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="introduction_image">
+                        <img class="ui circular small image" src="../Static/pic/5147539.jpg">
+                    </div>
+                </div>
+                <!-- ------End of Introduction------- -->
+
+
+                <!-- ------Start of Cards------- -->
+                <!-- <div class="group_cards">
+                    
+                    <div class="ui card">
+                        <div class="content">
+                            <i class="left floated circular dollar icon"></i>
+                            <div class="header">
+                                <span>100</span>
+                                تومان
+                            </div>
+                            <div class="meta">مانده پول شما</div>
+                            <div class="description">
+                                <h3>500 <span>تومان</span></h3>
+                                مصرف طی یک ماه گذشته
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ui card">
+                        <div class="content">
+                            <i class="left floated circular clock icon"></i>
+                            <div class="header">
+                                <span>12</span>
+                                ساعت
+                            </div>
+                            <div class="meta">
+                                ساعات آزاد وسیله در 
+                                <span>
+                                    11 /
+                                    6 / 
+                                    1400
+                                </span>
+                            </div>
+                            <div class="description">
+                                <h3>10 <span>ساعت</span></h3>
+                                رزرو در همان روز
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui card">
+                        <div class="content">
+                            <i class="left floated circular rocket icon"></i>
+                            <div class="header">
+                                <span>12</span>
+                                ساعت
+                            </div>
+                            <div class="meta">
+                                ساعات آزاد وسیله تا انتهای ماه
+                            </div>
+                            <div class="description">
+                                <h3>10 <span>ساعت</span></h3>
+                                رزرو تا انتهای ماه
+                            </div>
+                        </div>
+                    </div>
+
+                </div> -->
+                <!-- ------End of Cards------- -->
+
+
+                <!-- ------Start of Cards------- -->
+                <!-- <div class="group_cards">
+                    
+                    <div class="ui raised segment card_seg">
+                    <div class="ui card">
+                        <div class="content">
+                            <i class="left floated circular dollar icon"></i>
+                            <div class="header">
+                                وضعیت هزینه شما
+                            </div>
+
+                            <div class="meta">مانده حساب</div>
+
+                            <div class="description">
+                                <div class="ui green progress" data-percent="74">
+                                    <div class="bar">
+                                      <div class="progress"></div>
+                                    </div>
+                                    <div class="label">
+                                        <span class="progress_remain_money">
+                                            000'300
+                                        </span>
+                                        تومان
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="ui raised segment card_seg">
+                    <div class="ui card">
+                        <div class="content">
+                            <i class="left floated circular clock icon"></i>
+                            <div class="header">
+                                تعداد ساعات رزرو شده
+                            </div>
+                            <div class="meta">
+                                تاریخ
+                                <span>
+                                    11 /
+                                    6 / 
+                                    1400
+                                </span>
+                            </div>
+                            <div class="description">
+                                <div class="ui red progress" data-percent="25">
+                                    <div class="bar">
+                                      <div class="progress"></div>
+                                    </div>
+                                    <div class="label">
+                                        <span class="progress_remain_money">
+                                            4.5
+                                        </span>
+                                        ساعت
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div> -->
+                <!-- ------End of Cards------- -->
+
+                
                 <div class="group_inputs">
 
                     <div class="ui icon input item1">
                         <i class="calendar alternate icon"></i>
-                        <input type="text" data-jdp class="individual_input" name="proposal_date" placeholder="تاریخ دفاع پروپوزال">
+                        <input type="text" data-jdp class="individual_input" name="calendar" placeholder="تاریخ رزرو">
+                    </div>
+
+                    <div class="ui selection dropdown item_drop_down font_light">
+                        <input type="hidden" name="start_time">
+                        <i class="clock icon"></i>
+                        <div class="default text">ساعت شروع</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">از ساعت 8</div>
+                            <div class="item" data-value="2">از ساعت 8:30</div>
+                            <div class="item" data-value="3">از ساعت 9</div>
+                            <div class="item" data-value="4">از ساعت 9:30</div>
+                            <div class="item" data-value="5">از ساعت 10</div>
+                            <div class="item" data-value="6">از ساعت 10:30</div>
+                            <div class="item" data-value="7">از ساعت 11</div>
+                            <div class="item" data-value="8">از ساعت 11:30</div>
+                            <div class="item" data-value="9">از ساعت 12</div>
+                            <div class="item" data-value="10">از ساعت 12:30</div>
+                            <div class="item" data-value="11">از ساعت 13</div>
+                            <div class="item" data-value="12">از ساعت 13:30</div>
+                            <div class="item" data-value="13">از ساعت 14</div>
+                            <div class="item" data-value="14">از ساعت 14:30</div>
+                            <div class="item" data-value="15">از ساعت 15</div>
+                            <div class="item" data-value="16">از ساعت 15:30</div>
+                            <div class="item" data-value="17">از ساعت 16</div>
+                            <div class="item" data-value="18">از ساعت 16:30</div>
+                            <div class="item" data-value="19">از ساعت 17</div>
+                            <div class="item" data-value="20">از ساعت 17:30</div>
+                            <div class="item" data-value="21">از ساعت 18</div>
+                            <div class="item" data-value="22">از ساعت 18:30</div>
+                            <div class="item" data-value="23">از ساعت 19</div>
+                            <div class="item" data-value="24">از ساعت 19:30</div>
+                            <div class="item" data-value="25">از ساعت 20</div>
+                        </div>
+                    </div>
+
+                    <div class="ui selection dropdown item_drop_down font_light">
+                        <input type="hidden" name="end_time">
+                        <i class="clock icon"></i>
+                        <div class="default text">ساعت پایان</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">الی ساعت 8</div>
+                            <div class="item" data-value="2">الی ساعت 8:30</div>
+                            <div class="item" data-value="3">الی ساعت 9</div>
+                            <div class="item" data-value="4">الی ساعت 9:30</div>
+                            <div class="item" data-value="5">الی ساعت 10</div>
+                            <div class="item" data-value="6">الی ساعت 10:30</div>
+                            <div class="item" data-value="7">الی ساعت 11</div>
+                            <div class="item" data-value="8">الی ساعت 11:30</div>
+                            <div class="item" data-value="9">الی ساعت 12</div>
+                            <div class="item" data-value="10">الی ساعت 12:30</div>
+                            <div class="item" data-value="11">الی ساعت 13</div>
+                            <div class="item" data-value="12">الی ساعت 13:30</div>
+                            <div class="item" data-value="13">الی ساعت 14</div>
+                            <div class="item" data-value="14">الی ساعت 14:30</div>
+                            <div class="item" data-value="15">الی ساعت 15</div>
+                            <div class="item" data-value="16">الی ساعت 15:30</div>
+                            <div class="item" data-value="17">الی ساعت 16</div>
+                            <div class="item" data-value="18">الی ساعت 16:30</div>
+                            <div class="item" data-value="19">الی ساعت 17</div>
+                            <div class="item" data-value="20">الی ساعت 17:30</div>
+                            <div class="item" data-value="21">الی ساعت 18</div>
+                            <div class="item" data-value="22">الی ساعت 18:30</div>
+                            <div class="item" data-value="23">الی ساعت 19</div>
+                            <div class="item" data-value="24">الی ساعت 19:30</div>
+                            <div class="item" data-value="25">الی ساعت 20</div>
+                        </div>
                     </div>
 
                 </div>
+                <!-- ----------End of Inputs-------- -->
+
+                <!-- <div class="wrapper2">
+                    <canvas id="chart2"></canvas>
+                </div> -->
+
+
+                <!-- ----Begining of table---- -->
+                <!-- <div class="table_hours">
+                    
+                    <div class="table_headers">
+                        <h3 class="table_h1">
+                            <i class="circular clock icon"></i>
+                            ساعت
+                        </h3>
+                        <h3 class="table_h2">
+                            <i class="circular question icon"></i>
+                            وضعیت
+                        </h3>
+                        <h3 class="table_h3">
+                            <i class="circular edit icon"></i>
+                            انتخاب
+                        </h3>
+                    </div>
+
+                    <div class="table_infos">
+
+                        <div class="each_data odd_data">
+                            <h4 class="data1">ساعت 8 الی 8:30</h4>
+                            <h4 class="data2 reserve_icon">
+                                <i class="circle icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data">
+                            <h4 class="data1">ساعت 8:30 الی 9</h4>
+                            <h4 class="data2">
+                                <i class="circular x icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data odd_data">
+                            <h4 class="data1">ساعت 10 الی 10:30</h4>
+                            <h4 class="data2">
+                                <i class="circular x icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data even_data">
+                            <h4 class="data1">ساعت 10:30 الی 11</h4>
+                            <h4 class="data2">
+                                <i class="circular check icon"></i>
+                                آزاد
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data">
+                            <h4 class="data1">ساعت 11 الی 11:30</h4>
+                            <h4 class="data2 reserve_icon">
+                                <i class="circle icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data">
+                            <h4 class="data1">ساعت 11:30 الی 12</h4>
+                            <h4 class="data2 free_icon">
+                                <i class="circle icon"></i>
+                                رزرو نشده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data">
+                            <h4 class="data1">ساعت 12 الی 12:30</h4>
+                            <h4 class="data2">
+                                <i class="circular x icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data even_data">
+                            <h4 class="data1">ساعت 12:30 الی 13</h4>
+                            <h4 class="data2">
+                                <i class="circular check icon"></i>
+                                آزاد
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data odd_data">
+                            <h4 class="data1">ساعت 13 الی 13:30</h4>
+                            <h4 class="data2">
+                                <i class="circular x icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data even_data">
+                            <h4 class="data1">ساعت 13:30 الی 14</h4>
+                            <h4 class="data2">
+                                <i class="circular check icon"></i>
+                                آزاد
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data odd_data">
+                            <h4 class="data1">ساعت 14 الی 14:30</h4>
+                            <h4 class="data2">
+                                <i class="circular x icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data even_data">
+                            <h4 class="data1">ساعت 14:30 الی 15</h4>
+                            <h4 class="data2">
+                                <i class="circular check icon"></i>
+                                آزاد
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data odd_data">
+                            <h4 class="data1">ساعت 15 الی 15:30</h4>
+                            <h4 class="data2">
+                                <i class="circular x icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data even_data">
+                            <h4 class="data1">ساعت 15:30 الی 16</h4>
+                            <h4 class="data2">
+                                <i class="circular check icon"></i>
+                                آزاد
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                        <div class="each_data odd_data">
+                            <h4 class="data1">ساعت 16 الی 16:30</h4>
+                            <h4 class="data2">
+                                <i class="circular x icon"></i>
+                                رزرو شده
+                            </h4>
+                            <h4 class="data3">دکمه</h4>
+                        </div>
+
+                    </div>
+
+                </div> -->
+                <!-- ----End of table---- -->
+
+
+                <!-- ----Begining of TimeCards---- -->
+                <div class="time_cards">
+                    
+                    <!-- Each Card Begins -->
+                    <div class="each_card">
+                        <div class="each_card_top">
+                            <h3 class="each_card_header">
+                                <span>8</span>
+                                الی
+                                <span>8:30</span>
+                            </h3>
+                            <svg viewBox="0 0 500 34" preserveAspectRatio="xMidYMin meet" class="card_curve">
+                                <path d="M0,0 C76.4327922,21.6962525 157.300642,32.5443787 242.60355,32.5443787 C327.906458,32.5443787 413.705275,21.6962525 500,0 L500,34 L0,34 L0,0 Z" fill="#FFFFFF"></path>
+                            </svg>
+                        </div>
+
+                        <div class="each_card_content">
+                            <div class="each_card_date">
+                                <i class="clock outline icon"></i>
+                                <h4>
+                                    تاریخ : 
+                                </h4>
+                                <h5>
+                                    28 شهریور 1400
+                                </h5>
+                            </div>
+                            <div class="each_card_state">
+                                <i class="lightbulb outline icon"></i>
+                                <h4>
+                                    وضعیت : 
+                                </h4>
+                                <h5 class="not_reserved">
+                                    رزرو نشده
+                                </h5>
+                            </div>
+                            <div class="each_card_reserve">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden">
+                                    <label>رزرو</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Each Card Ends -->
+
+                    <div class="each_card">
+                        <div class="each_card_top">
+                            <h3 class="each_card_header">
+                                <span>8</span>
+                                الی
+                                <span>8:30</span>
+                            </h3>
+                            <svg viewBox="0 0 500 34" preserveAspectRatio="xMidYMin meet" class="card_curve">
+                                <path d="M0,0 C76.4327922,21.6962525 157.300642,32.5443787 242.60355,32.5443787 C327.906458,32.5443787 413.705275,21.6962525 500,0 L500,34 L0,34 L0,0 Z" fill="#FFFFFF"></path>
+                            </svg>
+                        </div>
+
+                        <div class="each_card_content">
+                            <div class="each_card_date">
+                                <i class="clock outline icon"></i>
+                                <h4>
+                                    تاریخ : 
+                                </h4>
+                                <h5>
+                                    28 شهریور 1400
+                                </h5>
+                            </div>
+                            <div class="each_card_state">
+                                <i class="lightbulb outline icon"></i>
+                                <h4>
+                                    وضعیت : 
+                                </h4>
+                                <h5 class="not_reserved">
+                                    رزرو نشده
+                                </h5>
+                            </div>
+                            <div class="each_card_reserve">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden">
+                                    <label>رزرو</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_card">
+                        <div class="each_card_top">
+                            <h3 class="each_card_header">
+                                <span>8</span>
+                                الی
+                                <span>8:30</span>
+                            </h3>
+                            <svg viewBox="0 0 500 34" preserveAspectRatio="xMidYMin meet" class="card_curve">
+                                <path d="M0,0 C76.4327922,21.6962525 157.300642,32.5443787 242.60355,32.5443787 C327.906458,32.5443787 413.705275,21.6962525 500,0 L500,34 L0,34 L0,0 Z" fill="#FFFFFF"></path>
+                            </svg>
+                        </div>
+
+                        <div class="each_card_content">
+                            <div class="each_card_date">
+                                <i class="clock outline icon"></i>
+                                <h4>
+                                    تاریخ : 
+                                </h4>
+                                <h5>
+                                    28 شهریور 1400
+                                </h5>
+                            </div>
+                            <div class="each_card_state">
+                                <i class="lightbulb outline icon"></i>
+                                <h4>
+                                    وضعیت : 
+                                </h4>
+                                <h5 class="is_reserved">
+                                    رزرو شده
+                                </h5>
+                            </div>
+                            <div class="each_card_reserve">
+                                <div class="ui checkbox disabled">
+                                    <input type="checkbox" class="hidden" >
+                                    <label>رزرو</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_card">
+                        <div class="each_card_top">
+                            <h3 class="each_card_header">
+                                <span>8</span>
+                                الی
+                                <span>8:30</span>
+                            </h3>
+                            <svg viewBox="0 0 500 34" preserveAspectRatio="xMidYMin meet" class="card_curve">
+                                <path d="M0,0 C76.4327922,21.6962525 157.300642,32.5443787 242.60355,32.5443787 C327.906458,32.5443787 413.705275,21.6962525 500,0 L500,34 L0,34 L0,0 Z" fill="#FFFFFF"></path>
+                            </svg>
+                        </div>
+
+                        <div class="each_card_content">
+                            <div class="each_card_date">
+                                <i class="clock outline icon"></i>
+                                <h4>
+                                    تاریخ : 
+                                </h4>
+                                <h5>
+                                    28 شهریور 1400
+                                </h5>
+                            </div>
+                            <div class="each_card_state">
+                                <i class="lightbulb outline icon"></i>
+                                <h4>
+                                    وضعیت : 
+                                </h4>
+                                <h5 class="not_reserved">
+                                    رزرو نشده
+                                </h5>
+                            </div>
+                            <div class="each_card_reserve">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" class="hidden">
+                                    <label>رزرو</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ----End of TimeCards---- -->
+                
             </div>
+            <!-- -----End of main content----- -->
 
         </div>
 

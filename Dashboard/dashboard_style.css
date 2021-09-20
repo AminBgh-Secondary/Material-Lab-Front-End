@@ -212,7 +212,8 @@ body ::-webkit-scrollbar {
 
 #sidebar .calendar.icon
 {
-    color:#ee4c7c;
+    /* color:#ee4c7c; */
+    color:rgb(238, 12, 57);
 }
 
 #sidebar .chart.icon

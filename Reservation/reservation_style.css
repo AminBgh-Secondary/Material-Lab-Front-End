@@ -41,8 +41,7 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     background-color:rgb(228, 228, 228) !important;
 }
 
-input[name = "proposal_date"], input[name = "student_number"], input[name = "national_id"],
-input[name = "email"], input[name = "phone"]
+input[name = "calendar"]
 {
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
     font-weight:700 !important;
@@ -185,7 +184,47 @@ input[name = "email"], input[name = "phone"]
 
 
 
-/* ------------------------Side bar Begins ------------- */
+/* ------------------------ Side bar Begins ------------- */
+
+/* ----- Side bar user Begins ----- */
+
+.sidebar_user_image
+{
+    /* background-color:red; */
+    margin-top:10px;
+    text-align:center;
+}
+
+.sidebar_user_image img
+{
+    width:130px !important;
+}
+
+.sidebar_user_image h4
+{
+    font-family:"Samim" !important;
+    border-radius:4px;
+    position:relative;
+    bottom:25px;
+    background-color: #fc0;
+    padding:5px 15px 5px 15px;
+    font-size:13px;
+    display:inline-block;
+    text-align:center;
+    margin:0 auto 0 !important;
+}
+
+.sidebar_user_image h3
+{
+    font-family:"Samim" !important;
+    margin-top:0px !important;
+    margin-bottom:10px !important;
+    font-size:15px;
+    position:relative;
+    bottom:13px;
+}
+
+/* ----- Side bar user Ends ----- */
 
 .ui.vertical.menu.sidebar-menu
 {
@@ -238,7 +277,8 @@ input[name = "email"], input[name = "phone"]
 
 #sidebar .calendar.icon
 {
-    color:#ee4c7c;
+    /* color:#ee4c7c; */
+    color:rgb(238, 12, 57);
 }
 
 #sidebar .chart.icon
@@ -312,8 +352,8 @@ input[name = "email"], input[name = "phone"]
 
 #sidebar .title.active div.item
 {
-    /* background-color:#0088cc21; */
-    background-color:#14b1ff13;
+    /* background-color:#14b1ff13; */
+    /* background-color:gray; */
 }
 
 .accordion_sub_item
@@ -329,8 +369,31 @@ input[name = "email"], input[name = "phone"]
     -o-transition:0.4s !important;
     -webkit-transition: 0.4s !important;
 
-    background-color:#14b1ff0a;
+    /* background-color:#14b1ff0a; */
 }
+
+.message_number
+{
+    float:left;
+    margin-left:10px;
+    padding-top:4px;
+
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+
+    border:1px solid #fce8e6;
+    background-color:#fce8e6;
+    color: #d93025;
+
+    width:30px !important;
+    height:30px !important;
+    border-radius:100%;
+    text-align:center !important;
+    position:relative;
+    bottom:5px;
+}
+
+
+
 
 .accordion_sub_item .icon
 {
@@ -362,33 +425,431 @@ input[name = "email"], input[name = "phone"]
 
 .main-content
 {
-    margin-top:60px;
-    padding-top:20px;
+    padding-top:90px;
+    padding-bottom:50px;
+    /* background: linear-gradient(87deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important; */
+    /* background-color:rgb(21, 52, 121); */
 }
 
-/* --------------Main Form Begins----------- */
-.main_form
+
+/* -------Product Introduction Begins------- */
+.introduction
+{
+    width:95%;
+    max-width:1100px;
+    /* background-color:red; */
+    background-color:white;
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 auto 0 !important;
+    padding:20px !important;
+    border-radius:8px;
+    /* box-shadow: 0px 0px 10px 3px #e9e9e9; */
+    /* border:2px solid rgb(241, 241, 241); */
+}
+
+.introduction_image
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background-color:orange !important; */
+    width:35% !important;
+}
+
+.introduction_image img
+{
+    display:block !important;
+    margin:0 auto 0 !important;
+    width:250px !important;
+}
+
+.introduction_text
+{
+    width:65%;
+    /* background-color:blue !important; */
+}
+
+.object_header
 {
     width:100%;
-    margin:20px auto 0;
+    /* background-color:green; */
+    direction:rtl;
+    display:flex;
+    flex-wrap:wrap;
 }
 
+h2.object_name
+{
+    font-family:"Samim";
+    /* background-color:yellow; */
+    margin:0 auto 0;
+    font-size:26px;
+    padding-top:10px;
+}
+
+div.object_rate
+{
+    font-family:"Samim";
+    background-color:rgb(255, 209, 23);
+    border-radius:8px;
+    padding:10px;
+    margin:0 auto 0;
+    text-align:center;
+}
+
+.rate_score:nth-of-type(1)
+{
+    padding-left:10px !important;
+}
+
+div.object_rate .star.icon
+{
+    font-size:17px;
+    position:relative;
+    bottom:3px;
+    color:rgb(165, 126, 0);
+}
+
+.real_rate, .total_rate, .number_of_rates
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+
+.number_of_rates
+{
+    position:relative;
+    top:2px;
+}
+
+.total_rate
+{
+    font-size:15px;
+}
+
+.real_rate
+{
+    font-size:26px;
+    font-weight:900;
+}
+
+.technical_specifics, .descriptions
+{
+    width:100%;
+    /* background-color:gray; */
+    padding-top:17px;
+    direction:rtl;
+    margin-bottom:10px;
+}
+
+.technical_specifics
+{
+    float:right;
+    width:50%;
+}
+
+.descriptions
+{
+    clear:both;
+}
+
+h3.technical_header, h3.descriptions_header
+{
+    font-family:"Samim";
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:16px;
+}
+
+.just_border
+{
+    height:2px;
+    display:inline-block;
+    width:80px;
+    margin-top:0px !important;
+    margin-bottom:5px !important;
+    background-color:rgb(240, 23, 8) !important;
+}
+
+.technical_overall_text, .descriptions_text
+{
+    font-family:"Samim";
+    font-size:12.5px;
+    padding-right:15px;
+    padding-left:20px;
+    /* background-color:cadetblue; */
+    width:90%;
+    direction:rtl;
+    text-align:justify;
+    color:rgb(119, 119, 119);
+    line-height:25px;
+}
+
+.technical_text .icon
+{
+    font-size:7px;
+    color:rgb(175, 175, 175);
+    position:relative;
+    top:1px;
+    margin-right:0px;
+}
+
+.price_sample_hour
+{
+    display:inline-block !important;
+    direction:ltr !important;
+    font-size:17px;
+    font-weight:900;
+    color:rgb(11, 145, 100);
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+
+.more_infos
+{
+    width:90%;
+    background-color:rgb(231, 231, 231);
+    border-radius:8px;
+    direction:rtl;
+    float:right;
+    padding:15px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.made_in, .last_service, .construction_year
+{
+    margin:0 auto 0;
+    text-align:center;
+    /* background-color:purple; */
+}
+
+.construction_year
+{
+    width:220px;
+    border-left:2px solid rgb(207, 207, 207);
+    border-right:2px solid rgb(207, 207, 207);
+}
+
+.made_in_header, .last_service_header, .construction_year_header
+{
+    margin-bottom:7px;
+    font-size:16px;
+    font-family:"Samim";
+}
+
+.made_in_text, .last_service_text, .construction_year_text
+{
+    font-family:"Samim";
+    font-size:12.5px;
+    color:rgb(119, 119, 119);
+}
+
+.made_in_text .flag
+{
+    position:relative;
+    top:1px;
+    margin:0px 0px 0px 3px !important;
+}
+/* ---------Product Introduction Ends------- */
+
+
+
+
+
+/* --------------Cards Begins----------- */
+.group_cards
+{
+    width:95%;
+    margin:30px auto 30px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* .group_cards .ui.card:nth-of-type(1)
+{
+    background:linear-gradient(87deg,#2dce89,#2dcecc);
+}
+
+.group_cards .ui.card:nth-of-type(2)
+{
+    background: linear-gradient(87deg,#f5365c,#f56036);
+}
+
+.group_cards .ui.card:nth-of-type(3)
+{
+    background: linear-gradient(87deg,#11cdef,#1171ef);
+} */
+.card_seg .ui.card
+{   
+    border:none !important;
+    border-radius:8px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color:rgb(245, 245, 245) !important;
+}
+.card_seg
+{
+    margin:0 auto 0 !important;
+    max-width:290px !important;
+    width:90% !important;
+    border-radius:8px !important;
+    padding:10px !important;
+
+    -webkit-box-shadow: 0 2px 4px 0 rgb(34 36 38 / 12%), 0 2px 10px 0 rgb(34 36 38 / 15%);
+    box-shadow: 0 2px 4px 0 rgb(34 36 38 / 12%), 0 2px 10px 0 rgb(34 36 38 / 15%);
+}
+
+.card_seg
+{
+    /* background-color:rgb(109, 233, 196) !important; */
+}
+
+/* .groups_card .ui.card
+{
+    margin:0 auto 0 !important;
+    max-width:290px !important;
+    width:90% !important;
+
+    border:none !important;
+    border-radius:8px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+} */
+
+.group_cards .ui.card:nth-of-type(1)
+{
+    /* border:2px solid rgb(115, 196, 23) !important; */
+    /* background-color:rgb(226, 255, 193) !important; */
+}
+
+/* .group_cards .ui.card:nth-of-type(2)
+{
+    max-width:550px !important;
+    width:350px !important;
+    border-right:2px solid rgb(207, 207, 207) !important;
+    border-left:2px solid rgb(207, 207, 207) !important;
+} */
+
+.group_cards .ui.card .content, .group_cards .ui.card .content .header
+{
+    direction:rtl !important;
+    font-family: "Samim";
+    color:white !important;
+}
+
+.group_cards .ui.card .content .header
+{
+    color:rgb(39, 124, 0) !important;
+    color:rgb(63, 63, 63) !important;
+    font-size:20px !important;
+}
+
+.group_cards .ui.card .content .meta
+{
+    margin-top:4px !important;
+}
+
+.group_cards .ui.card .content .meta span, .group_cards .ui.card .content .header span
+{
+    direction:ltr !important;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.group_cards .ui.card .content .icon
+{
+    font-size:20px;
+    position:relative;
+    bottom:5px;
+    color:rgb(0, 0, 0);
+}
+
+.group_cards .ui.card .content .dollar.icon
+{
+    background:linear-gradient(87deg,#2dce89,#2dcecc);
+    background:linear-gradient(87deg,#2dce89,#2dce42);
+    color:rgb(12, 104, 12);
+}
+
+.group_cards .ui.card .content .clock.icon
+{
+    background: linear-gradient(87deg,#f5365c,#f56036);
+    background: linear-gradient(87deg,#ff476c,#ff2c2c);
+    color:rgb(146, 30, 30);
+}
+
+.group_cards .ui.card .content .rocket.icon
+{
+    background: linear-gradient(87deg,#11cdef,#1171ef);
+}
+
+.group_cards .ui.card .content .description
+{
+    margin-top:35px !important;
+    font-size:13px;
+}
+
+.group_cards .ui.card .content .description h3
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    display:inline-block;
+    font-size:13px;
+    color:rgb(204, 38, 26) !important;
+}
+
+.group_cards .ui.card .content .description h3 span
+{
+    font-family: "Samim" !important;
+}
+
+.group_cards .ui.card .content .description
+{
+    margin-top:35px !important;
+    font-size:13px;
+}
+
+
+
+/* ---Progress Bar Begins--- */
+.ui.progress .bar
+{
+    line-height: 1.1 !important;
+    /* height:8px !important; */
+}
+
+.ui.progress .bar>.progress
+{
+    color:white !important;
+}
+
+.progress_remain_money
+{
+    direction:ltr !important;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+/* ---Progress Bar Begins--- */
+/* --------------Cards Ends----------- */
+
+
+
+
+
+/* --------------Main Form Begins----------- */
 .group_inputs
 {
     display:flex;
     flex-wrap:wrap;
-    text-align:center !important;
-    direction:rtl !important;
+    text-align:center;
+    direction:rtl;
     font-family:"Samim" !important;
     
-    width:550px !important;
-    margin:20px auto 0 !important;
+    width:100%;
+    margin:10px auto 0 !important;
 }
 
 .item1, .item2
 {
     width:220px !important;
-    margin:0 auto 0 !important;
+    margin:20px auto 0 !important;
     direction:rtl !important;
 }
 
@@ -413,18 +874,412 @@ input[name = "email"], input[name = "phone"]
 
 .ui.icon.input.item1 .icon
 {
-    color:rgb(134, 134, 134) !important;
+    /* color:rgb(134, 134, 134) !important; */
     opacity:1 !important;
+    font-size:16px;
 }
+
+.item1 .calendar.icon
+{
+    color:#557a95;
+}
+
+input[name="calendar"]
+{
+    cursor:pointer;
+}
+
+
+/* --------Drop Down Begins ----- */
+.item_drop_down, div.item
+{
+    direction:rtl !important;
+    text-align:right !important;
+}
+
+.item_drop_down
+{
+    width:220px !important;
+    margin:20px auto 0 !important;
+    height:50px !important;
+    border-radius: .28571429rem !important;
+
+    font-family:"Samim";
+    outline:none;
+    
+    padding:17px !important;
+
+
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.font_light
+{
+    font-weight:500 !important;
+}
+
+.font_bold
+{
+    font-weight:700 !important;
+}
+
+.item_drop_down .icon
+{
+    /* color:rgb(134, 134, 134) !important; */
+    opacity:1 !important;
+    font-size:16px;
+}
+
+.item_drop_down .icon
+{
+    position: relative;
+    left:8px;
+}
+
+input[name="start_time"] + .clock.icon
+{
+    color:#3b945e;
+}
+
+input[name="end_time"] + .clock.icon
+{
+    color:rgb(212, 22, 22);
+}
+
+.label_input
+{
+    position:relative;
+    bottom:40px;
+    left:100px;
+}
+/* --------Drop Down Ends ----- */
+
 /* --------------Main Form Ends----------- */
 
-/* -------------------Main Content Begins------------------------ */
+/* ---------Chart Begins------------ */
+.wrapper2
+{
+    width:50%;
+    display:block;
+    overflow:hidden;
+    margin:0 auto;
+    padding: 60px 50px;
+    /* background:red; */
+    border-radius:4px;
+    font-family:"Samim" !important;
+}
+
+canvas
+{
+    background:#fff;
+    height:250px;
+    font-family:"Samim" !important;
+}
+/* ---------Chart Ends------------ */
 
 
 
-/* .main-content {
-  margin-top: 60px;
-} */
+
+
+/* --------Data Table Begins------- */
+.table_hours
+{
+    width:95%;
+    max-width:1100px;
+    margin:10px auto 0;
+    border:1px solid rgb(231, 231, 231);
+    border-radius:8px;
+}
+
+.table_headers, .each_data
+{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.table_headers
+{
+    background-color:rgb(235, 235, 235);
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+}
+
+.table_h1, .table_h2, .table_h3, .table_h4,
+.data1, .data2, .data3, .data4
+{
+    font-family:"Samim";
+    margin:0 auto 0 !important;
+    text-align:center;
+    direction:rtl;
+    width:33%;
+}
+
+.table_h1, .table_h2, .table_h3, .table_h4
+{
+    font-size:18px;
+    padding-bottom:15px;
+    padding-top:15px;
+}
+
+.table_headers .clock.icon
+{
+    color:rgb(3, 87, 102);
+}
+
+.table_headers .question.icon
+{
+    color:rgb(248, 118, 31);
+}
+
+.table_infos
+{
+    width:100%;
+}
+
+.each_data
+{
+    padding:22px;
+    padding-top:15px;
+    font-family:"Samim";
+    border-top:2px solid rgb(240, 240, 240);
+}
+
+.each_data .x.icon
+{
+    background-color:rgb(255, 107, 107);
+    color:rgb(167, 0, 0);
+    position:relative;
+    left:5px;
+}
+/* new Added Begins */
+.each_data .reserve_icon .circle.icon
+{
+    color:rgb(240, 21, 21);
+    font-size:9px;
+    position:relative;
+    left:8px;
+}
+
+.each_data .free_icon .circle.icon
+{
+    color:rgb(20, 168, 20);
+    font-size:9px;
+    position:relative;
+    left:5px;
+}
+
+.reserve_icon
+{
+    padding-top:6px;
+    color:Red;
+}
+
+.free_icon
+{
+    padding-top:6px;
+    color:rgb(25, 158, 8);
+}
+/* new Added Ends */
+
+.each_data .check.icon
+{
+    background-color:rgb(89, 255, 89);
+    position:relative;
+    left:22px;
+}
+
+.data1, .data3
+{
+    padding-top:8px;
+}
+
+.data1, .data2, .data3
+{
+    font-size:14px;
+}
+
+.even_data
+{
+    background-color:rgb(243, 243, 243);
+}
+
+/* --------Data Table Ends------- */
+
+
+
+/* --------Time Card Begins------- */
+.time_cards
+{
+    width:95%;
+    max-width:1100px;
+    margin:10px auto 0;
+    border-radius:8px;
+
+    display:flex;
+    flex-wrap:wrap;
+    direction:ltr !important;
+}
+
+.each_card
+{
+    direction:rtl !important;
+    margin:18px auto 0 !important;
+    border-radius: 15px !important;
+    width:265px;
+
+    
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+}
+
+.each_card_top
+{
+    background-color: #fc0;
+    /* background-color: #005b96; */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+
+    direction: rtl;
+    text-align: right;
+}
+
+.each_card_header
+{
+    font-family:"Samim" !important;
+    text-align:center;
+    /* color:white !important; */
+
+    font-size: 18px !important;
+    line-height: 1.5;
+    min-height: 20px;
+    margin-bottom: 0;
+    padding: 10px !important;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.each_card_content
+{
+    direction:rtl !important;
+    padding:10px !important;
+}
+
+.each_card_date, .each_card_state, .each_card_reserve
+{
+    padding: 15px;
+    padding-left: 5px;
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+.each_card_reserve
+{
+    /* padding-bottom: 10px; */
+    padding: 15px 0px 10px 10px !important;
+    border-bottom: none;
+}
+
+@media (min-width: 992px)
+{
+    .mtn-h3, h3 {
+        font-size: 35px;
+    }
+}
+
+svg.card_curve
+{
+    overflow: hidden;
+    vertical-align: middle;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.each_card_header span
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+
+.each_card_content h4
+{
+    font-family:"Samim" !important;
+    display: inline-block;
+    margin: 0px;
+}
+
+.each_card_content h5
+{
+    font-family:"Samim" !important;
+    display: inline-block;
+    margin: 0px 10px 0px 0px !important;
+    font-size: 13px !important;
+    color:rgb(56, 56, 56);
+    position:relative;
+    top:1px;
+}
+
+.each_card_content h5.not_reserved
+{
+    color:green;
+    font-size:14px !important;
+    top:0px;
+}
+
+.each_card_content h5.is_reserved
+{
+    color:rgb(245, 8, 8);
+    font-size:14px !important;
+    top:0px;
+}
+
+.each_card_date .clock.icon
+{
+    color: goldenrod;
+    font-size: 18px;
+    position:relative;
+    top:2px;
+}
+
+.each_card_state .lightbulb.icon
+{
+    color: rgb(10, 72, 107);
+    font-size: 19px;
+    position:relative;
+    top:2px;
+}
+
+.each_card_reserve .ui.checkbox
+{
+    /* background-color:red !important; */
+    margin:0 auto 0 !important;
+    display:block !important;
+    width:70px !important;
+}
+
+.each_card_reserve .ui.checkbox label
+{
+    font-family:"Samim" !important;
+    font-size: 1.07142857rem !important;
+    line-height: 1.28571429em !important;
+    font-weight: 700 !important;
+}
+
+/* --------Time Card Ends------- */
+
+
+/* -------------------Main Content Ends------------------------ */
+
+
 
 @media (min-width: 768px) {
   .ui.vertical.menu.sidebar-menu {
