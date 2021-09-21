@@ -4,6 +4,7 @@
 
 $(document).ready(function(){
 
+  console.log("The files list is ", $("#files")[0].files);
   $('.ui.dropdown').dropdown('hide');
 
   $('.ui.accordion').accordion();
@@ -36,6 +37,7 @@ $(document).ready(function(){
 
   const file = document.querySelector('#files');
   file.addEventListener('change', (e) => {
+    
     // Get the selected file
     const exist_file = $("#files")[0].files[0];
     if(exist_file)  // File Exists
@@ -65,10 +67,23 @@ $(document).ready(function(){
   });
 
   $('.file_submit_div .x.icon').click(function(){
-    // alert("Pushed");
-    // alert("The value is ", $("#files").val());
-    $("#files").val(null);
-    $("#files").trigger('change');
+    // $('#files').val('');
+    console.log("The files info is ", $("#files")[0].files[0]);
+    var filename = $('input[type=file]').val().split('\\').pop();
+    console.log("The files Name is ", filename);
+    console.log("The files list is ", $("#files")[0].files);
+
+    $('#files').val('');
+    console.log("َ----- After Delete -----");
+    document.querySelector('.file_text').textContent = "فایلی انتخاب نشده است";
+    $(".file_submit_div .x.icon").removeClass("display_none");
+    $(".file_submit_div .x.icon").addClass("display_none");
+
+    console.log("The files info is ", $("#files")[0].files[0]);
+    var filename = $('input[type=file]').val().split('\\').pop();
+    console.log("The files Name is ", filename);
+    console.log("The files list is ", $("#files")[0].files);
+    
   });
 
   
