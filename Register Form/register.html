@@ -86,9 +86,17 @@
                     <label class="switch-button-label" for="">
                         <span class="switch-button-label-span">استاد</span>
                     </label>
+                </div> -->
+
+                
+                <div class="ui horizontal pointing menu student_free_menu">
+                    <div class="right pointing menu">
+                        <a class="item free_menu">آزاد</a>
+                        <a class="active item student_menu">دانشجویان</a>
+                    </div>
                 </div>
 
-                <div class="master_or_student">
+                <!-- <div class="master_or_student">
                     <h3 class="ui header">
                         ثبت نام به عنوان استاد
                     </h3>
@@ -96,7 +104,7 @@
 
                 <div class="main_form">
                     
-                    <form action="">
+                    <form class="student_form" action="">
                         
                         <div class="group_inputs">
 
@@ -196,6 +204,76 @@
                         
 
                     </form>
+
+                    <!-- Free Form Begins -->
+                    <form class="free_form display_none" action="">
+                        
+                        <div class="group_inputs">
+
+                            <div class="ui icon input item1">
+                                <i class="user icon"></i>
+                                <input type="text" class="individual_input" name="free_first_name" placeholder="نام">
+                            </div>
+
+                            <div class="ui icon input item1">
+                                <i class="user icon"></i>
+                                <input type="text" class="individual_input" name="free_last_name" placeholder="نام خانوادگی">
+                            </div>
+
+                        </div>
+
+
+                        <div class="group_inputs">
+                            
+                            <div class="ui icon input item1">
+                                <i class="phone icon"></i>
+                                <input type="text" class="individual_input" name="free_phone" placeholder="شماره تماس">
+                            </div>
+                            
+
+                            <div class="ui icon input item1">
+                                <i class="id card icon"></i>
+                                <input type="text" class="individual_input" name="free_national_id" placeholder="کدملی">
+                            </div>
+
+                        </div>
+
+
+                        <div class="group_inputs">
+                            <div class="ui labeled icon input item2">
+                                <i class="envelope icon"></i>
+                                <input type="text" class="individual_input" name="free_email" placeholder="ایمیل">
+
+                                <div class="ui label email_lbl">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group_inputs">
+
+                            <div class="ui icon input item2">
+                                <i class="university icon"></i>
+                                <input type="text" class="individual_input" name="free_university" placeholder="موسسه یا دانشگاه">
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit" class="ui animated button btn1">
+                            <div class="visible content">
+                                <h4>
+                                    ثبت
+                                </h4>
+                            </div>
+                            <div class="hidden content">
+                                <i class="check icon"></i>
+                            </div>
+                        </button>
+                        
+
+                    </form>
+                    <!-- Free Form Ends -->
 
                 </div>
                 

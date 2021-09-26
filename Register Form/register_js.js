@@ -21,33 +21,21 @@ function dist_email(str)
     if (str1 == "@yahoo.com")
     {
         $(".ui.label.email_lbl").html("<img src='../Static/pic/yahoo3.png' class='email_image ui small image'>");
-        // $("input[name='email']").removeClass("email_align2");
-        // $("input[name='email']").removeClass("email_align");
-        // $("input[name='email']").addClass("email_align2");
     }
 
     else if (str2 == "@outlook.com")
     {
         $(".ui.label.email_lbl").html("<img src='../Static/pic/outlook2.png' class='email_image ui medium image'>");
-        // $("input[name='email']").removeClass("email_align2");
-        // $("input[name='email']").removeClass("email_align");
-        // $("input[name='email']").addClass("email_align2");
     }
 
     else if (str1 == "@gmail.com")
     {
         $(".ui.label.email_lbl").html("<img src='../Static/pic/google_logo.png' class='email_image ui medium image'>");
-        // $("input[name='email']").removeClass("email_align2");
-        // $("input[name='email']").removeClass("email_align");
-        // $("input[name='email']").addClass("email_align2");
     }
 
     else
     {
         $(".ui.label.email_lbl").html("");
-        // $("input[name='email']").removeClass("email_align2");
-        // $("input[name='email']").removeClass("email_align");
-        // $("input[name='email']").addClass("email_align");
     }
 }
 
@@ -61,12 +49,7 @@ $(document).ready(function(){
 
     });
 
-    // $('.ui.dropdown').dropdown('show');
     $('.ui.dropdown').dropdown('hide');
-
-    // $(".ui.dropdown").click(function(){
-    //     $('.ui.dropdown').dropdown('show');
-    // });
 
     $(".ui.dropdown.item_drop_down").click(function(){
         var x = $('input[name="master"]').val();
@@ -76,6 +59,23 @@ $(document).ready(function(){
             $(".item_drop_down").removeClass("font_bold");
             $(".item_drop_down").addClass("font_bold");
         }
+    });
+
+    $(".student_free_menu .item").click(function(){
+        $(".item").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".free_menu").click(function(){
+        $(".student_form").addClass("display_none");
+        $(".free_form").addClass("display_none");
+        $(".free_form").removeClass("display_none");
+    });
+
+    $(".student_menu").click(function(){
+        $(".free_form").addClass("display_none");
+        $(".student_form").addClass("display_none");
+        $(".student_form").removeClass("display_none");
     });
 
 });
