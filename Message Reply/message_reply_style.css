@@ -508,11 +508,147 @@ input[name = "calendar"]
     margin:40px auto 0; 
 }
 
+/* body{background-color:rgb(245, 245, 245) !important;} */
+
+/* Show Messages Begins */
+.div_show_messages
+{
+    width:95%;
+    max-width:585px;
+    margin:20px auto 0 !important;
+    padding:0px !important;
+}
+
+
+/* Each Message Begins */
+.each_message
+{
+    width:100%;
+    margin-top:27px;
+}
+
+.each_message:nth-of-type(1)
+{
+    margin-top:0px !important;
+}
+
+.each_message_header
+{
+    background-color:rgb(238, 238, 238) !important;
+    padding:12px 15px 12px 15px;
+}
+
+.each_message:nth-of-type(1) .each_message_header
+{
+    border-top-left-radius:.18571429rem !important;
+    border-top-right-radius:.18571429rem !important;
+}
+
+.each_message_header_right
+{
+    float:right;
+    margin-left:15px;
+}
+
+.each_message_header_right img
+{
+    width:55px;
+}
+
+.each_message_header_left
+{
+    float:right;
+}
+
+.each_message_sender, .each_message_date
+{
+    font-family:"Samim" !important;
+    text-align:right !important;
+}
+
+.each_message_sender
+{
+    font-size:15px;
+}
+
+.each_message_date
+{
+    color:rgb(131, 131, 131);
+    padding-right:1px;
+    font-size:12px;
+}
+
+.each_message_body
+{
+    font-family:"Samim" !important;
+    direction:rtl !important;
+    text-align:justify;
+    padding:0px;
+    line-height:27px !important;
+}
+
+.each_meassge_topic
+{
+    display:inline-block;
+    padding:6px;
+    padding-right:11px;
+    font-weight:900;
+    font-size:15px;
+}
+
+.each_meassge_topic .bookmark.icon
+{
+    color:rgb(22, 134, 22);
+    font-size:20px;
+    position:relative;
+    top:4px;
+}
+
+.each_message_text
+{
+    padding:15px 20px 15px 20px;
+}
+
+.each_message:nth-of-type(1) .each_message_body .each_message_text
+{
+    padding-top:0px !important;
+}
+/* Each Message Ends */
+
+
+/* Show Messages Begins */
+
+
+
+
 /* ---- Form Begins ---- */
 .main_form
 {
     width:100%;
     margin:20px auto 0;
+}
+
+.group_inputs2
+{
+    direction:rtl !important;
+    font-family:"Samim" !important;
+    max-width:600px !important;
+    width:90% !important;
+    margin:20px auto 0 !important;
+}
+
+.group_inputs2 h3.item2
+{ 
+    font-family:"Samim" !important;
+    margin-bottom:10px !important;
+}
+
+.group_inputs2 h4.item2
+{ 
+    font-family:"Samim" !important;
+    font-weight:700 !important;
+    color:rgb(182, 182, 182);
+    font-weight:500 !important;
 }
 
 .group_inputs
@@ -527,6 +663,8 @@ input[name = "calendar"]
     width:90% !important;
     margin:20px auto 0 !important;
 }
+
+
 
 .item1, .item2, .item3, .item4
 {
@@ -589,39 +727,6 @@ input[name = "calendar"]
     display:none !important;
 }
 
-/* --------Drop Down Begins ----- */
-.item_drop_down, div.item
-{
-    direction:rtl !important;
-    text-align:right !important;
-}
-
-.item_drop_down
-{
-    width:270px !important;
-    margin:0 auto 0 !important;
-    height:50px !important;
-    border-radius: .28571429rem !important;
-
-    font-family:"Samim";
-    outline:none;
-    padding:17px !important;
-
-    -moz-appearance:none; /* Firefox */
-    -webkit-appearance:none; /* Safari and Chrome */
-    appearance:none;
-}
-
-.font_light
-{
-    font-weight:500 !important;
-}
-
-.font_bold
-{
-    font-weight:700 !important;
-}
-/* --------Drop Down Ends ----- */
 
 .priority
 {

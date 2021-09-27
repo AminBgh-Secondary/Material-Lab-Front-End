@@ -10,17 +10,6 @@ $(document).ready(function(){
 
   $('.ui.checkbox').checkbox();
 
-  $(".ui.dropdown.item_drop_down").click(function(){
-    var x = $(this).children("input").val();
-    if(x)
-    {
-      $(this).removeClass("font_light");
-      $(this).removeClass("font_bold");
-      $(this).addClass("font_bold");
-    }
-  });
-
-
   $(".regular, .necessary, .urgent").click(function(){
     $(".regular").removeClass("active_span");
     $(".necessary").removeClass("active_span");

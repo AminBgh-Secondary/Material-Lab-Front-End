@@ -8,7 +8,7 @@
         <title>MateriaLab</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" media="screen" href="message_style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="message_reply_style.css"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -22,7 +22,7 @@
         <script src="https://use.fontawesome.com/your-embed-code.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="message_js.js"></script>
+        <script src="message_reply_js.js"></script>
     </head>
 
 
@@ -162,52 +162,134 @@
                         </div>
                         <div class="div_message_headers">
                             <h2>
-                                پیام جدید
+                               مشاهده پیام
                             </h2>
                             <h4>
-                                برای ارسال پیام به کارشناسان و اساتید، فرم زیر را کامل کنید
+                                در پاسخ به پیام، می‌توانید فرم پایین صفحه را پر کنید
                             </h4>
                         </div>
                     </div>
 
                     <div class="clear_both"></div>
 
+                    <div class="ui raised segment div_show_messages">
+                        
+                        <!-- Each Message Begins -->
+                        <div class="each_message">
+                            
+                            <div class="each_message_header">
+                                <div class="each_message_header_right">
+                                    <img class="ui centered circular image" src="../Static/pic/user2.png">
+                                </div>
+                                <div class="each_message_header_left">
+                                    <h3 class="each_message_sender">
+                                        میلاد بارونی
+                                    </h3>
+                                    <div class="each_message_date">
+                                        ارسال شده در
+                                        27 شهریور 1400
+                                        ،
+                                        ساعت 18:50
+                                    </div>
+                                </div>
+                                <div class="clear_both"></div>
+                            </div>
+
+                            <div class="each_message_body">
+                                <div class="each_meassge_topic">
+                                    <i class="bookmark outline icon"></i>
+                                    عنوان پیام
+                                    <!-- <i class="bookmark outline icon"></i> -->
+                                    :
+                                    &nbsp &nbsp
+                                    قورباغه ات را بخور
+                                </div>
+
+                                <div class="each_message_text">
+                                    سلام<br>
+                                    من میلاد بارونی هستم<br>
+                                    بهترین دوستم 2 هفته پیش پذیرشش اومده و تا 4 ماه دیگه داره میره
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Each Message Ends -->
+
+                        <!-- Each Message Begins -->
+                        <div class="each_message">
+                            
+                            <div class="each_message_header">
+                                <div class="each_message_header_right">
+                                    <img class="ui centered circular image" src="../Static/pic/user2.png">
+                                </div>
+                                <div class="each_message_header_left">
+                                    <h3 class="each_message_sender">
+                                        میلاد بارونی
+                                    </h3>
+                                    <div class="each_message_date">
+                                        ارسال شده در
+                                        27 شهریور 1400
+                                        ،
+                                        ساعت 18:50
+                                    </div>
+                                </div>
+                                <div class="clear_both"></div>
+                            </div>
+
+                            <div class="each_message_body">
+                                <div class="each_message_text">
+                                    سلام<br>
+                                    من میلاد بارونی هستم<br>
+                                    بهترین دوستم 2 هفته پیش پذیرشش اومده و تا 4 ماه دیگه داره میره
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Each Message Ends -->
+
+                        <!-- Each Message Begins -->
+                        <div class="each_message">
+                            
+                            <div class="each_message_header">
+                                <div class="each_message_header_right">
+                                    <img class="ui centered circular image" src="../Static/pic/user2.png">
+                                </div>
+                                <div class="each_message_header_left">
+                                    <h3 class="each_message_sender">
+                                        میلاد بارونی
+                                    </h3>
+                                    <div class="each_message_date">
+                                        ارسال شده در
+                                        27 شهریور 1400
+                                        ،
+                                        ساعت 18:50
+                                    </div>
+                                </div>
+                                <div class="clear_both"></div>
+                            </div>
+
+                            <div class="each_message_body">
+                                <div class="each_message_text">
+                                    سلام<br>
+                                    من میلاد بارونی هستم<br>
+                                    بهترین دوستم 2 هفته پیش پذیرشش اومده و تا 4 ماه دیگه داره میره
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Each Message Ends -->
+
+                    </div>
+
                     <div class="message_div_body">
 
                         <!-- ---- From Begins ---- -->
                         <form class="ui fluid form">
 
-                            <div class="group_inputs">
-                                <div class="field item2">
-                                    <input type="text" class="individual_input" name="msg_title" placeholder="عنوان پیام">
-                                    <h4 class="fill_input_error display_none">
-                                        عنوان پیام الزامی است
-                                    </h4>
-                                </div>
+                            <div class="group_inputs2">
+                                <h3 class="item2">ارسال پاسخ</h3>
+                                <h4 class="item2">برای ارسال پاسخ، از فرم زیر استفاده کنید</h4>
                             </div>
-
-                            <div class="group_inputs">
-                                <div class="ui selection dropdown field item_drop_down font_light">
-                                    <input type="hidden" name="receiver">
-                                    <div class="default text">گیرنده</div>
-                                    <div class="menu">
-                                        <div class="item" data-value="1">دکتر فخراحمد</div>
-                                        <div class="item" data-value="0">دکتر کشتکاران</div>
-                                    </div>
-                                </div>
-
-                                <div class="field item1">
-                                    <div class="priority">
-                                        <div class="priority_div_first">اولویت بندی</div>
-                                        <div class="ui raised segment priority_div_second">
-                                            <span class="regular active_span">معمولی</span>
-                                            <span class="necessary">مهم</span>
-                                            <span class="urgent">فوری</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
 
                             <div class="group_inputs">
                                 <div class="field item2">
