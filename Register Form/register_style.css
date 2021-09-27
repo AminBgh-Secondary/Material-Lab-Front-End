@@ -28,7 +28,79 @@
 body
 {
     padding-top:40px !important;
+
+    padding-top:100px !important;
 }
+
+
+
+.ui[class*="middle aligned"].grid > .column:not(.row), .ui[class*="middle aligned"].grid > .row > .column, .ui.grid > [class*="middle aligned"].row > .column, .ui.grid > [class*="middle aligned"].column:not(.row), .ui.grid > .row > [class*="middle aligned"].column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    vertical-align: middle;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+}
+.ui[class*="center aligned"].grid > .column, .ui[class*="center aligned"].grid > .row > .column, .ui.grid > [class*="center aligned"].row > .column, .ui.grid > [class*="center aligned"].column.column, .ui.grid > .row > [class*="center aligned"].column.column {
+    text-align: center;
+    -ms-flex-item-align: inherit;
+    align-self: inherit;
+}
+.ui.grid > .column:only-child, .ui.grid > .row > .column:only-child {
+    width: 100%;
+}
+.ui.grid > .column:not(.row) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    position: relative;
+    display: inline-block;
+    width: 6.25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+}
+.ui.grid > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.column {
+    max-width: 450px;
+}
+
+.ui[class*="center aligned"].grid {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.ui.grid {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.ui.grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0em;
+}
+body > .grid {
+    height: 100%;
+}
+
 
 
 
@@ -174,7 +246,7 @@ body
 {
     /* background-color:cadetblue !important; */
     width:90%;
-    margin:60px auto 0 !important;
+    margin:0 auto 0 !important;
     display:flex;
     flex-wrap:wrap;
 }
@@ -198,6 +270,9 @@ body
     display:flex;
     justify-content:center;
     align-items:center;
+    /* background-color:teal; */
+    position:relative;
+    bottom:40px;
 }
 
 .form_picture_text
@@ -320,6 +395,8 @@ body
 /* Student Free Begins */
 .student_free_menu
 {
+    position:relative;
+    left:29px;
     width:495px !important;
     margin:0 auto 0 !important;
 }
@@ -327,12 +404,17 @@ body
 .student_free_menu .item
 {
     font-family:"Samim" !important;
+    /* width:300px !important; */
 }
 
 .student_free_menu .active
 {
     font-family:"Samim" !important;
     font-weight:900 !important;
+}
+
+.ui.menu>.item:first-child {
+    border-radius: 0px !important;
 }
 
 /* -------------------Main Form Begins---------------- */
@@ -354,7 +436,7 @@ body
     margin:20px auto 0 !important;
 }
 
-.item1, .item2
+.item1, .item2, .item3, .item4
 {
     width:220px !important;
     margin:0 auto 0 !important;
@@ -467,9 +549,6 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
 .btn1
 {
     font-family:"Samim" !important;
-    /* width:60%;
-    min-width:100px;
-    max-width:150px; */
     width:495px !important;
     display:block !important;
     margin:20px auto 25px !important;
@@ -479,11 +558,9 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
     padding-top:10px !important;
     padding-bottom:12px !important;
     cursor:pointer;
-    /* color:rgb(18, 112, 15) !important; */
     color:#425c81 !important;
     color:#ffffff !important;
     font-weight:500 !important;
-    /* background-color:rgb(0, 255, 85) !important; */
     background-color:#a5d4de !important;
     background-color:#52a7cc !important;
     text-align:center !important;
@@ -493,7 +570,6 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
 {
     font-family:"Samim" !important;
     
-    /* color:rgb(18, 112, 15) !important;   */
     color:#425c81 !important;
     color:#ffffff !important;
     font-size:16px;
@@ -502,7 +578,6 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
 
 .visible.content
 {
-    /* color:rgb(18, 112, 15) !important;   */
     color:#425c81 !important;
     color:#ffffff !important;
     font-size:15px;
@@ -567,6 +642,116 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
 
 
 /* --------Drop Down Ends ----- */
+
+
+/* File Begins */
+.group_inputs2
+{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center !important;
+    direction:rtl !important;
+    font-family:"Samim" !important;
+    
+    width:520px !important;
+    margin:20px auto 0 !important;
+}
+
+.item3
+{
+    width:350px !important;
+    /* background-color:red; */
+}
+
+.item4
+{
+    width:120px !important;
+    padding-top:7px;
+    /* background-color:green; */
+}
+
+.file_submit, .free_file_submit
+{
+    text-align:left;
+    padding-top:4px;
+}
+
+.file_submit_div, .free_file_submit_div
+{
+    border-radius:20px !important;
+    padding:5px 5px 5px 5px !important;
+    /* background-color:orange !important; */
+}
+
+.file_submit_div .x.icon, .free_file_submit_div .x.icon
+{
+    float:left;
+    position:relative;
+    top:5px;
+    left:5px;
+    color:rgb(77, 77, 77);
+    cursor:pointer;
+}
+
+input[name = "file_uploads"], input[name = "free_file_uploads"]
+{
+    display:none;
+}
+
+.file_text, .free_file_text
+{
+    border-radius:20px !important;
+    padding:5px 10px 5px 10px;
+    color:rgb(155, 155, 155);
+    float:left;
+    position:relative;
+    top:1px;
+}
+
+.file_button, .free_file_button
+{
+    float:right !important;
+    padding:6px 10px 5px 10px;
+    font-family:"Samim";
+    border-radius:20px;
+    border:1px solid rgb(216, 216, 216);
+    background-color:rgb(216, 216, 216);
+    outline:none;
+    cursor:pointer;
+}
+
+.clear_both
+{
+    clear:both;
+}
+
+/* File Ends */
+
+.item4 .submit_btn
+{
+    border-radius:8px !important;
+    padding:10px !important;
+    width:100% !important;
+
+    font-family:"Samim";
+    color:#ffffff;
+    font-weight:500 !important;
+    background-color:#52a7cc;
+    border:1px solid #52a7cc;
+    /* color:white; */
+    outline:none;
+    cursor:pointer;
+    position:relative;
+    bottom:2px;
+    transition-duration: 0.4s;
+}
+
+.submit_btn:hover
+{
+    background-color:#2d81a5;
+    border:1px solid #2d81a5;
+}
+
 
 
 /* -------------------Main Form Ends---------------- */

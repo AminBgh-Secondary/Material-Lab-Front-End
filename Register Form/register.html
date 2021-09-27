@@ -66,7 +66,7 @@
         <!-- ------------------ Fixed Menu Ends -->
 
 
-        <div class="main_div">
+        <div class="ui middle aligned center grid main_div">
 
             <div class="form_picture">
                 <div class="form_picture_container">
@@ -89,11 +89,11 @@
                 </div> -->
 
                 
-                <div class="ui horizontal pointing menu student_free_menu">
-                    <div class="right pointing menu">
+                <div class="ui horizontal pointing two item menu student_free_menu">
+                    <!-- <div class="right pointing menu"> -->
+                        <a class="active item student_menu">دانشجو</a>
                         <a class="item free_menu">آزاد</a>
-                        <a class="active item student_menu">دانشجویان</a>
-                    </div>
+                    <!-- </div> -->
                 </div>
 
                 <!-- <div class="master_or_student">
@@ -190,8 +190,33 @@
 
                         </div>
 
+                        <div class="group_inputs2">
 
-                        <button type="submit" class="ui animated button btn1">
+                            <div class="field item3">
+                                <div class="file_submit">
+                                    <div class="ui raised segment file_submit_div">
+                                        <input type="file" id="files" name="file_uploads">
+                                        <button class="file_button">
+                                            الصاق عکس
+                                        </button>
+                                        <i class="x icon display_none" title = "حذف فایل"></i>
+                                        <span class="file_text">
+                                            عکس کاربری (اختیاری)
+                                        </span>
+                                        <div class="clear_both"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field item4">
+                                <button class="submit_btn">
+                                    ثبت
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- <button type="submit" class="ui animated button btn1">
                             <div class="visible content">
                                 <h4>
                                     ثبت
@@ -200,7 +225,7 @@
                             <div class="hidden content">
                                 <i class="check icon"></i>
                             </div>
-                        </button>
+                        </button> -->
                         
 
                     </form>
@@ -260,7 +285,7 @@
                         </div>
 
 
-                        <button type="submit" class="ui animated button btn1">
+                        <!-- <button type="submit" class="ui animated button btn1">
                             <div class="visible content">
                                 <h4>
                                     ثبت
@@ -269,7 +294,32 @@
                             <div class="hidden content">
                                 <i class="check icon"></i>
                             </div>
-                        </button>
+                        </button> -->
+
+                        <div class="group_inputs2">
+
+                            <div class="field item3">
+                                <div class="free_file_submit">
+                                    <div class="ui raised segment free_file_submit_div">
+                                        <input type="file" id="free_files" name="free_file_uploads">
+                                        <button class="free_file_button">
+                                            الصاق عکس
+                                        </button>
+                                        <i class="x icon display_none" title = "حذف فایل"></i>
+                                        <span class="free_file_text">
+                                            عکس کاربری (اختیاری)
+                                        </span>
+                                        <div class="clear_both"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field item4">
+                                <button class="submit_btn">
+                                    ثبت
+                                </button>
+                            </div>
+                        </div>
                         
 
                     </form>

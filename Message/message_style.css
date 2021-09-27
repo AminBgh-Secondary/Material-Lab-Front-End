@@ -726,7 +726,7 @@ input[name = "file_uploads"]
 .submit_btn
 {
     border-radius:8px !important;
-    padding:10px !important;
+    padding:11px !important;
     width:100% !important;
 
     font-family:"Samim";
@@ -737,6 +737,9 @@ input[name = "file_uploads"]
     /* color:white; */
     outline:none;
     cursor:pointer;
+    
+    position:relative;
+    bottom:2px;
     transition-duration: 0.4s;
 }
 

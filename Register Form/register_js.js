@@ -78,4 +78,99 @@ $(document).ready(function(){
         $(".student_form").removeClass("display_none");
     });
 
+
+
+
+
+    $('.file_button').click(function(){
+        event.preventDefault();
+        $("#files").trigger('click');
+    });
+    
+    const file = document.querySelector('#files');
+    file.addEventListener('change', (e) => {
+        
+    // Get the selected file
+    const exist_file = $("#files")[0].files[0];
+    if(exist_file)  // File Exists
+    {
+        const [file] = e.target.files;
+        // Get the file name and size
+        const { name: fileName, size } = file;
+        
+        console.log("Target file is :" + fileName);
+        // Convert size in bytes to kilo bytes
+        const fileSize = (size / 1000).toFixed(2);
+        // Set the text content
+        const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+        document.querySelector('.file_text').textContent = fileNameAndSize;
+
+        $(".file_submit_div .x.icon").removeClass("display_none");
+    }
+
+    else  // File Doesn't Exist
+    {
+        console.log("Target file is : Empty");
+        document.querySelector('.file_text').textContent = "عکس کاربری (اختیاری)";
+        $(".file_submit_div .x.icon").removeClass("display_none");
+        $(".file_submit_div .x.icon").addClass("display_none");
+    }
+    
+    });
+
+    $('.file_submit_div .x.icon').click(function(){
+        $('#files').val('');
+        document.querySelector('.file_text').textContent = "عکس کاربری (اختیاری)";
+        $(".file_submit_div .x.icon").removeClass("display_none");
+        $(".file_submit_div .x.icon").addClass("display_none");
+    });
+
+
+
+
+
+    $('.free_file_button').click(function(){
+        event.preventDefault();
+        $("#free_files").trigger('click');
+    });
+    
+    const free_file = document.querySelector('#free_files');
+    free_file.addEventListener('change', (e) => {
+        
+    // Get the selected file
+    const exist_file = $("#free_files")[0].files[0];
+    if(exist_file)  // File Exists
+    {
+        const [free_file] = e.target.files;
+        // Get the file name and size
+        const { name: fileName, size } = free_file;
+        
+        console.log("Target file is :" + fileName);
+        // Convert size in bytes to kilo bytes
+        const fileSize = (size / 1000).toFixed(2);
+        // Set the text content
+        const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+        document.querySelector('.free_file_text').textContent = fileNameAndSize;
+
+        $(".free_file_submit_div .x.icon").removeClass("display_none");
+    }
+
+    else  // File Doesn't Exist
+    {
+        console.log("Target file is : Empty");
+        document.querySelector('.free_file_text').textContent = "عکس کاربری (اختیاری)";
+        $(".free_file_submit_div .x.icon").removeClass("display_none");
+        $(".free_file_submit_div .x.icon").addClass("display_none");
+    }
+    
+    });
+
+    $('.free_file_submit_div .x.icon').click(function(){
+        $('#free_files').val('');
+        document.querySelector('.free_file_text').textContent = "عکس کاربری (اختیاری)";
+        $(".free_file_submit_div .x.icon").removeClass("display_none");
+        $(".free_file_submit_div .x.icon").addClass("display_none");
+    });
+    
+
 });
