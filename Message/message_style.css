@@ -621,6 +621,15 @@ input[name = "calendar"]
 {
     font-weight:700 !important;
 }
+
+/* Selection Begins */
+.ui.search.selection.dropdown>input.search
+{
+    font-family:"Samim" !important;
+    padding: 15px !important;
+}
+/* Selection Ends */
+
 /* --------Drop Down Ends ----- */
 
 .priority

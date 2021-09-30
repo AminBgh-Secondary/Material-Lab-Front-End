@@ -62,7 +62,7 @@ $(document).ready(function(){
     });
 
     $(".student_free_menu .item").click(function(){
-        $(".item").removeClass("active");
+        $(".student_free_menu .item").removeClass("active");
         $(this).addClass("active");
     });
 

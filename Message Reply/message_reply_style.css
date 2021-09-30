@@ -515,6 +515,7 @@ input[name = "calendar"]
 {
     width:95%;
     max-width:585px;
+    max-width:700px;
     margin:20px auto 0 !important;
     padding:0px !important;
 }
