@@ -61,6 +61,30 @@ $(document).ready(function(){
         }
     });
 
+    $(".ui.dropdown.item_drop_down2").click(function(){
+        var x = $('input[name="degree"]').val();
+        if(x == "2" || x == "1" || x == "0")
+        {
+            $(".item_drop_down2").removeClass("font_light");
+            $(".item_drop_down2").removeClass("font_bold");
+            $(".item_drop_down2").addClass("font_bold");
+        }
+
+        if(x == "2" || x == "1")
+        {
+            $("#the_calendar").removeClass("display_none");
+            $("#phone_std").removeClass("item2");
+            $("#phone_std").addClass("item1");
+        }
+
+        if(x == "0")
+        {
+            $("#the_calendar").addClass("display_none");
+            $("#phone_std").removeClass("item1");
+            $("#phone_std").addClass("item2");
+        }
+    });
+
     $(".student_free_menu .item").click(function(){
         $(".student_free_menu .item").removeClass("active");
         $(this).addClass("active");
@@ -111,7 +135,7 @@ $(document).ready(function(){
     else  // File Doesn't Exist
     {
         console.log("Target file is : Empty");
-        document.querySelector('.file_text').textContent = "عکس کاربری (اختیاری)";
+        document.querySelector('.file_text').textContent = "عکس کاربری";
         $(".file_submit_div .x.icon").removeClass("display_none");
         $(".file_submit_div .x.icon").addClass("display_none");
     }
@@ -120,7 +144,7 @@ $(document).ready(function(){
 
     $('.file_submit_div .x.icon').click(function(){
         $('#files').val('');
-        document.querySelector('.file_text').textContent = "عکس کاربری (اختیاری)";
+        document.querySelector('.file_text').textContent = "عکس کاربری";
         $(".file_submit_div .x.icon").removeClass("display_none");
         $(".file_submit_div .x.icon").addClass("display_none");
     });
@@ -158,7 +182,7 @@ $(document).ready(function(){
     else  // File Doesn't Exist
     {
         console.log("Target file is : Empty");
-        document.querySelector('.free_file_text').textContent = "عکس کاربری (اختیاری)";
+        document.querySelector('.free_file_text').textContent = "عکس کاربری";
         $(".free_file_submit_div .x.icon").removeClass("display_none");
         $(".free_file_submit_div .x.icon").addClass("display_none");
     }
@@ -167,7 +191,7 @@ $(document).ready(function(){
 
     $('.free_file_submit_div .x.icon').click(function(){
         $('#free_files').val('');
-        document.querySelector('.free_file_text').textContent = "عکس کاربری (اختیاری)";
+        document.querySelector('.free_file_text').textContent = "عکس کاربری";
         $(".free_file_submit_div .x.icon").removeClass("display_none");
         $(".free_file_submit_div .x.icon").addClass("display_none");
     });

@@ -138,13 +138,39 @@
 
 
                         <div class="group_inputs">
-                            <div class="ui labeled icon input item2">
-                                <i class="envelope icon"></i>
-                                <input type="text" class="individual_input" name="email" placeholder="ایمیل">
 
-                                <div class="ui label email_lbl">
-                                    
+                            <div class="ui selection dropdown item_drop_down2 font_light">
+                                <input type="hidden" name="degree">
+                                <i class="university icon"></i>
+                                <div class="default text">مقطع</div>
+                                <div class="menu">
+                                    <div class="item" data-value="0">کارشناسی</div>
+                                    <div class="item" data-value="1">کارشناسی ارشد</div>
+                                    <div class="item" data-value="2">دکترا</div>
                                 </div>
+                            </div>
+
+                            <div class="ui selection dropdown item_drop_down font_light">
+                                <input type="hidden" name="master">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div class="default text">استاد راهنما</div>
+                                <div class="menu">
+                                    <div class="item" data-value="0">دکتر فخراحمد</div>
+                                    <div class="item" data-value="1">دکتر کشتکاران</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="group_inputs">
+                            <div class="ui icon input item1 display_none" id="the_calendar">
+                                <i class="calendar alternate icon"></i>
+                                <input type="text" data-jdp class="individual_input" name="proposal_date" placeholder="تاریخ دفاع از پروپوزال">
+                            </div>
+
+                            <div class="ui icon input item2" id="phone_std">
+                                <i class="phone icon"></i>
+                                <input type="text" class="individual_input" name="phone" placeholder="شماره تماس">
                             </div>
                         </div>
 
@@ -156,38 +182,15 @@
                             </div>
                         </div>
 
-
                         <div class="group_inputs">
+                            <div class="ui labeled icon input item2">
+                                <i class="envelope icon"></i>
+                                <input type="text" class="individual_input" name="email" placeholder="ایمیل">
 
-                            <div class="ui icon input item1">
-                                <i class="calendar alternate icon"></i>
-                                <input type="text" data-jdp class="individual_input" name="proposal_date" placeholder="تاریخ دفاع از پروپوزال">
-                            </div>
-
-                            <div class="ui selection dropdown item_drop_down font_light">
-                                <input type="hidden" name="master">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                                <div class="default text">استاد راهنما</div>
-                                <div class="menu">
-                                    <div class="item" data-value="1">دکتر فخراحمد</div>
-                                    <div class="item" data-value="0">دکتر کشتکاران</div>
+                                <div class="ui label email_lbl">
+                                    
                                 </div>
                             </div>
-
-                        </div>
-
-                        <div class="group_inputs">
-
-                            <div class="ui icon input item1">
-                                <i class="university icon"></i>
-                                <input type="text" class="individual_input" name="degree" placeholder="مقطع">
-                            </div>
-
-                            <div class="ui icon input item1">
-                                <i class="phone icon"></i>
-                                <input type="text" class="individual_input" name="phone" placeholder="شماره تماس">
-                            </div>
-
                         </div>
 
                         <div class="group_inputs2">

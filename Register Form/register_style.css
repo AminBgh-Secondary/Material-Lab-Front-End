@@ -27,8 +27,6 @@
 
 body
 {
-    padding-top:40px !important;
-
     padding-top:100px !important;
 }
 
@@ -99,6 +97,7 @@ body
 }
 body > .grid {
     height: 100%;
+    /* height:106%; */
 }
 
 
@@ -477,7 +476,7 @@ body > .grid {
 
 .ui.icon.input.item1 .graduation.cap.icon, .ui.icon.input.item2 .envelope.icon,
 .ui.icon.input.item1 .calendar.icon, .ui.icon.input.item1 .users.icon,
-.ui.icon.input.item1 .university.icon, .ui.icon.input.item1 .phone.icon,
+.ui.icon.input.item1 .phone.icon,
 .ui.icon.input.item2 .pencil.alternate.icon, .ui.icon.input.item2 .university.icon
 {
     font-size:17px;
@@ -597,13 +596,13 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
 
 
 /* --------Drop Down Begins ----- */
-.item_drop_down, div.item
+.item_drop_down, div.item, .item_drop_down2, div.item
 {
     direction:rtl !important;
     text-align:right !important;
 }
 
-.item_drop_down
+.item_drop_down, .item_drop_down2
 {
     width:220px !important;
     margin:0 auto 0 !important;
@@ -622,6 +621,11 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
     appearance:none;
 }
 
+.item_drop_down2
+{
+    padding-right:15px !important;
+}
+
 .font_light
 {
     font-weight:500 !important;
@@ -632,12 +636,20 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
     font-weight:700 !important;
 }
 
-.item_drop_down .fa-chalkboard-teacher
+.item_drop_down .fa-chalkboard-teacher,
+.ui.selection.dropdown.item_drop_down2 .university.icon
 {
     font-size:17px;
     position: relative;
     left:8px;
     color: rgb(134, 134, 134) !important;
+}
+
+
+
+.ui.selection.dropdown.item_drop_down2 .university.icon
+{
+    left:12px;
 }
 
 
@@ -654,7 +666,7 @@ input[name = "free_national_id"], input[name = "free_email"], input[name = "free
     font-family:"Samim" !important;
     
     width:520px !important;
-    margin:20px auto 0 !important;
+    margin:20px auto 20px !important;
 }
 
 .item3
