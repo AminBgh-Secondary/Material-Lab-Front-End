@@ -1,0 +1,460 @@
+
+@font-face
+{
+    font-family: 'Samim';
+    src: url(../Static/fonts/Samim/Samim.eot);
+    src: url(../Static/fonts/Samim/Samim.woff2) format('woff2'),
+            url(../Static/fonts/Samim/Samim.woff) format('woff');
+}
+
+::placeholder
+{
+    font-size:14px;
+    font-weight:lighter;
+    font-family:"Samim" !important;
+    color:rgb(212, 212, 212);
+}
+
+body
+{
+    padding-top:60px !important;
+}
+
+
+
+.ui[class*="middle aligned"].grid > .column:not(.row), .ui[class*="middle aligned"].grid > .row > .column, .ui.grid > [class*="middle aligned"].row > .column, .ui.grid > [class*="middle aligned"].column:not(.row), .ui.grid > .row > [class*="middle aligned"].column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    vertical-align: middle;
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+}
+.ui[class*="center aligned"].grid > .column, .ui[class*="center aligned"].grid > .row > .column, .ui.grid > [class*="center aligned"].row > .column, .ui.grid > [class*="center aligned"].column.column, .ui.grid > .row > [class*="center aligned"].column.column {
+    text-align: center;
+    -ms-flex-item-align: inherit;
+    align-self: inherit;
+}
+.ui.grid > .column:only-child, .ui.grid > .row > .column:only-child {
+    width: 100%;
+}
+.ui.grid > .column:not(.row) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    position: relative;
+    display: inline-block;
+    width: 6.25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+}
+.ui.grid > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.column {
+    max-width: 450px;
+}
+
+.ui[class*="center aligned"].grid {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.ui.grid {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.ui.grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0em;
+}
+body > .grid {
+    height: 100%;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------- fixed menu begins */
+
+.fixed_menu
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color:rgb(255, 255, 255);
+    z-index: 999;
+    padding:0px 100px 0px 100px;
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.fixed_menu_item
+{
+    margin-left:20px;
+    font-family:"Samim";
+    font-weight:900;
+    float:right;
+    height:100%;
+    width:110px;
+    text-align:center;
+    font-size:16px;
+    line-height:55px;
+    direction:rtl;
+    color:rgb(23, 19, 70);
+}
+
+.fixed_menu_item .icon
+{
+    margin-left:5px;
+}
+
+.material_logo
+{
+    float:left;
+    margin-right:30px;
+    height:60px !important;
+    cursor:pointer;
+}
+
+.labaratory_fixed
+{
+    width:130px;
+}
+
+.education_fixed
+{
+    width:140px;
+    padding-bottom:10px !important;
+}
+
+.login_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+    
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.sign_up_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+}
+
+.dashboard_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.home_fixed .home.icon
+{
+    color:rgb(13, 121, 54) !important;
+    font-size:21px;
+}
+
+.labaratory_fixed .flask.icon
+{
+    color:goldenrod !important;
+    font-size:21px;
+}
+
+.education_fixed .laptop.icon
+{
+    color:rgb(19, 104, 110);
+    font-size:21px;
+}
+
+.login_fixed .sign-in
+{
+    color:#52a7cc;
+    font-size:26px;
+    position:relative;
+    top:5px;
+}
+
+.sign_up_fixed .user.plus
+{
+    color:crimson;
+    font-size:21px;
+    position:relative;
+}
+
+.dashboard_fixed .map.signs.icon
+{
+    color:#425c81;
+    font-size:23px;
+    position:relative;  
+}
+
+.active_fixed
+{
+    font-weight:600 !important;
+    color:black;
+    background-color:rgb(177, 211, 221);
+}
+
+/* ------------------------------------------------------------------------------- fixed menu ends */
+
+
+
+.main_div
+{
+    /* background-color:cadetblue !important; */
+    width:100%;
+    max-width:750px !important;
+    margin:0 auto 0 !important;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.form_container, .form_picture
+{
+    /* background-color:red; */
+    padding:0px !important;
+    margin:0 auto 0;
+}
+
+.form_picture_container img
+{
+    display:block !important;
+    margin:0 auto 0 !important;
+    width:300px !important;
+}
+
+.form_picture
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:15px !important;
+    /* position:relative;
+    bottom:40px; */
+}
+
+.form_picture_text
+{
+    padding-top:20px;
+    text-align:center;
+}
+
+.form_picture_container .ui.header, .form_text
+{
+    font-family:'Samim' !important;
+    direction:rtl !important;
+    text-align:right;
+}
+
+
+/* -------------------Main Form Begins---------------- */
+.form_container
+{
+    width:100% !important;
+    padding:10px !important;
+    max-width:350px !important;
+    min-width:250px !important;
+}
+
+.group_inputs
+{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center !important;
+    direction:rtl !important;
+    font-family:"Samim" !important;
+    
+    width:100%;
+    margin:20px auto 0 !important;
+}
+
+.item2
+{
+    width:100% !important;
+    margin:0 auto 0 !important;
+    direction:rtl !important;
+}
+
+.individual_input
+{
+    font-family:"Samim" !important;
+    width:100%;
+    padding:15px !important;
+    direction:rtl !important;
+    text-align:right !important;
+    border:none;
+    /* border-bottom:2px solid rgb(21, 180, 185); */
+    outline:none;
+    font-size:15px;
+    font-weight:700;
+}
+
+.ui.icon.input.error.item2 .icon
+{
+    color: #d47e7e !important;
+}
+
+.ui.icon.input.item1 .icon, .ui.icon.input.item2 .icon
+{
+    color:rgb(134, 134, 134) !important;
+    opacity:1 !important;
+}
+
+.ui.icon.input.item2 .user.icon, .ui.icon.input.item2 .lock.icon
+{
+    font-size:16px !important;
+    position: relative;
+    right:10px;
+}
+
+input[name = "proposal_date"], input[name = "student_number"], input[name = "national_id"],
+input[name = "email"], input[name = "phone"],
+input[name = "free_national_id"], input[name = "free_email"], input[name = "free_phone"]
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    direction:ltr !important;
+}
+
+
+
+
+/* --------Email logo Begins ----- */
+.email_lbl
+{
+    border-radius:0px !important;
+    padding:0px !important;
+    padding-top:10px !important;
+
+    background-color:white !important;
+    direction:rtl !important;
+    border-radius:0px !important;  
+}
+
+.email_image
+{
+    position:relative;
+    left:40px;
+}
+
+.email_align
+{
+    text-align : right !important;
+}
+
+.email_align2
+{
+    text-align : center !important;
+}
+/* --------Email logo Ends ----- */
+
+
+.submit_btn
+{
+    font-family:"Samim" !important;
+    width:100% !important;
+    display:block !important;
+    margin:20px auto 25px !important;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    padding-top:13px !important;
+    padding-bottom:17px !important;
+    cursor:pointer;
+    color:#ffffff !important;
+    font-weight:500 !important;
+    font-size:16px;
+    background-color:#52a7cc !important;
+    text-align:center !important;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+
+.submit_btn:hover
+{
+    background-color:#2d81a5 !important;
+}
+
+
+.display_none
+{
+    display:none !important;
+}
+/* -------------------Main Form Ends---------------- */
+
+
+/* Message Begins */
+.ui.success.message
+{
+    padding:15px !important;
+}
+
+.ui.success.message .header
+{
+    font-family:"Samim" !important;
+    font-size:13px !important;
+    direction:rtl !important;
+    text-align:center;
+}
+
+.ui.message>.close.icon
+{
+    top:13px !important;
+}
+/* Message Ends */
+
+
+
+@media screen and (max-width:715px)
+{
+    h3.ui.header
+    {
+        font-size:15px !important;
+    }
+
+    .form_text
+    {
+        font-size:13px !important;
+    }
+
+    .form_picture
+    {
+        margin:0 auto 0 !important;
+    }
+
+    .form_picture_container img
+    {
+        width:250px !important;
+    }
+}
