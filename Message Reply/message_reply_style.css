@@ -15,6 +15,10 @@
     color:rgb(212, 212, 212);
 }
 
+html
+{
+    scroll-behavior:smooth;
+}
 
 body {
   font-family: var(--font-family) !important;
@@ -508,15 +512,64 @@ input[name = "calendar"]
     margin:40px auto 0; 
 }
 
-/* body{background-color:rgb(245, 245, 245) !important;} */
+
+/* Message Info Begins */
+.message_info
+{
+    width:95%;
+    max-width:700px;
+    margin:40px auto 0 !important;
+    padding:0px !important;
+    direction:rtl !important;
+    /* background-color:red; */
+}
+
+.f0c
+{
+    background-color:#fc0 !important;
+}
+
+.ui.horizontal.label, .ui.horizontal.labels .label
+{
+    padding: .4em .833em 0.6em 0.833em !important;
+}
+
+.message_info div
+{
+    padding:10px 7px 10px 7px;
+    border-bottom:1px solid rgb(228, 228, 228);
+}
+
+.message_info div span
+{
+    font-family:"Samim" !important;
+}
+
+.message_info div span:nth-of-type(1)
+{
+    font-size:17px;
+    /* display:inline-block; */
+    display:table-cell;
+    width:100px;
+    /* background-color:red; */
+    font-weight:700;
+}
+
+.message_info div span:nth-of-type(2)
+{
+    font-size:13px;
+    display:table-cell;
+    /* background-color:red; */
+}
+/* Message Info Begins */
+
 
 /* Show Messages Begins */
 .div_show_messages
 {
     width:95%;
-    max-width:585px;
     max-width:700px;
-    margin:20px auto 0 !important;
+    margin:40px auto 0 !important;
     padding:0px !important;
 }
 
@@ -525,7 +578,7 @@ input[name = "calendar"]
 .each_message
 {
     width:100%;
-    margin-top:27px;
+    /* margin-top:27px; */
 }
 
 .each_message:nth-of-type(1)
@@ -548,6 +601,10 @@ input[name = "calendar"]
 .each_message_header_right
 {
     float:right;
+}
+
+.each_message_header_right:nth-of-type(1)
+{
     margin-left:15px;
 }
 
@@ -558,7 +615,16 @@ input[name = "calendar"]
 
 .each_message_header_left
 {
-    float:right;
+    float:left;
+    display:block;
+    /* background-color:rgb(154, 228, 176); */
+    background-color:rgb(255, 196, 0);
+    /* background-color:rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    font-family:"Samim";
+    padding:5px 10px 5px 10px;
+    margin-top:12px;
+    border-radius:4px;
 }
 
 .each_message_sender, .each_message_date
@@ -577,42 +643,45 @@ input[name = "calendar"]
     color:rgb(131, 131, 131);
     padding-right:1px;
     font-size:12px;
+    direction:rtl !important;
 }
 
-.each_message_body
+.each_message_body, .each_message_body_attach
 {
     font-family:"Samim" !important;
     direction:rtl !important;
     text-align:justify;
-    padding:0px;
+    padding:10px 20px 37px 20px;
     line-height:27px !important;
 }
 
-.each_meassge_topic
+.each_message_body_attach
 {
-    display:inline-block;
-    padding:6px;
-    padding-right:11px;
-    font-weight:900;
-    font-size:15px;
-}
-
-.each_meassge_topic .bookmark.icon
-{
-    color:rgb(22, 134, 22);
-    font-size:20px;
-    position:relative;
-    top:4px;
+    padding:10px 20px 0px 20px;
 }
 
 .each_message_text
 {
-    padding:15px 20px 15px 20px;
+    padding:0px;
+    /* background-color:orange; */
 }
 
-.each_message:nth-of-type(1) .each_message_body .each_message_text
+.each_message_attach
 {
-    padding-top:0px !important;
+    width:70%;
+    max-width:400px;
+    min-width:250px;
+    /* background-color:orange; */
+    border-top:1px dotted rgb(201, 201, 201);
+    padding:8px 8px 16px 8px;
+    margin-top:20px;
+    font-weight:700;
+}
+
+.each_message_attach .paperclip.icon
+{
+    font-size:17px;
+    margin:0px !important;
 }
 /* Each Message Ends */
 
@@ -623,9 +692,11 @@ input[name = "calendar"]
 
 
 /* ---- Form Begins ---- */
-.main_form
+#the_form
 {
     width:100%;
+    max-width:700px;
+    /* background-color:red; */
     margin:20px auto 0;
 }
 
@@ -633,8 +704,7 @@ input[name = "calendar"]
 {
     direction:rtl !important;
     font-family:"Samim" !important;
-    max-width:600px !important;
-    width:90% !important;
+    /* background-color:green; */
     margin:20px auto 0 !important;
 }
 
@@ -659,12 +729,8 @@ input[name = "calendar"]
     /* text-align:center !important; */
     direction:rtl !important;
     font-family:"Samim" !important;
-    /* background-color:teal; */
-    max-width:600px !important;
-    width:90% !important;
     margin:20px auto 0 !important;
 }
-
 
 
 .item1, .item2, .item3, .item4
@@ -676,18 +742,20 @@ input[name = "calendar"]
 
 .item2
 {
-    width:570px !important;
+    width:100% !important;
+    /* background-color:orange; */
 }
 
 .item3
 {
-    width:420px !important;
+    width:80% !important;
+    padding:0px 0px 0px 50px;
     /* background-color:red; */
 }
 
 .item4
 {
-    width:120px !important;
+    width:20% !important;
     padding-top:7px;
     /* background-color:green; */
 }
@@ -875,5 +943,14 @@ input[name = "file_uploads"]
   .sidebar-menu-toggler {
     display: none !important;
   }
+}
+
+
+@media screen and (max-width:450px)
+{
+    .each_message_header_left
+    {
+        display:none;
+    }
 }
 /*# sourceMappingURL=style.css.map */
