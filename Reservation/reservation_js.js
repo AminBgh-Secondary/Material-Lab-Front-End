@@ -1,105 +1,107 @@
 
-
-
 $(document).ready(function(){
+  
   jalaliDatepicker.startWatch({
-      minDate: "today",
-      maxDate: "attr"
-    });
-    var elm = $('input[name="calendar"]');
-    jalaliDatepicker.hide();
-    jalaliDatepicker.show(elm);
-
-
-});
-
-
-
-$(document).ready(function(){
-
-  $('.ui.accordion').accordion();
+    minDate: "today",
+    maxDate: "attr"
+  });
+  var elm = $('input[name="calendar"]');
+  jalaliDatepicker.hide();
+  jalaliDatepicker.show(elm);
 
 });
 
-// rgb(255, 62, 104) --- for red
-const myChartData2 = {
-  type: 'doughnut',
-  data: {
-    labels: ["تعداد ساعت رزرو شده", "تعداد ساعت آزاد"],
-    datasets: [{
-      data: [10, 2],
-      backgroundColor: [
-        'rgb(255, 62, 104)',
-        'rgb(27, 226, 150)'
-      ],
-      borderColor: [
-        'rgb(255, 62, 104)',
-        'rgb(27, 226, 150)'
-      ],
-      borderWidth: 1
-    }]
-  },
+function hide_less_values(x)
+{
+  var elems = $(".div_end_time .menu .item");
+  for(var i = 0; i < elems.length; i++)
+  {
+    $(".div_end_time .menu .item").eq(i).removeClass('display_none');
+    if(i + 1 < x)
+    {
+      $(".div_end_time .menu .item").eq(i).addClass("display_none");
+    }
+  }
+  // console.log(elems);
+}
 
-  options: {
+function remove_class_disable(x)
+{
+  if(x == 1)
+  {
+    $(".div_start_time label").removeClass("disabled_label");
+    $(".div_start_time .ui.fluid.dropdown.item_drop_down").removeClass("disabled");
 
-    plugins: {
-      datalabels: {
-        formatter: (value) => {
-          return value + '%';
-        }
-      }
-    },
-      
-    title: {
-      display: true,
-      text: "This is your 401(k) account's current asset mix"
-    },
+    $(".div_start_time .menu .item").removeClass("active");
+    $(".div_start_time .menu .item").removeClass("selected");
+    $(".div_start_time .item_drop_down option[value='']").attr('selected', 'selected');
 
-    animation: {
-      animateScale: true,
-      animateRotate: true
-    },
-
-    responsive: true,
-    maintainAspectRatio: false   
+    $(".div_start_time .item_drop_down .text").html('انتخاب کنید');
+    $(".div_start_time .item_drop_down .text").addClass('placeholder_text_color');
+    $(".div_start_time .ui.fluid.dropdown.item_drop_down").removeClass("font_bold");
   }
 
-};
+  else if(x == 2)
+  {
+    $(".div_end_time label").removeClass("disabled_label");
+    $(".div_end_time .ui.fluid.dropdown.item_drop_down").removeClass("disabled");
 
+    $(".div_end_time .menu .item").removeClass("active");
+    $(".div_end_time .menu .item").removeClass("selected");
+    $(".div_end_time .item_drop_down option[value='']").attr('selected', 'selected');
 
-function createChart(chartId, chartData) {
-  const ctx = document.getElementById(chartId);
-  const myChart = new Chart(ctx, {
-      type: chartData.type,
-      data: chartData.data,
-      options: chartData.options
-  });
-};
-
+    $(".div_end_time .item_drop_down .text").html('انتخاب کنید');
+    $(".div_end_time .item_drop_down .text").addClass('placeholder_text_color');
+    $(".div_end_time .ui.fluid.dropdown.item_drop_down").removeClass("font_bold");
+  }
+}
 
 $(document).ready(function(){
 
   $('.ui.dropdown').dropdown('hide');
 
-  $('.ui.progress')
-  .progress({
-    showActivity : false,
-  });
-
+  $('.ui.accordion').accordion();
 
   $('.ui.checkbox').checkbox();
 
-  createChart('chart2', myChartData2);
-  Chart.defaults.font.family = "Samim";
-
-  $(".ui.dropdown.item_drop_down").click(function(){
-      var x = $(this).children("input").val();
-      if(x)
-      {
-        $(this).removeClass("font_light");
-        $(this).removeClass("font_bold");
-        $(this).addClass("font_bold");
-      }
+  $(".div_start_time .ui.fluid.dropdown.item_drop_down").change(function(){
+    $(".div_start_time .item_drop_down .text").removeClass('placeholder_text_color');
+    $(this).addClass("font_bold");
+    remove_class_disable(2);
+    var x = $(".div_start_time .item_drop_down option:selected").val();
+    hide_less_values(x);
   });
 
+  $(".div_end_time .ui.fluid.dropdown.item_drop_down").change(function(){
+    $(".div_end_time .item_drop_down .text").removeClass('placeholder_text_color');
+    $(this).addClass("font_bold");
+  });
+
+  $("input[name='calendar']").change(function(){
+    remove_class_disable(1);
+    // ------
+    $(".div_end_time label").addClass("disabled_label");
+    $(".div_end_time .ui.fluid.dropdown.item_drop_down").addClass("disabled");
+    
+    $(".div_end_time .menu .item").removeClass("active");
+    $(".div_end_time .menu .item").removeClass("selected");
+    $(".div_end_time .item_drop_down option[value='']").attr('selected', 'selected');
+
+    $(".div_end_time .item_drop_down .text").html('انتخاب کنید');
+    $(".div_end_time .item_drop_down .text").addClass('placeholder_text_color');
+    $(".div_end_time .ui.fluid.dropdown.item_drop_down").removeClass("font_bold");
+
+    // var x = $(".div_start_time .item_drop_down option:selected").val();
+    // alert(x);
+  });
+
+
+  $(".individual_input").focus(function() {
+    $(this).css("border-color", "rgb(150, 200, 218)");
+  });
+
+  $(".individual_input").blur(function() {
+    $(this).css("border-color", "rgba(34,36,38,.15)");
+  });
+  
 });

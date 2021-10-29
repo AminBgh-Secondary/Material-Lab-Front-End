@@ -428,453 +428,340 @@ input[name = "calendar"]
     padding-top:90px;
     padding-bottom:50px;
     /* background: linear-gradient(87deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important; */
-    /* background-color:rgb(21, 52, 121); */
 }
 
+.tool_div
+{
+    margin:0 auto 0 !important;
+    /* background-color:red; */
+}
 
-/* -------Product Introduction Begins------- */
-.introduction
+.tool_div_top
+{
+    direction:rtl !important;
+    width:95%;
+    max-width:1100px;
+    margin:0 auto 0 !important;
+    /* background-color:orange !important; */
+}
+
+.div_tool_icon
+{
+    /* background-color:red; */
+    float:right;
+}
+
+.div_tool_icon_first
+{
+    /* background-color:gray !important; */
+    padding:0px;
+    padding-right: 10px;
+    margin-bottom:2px;
+}
+
+.div_tool_icon_first .icon
+{
+    font-size:26px;
+    margin-top:7px;
+    color:rgb(148, 148, 148);
+}
+
+.div_tool_icon_second
+{
+    /* background-color:blue !important; */
+    padding:5px 5px 5px 19px;
+    font-family:"Samim" !important;
+    color:rgb(148, 148, 148);
+}
+
+.div_tool_headers
+{
+    /* background-color:blue; */
+    border-right:2px solid rgb(226, 226, 226);
+    float:right;
+}
+
+.div_tool_headers h2
+{
+    /* background-color:yellow; */
+    color:rgb(12, 8, 233);
+    padding:5px 20px 5px 5px !important;
+    font-family:"Samim" !important;
+    font-size:16px;
+    margin:0px 0px 5px 0px!important;
+}
+
+.div_tool_headers h4
+{
+    /* background-color:green; */
+    font-size:13px;
+    /* color:rgb(192, 192, 192); */
+    padding:5px 20px 5px 5px !important;
+    font-family:"Samim" !important;
+    margin:0px !important;
+}
+
+.clear_both
+{
+    clear:both;
+}
+
+.tool_div_body
 {
     width:95%;
     max-width:1100px;
     /* background-color:red; */
-    background-color:white;
-    display:flex;
-    flex-wrap:wrap;
-    margin:0 auto 0 !important;
-    padding:20px !important;
-    border-radius:8px;
-    /* box-shadow: 0px 0px 10px 3px #e9e9e9; */
-    /* border:2px solid rgb(241, 241, 241); */
+    margin:40px auto 0; 
 }
 
-.introduction_image
+.tool_image_features
+{
+    /* background-color:red; */
+    display:flex;
+    flex-wrap:wrap;
+    direction:rtl !important;
+}
+
+.tool_img
 {
     display:flex;
     justify-content:center;
     align-items:center;
     /* background-color:orange !important; */
-    width:35% !important;
+
+
+    width:90%;
+    max-width:350px !important;
+    margin:0 auto 0;
+    /* max-width:700px; */
 }
 
-.introduction_image img
+.tool_img img
 {
     display:block !important;
     margin:0 auto 0 !important;
-    width:250px !important;
+    border-radius:18px;
+
+
+    padding: 5px;
+    background-color: rgb(218, 218, 218) !important;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 
-.introduction_text
+.tool_features
 {
-    width:65%;
-    /* background-color:blue !important; */
+    width:calc(100% - 350px);
+    padding:7px 20px 7px 20px;
 }
 
-.object_header
+.tool_features h3
 {
-    width:100%;
-    /* background-color:green; */
-    direction:rtl;
-    display:flex;
-    flex-wrap:wrap;
-}
-
-h2.object_name
-{
-    font-family:"Samim";
-    /* background-color:yellow; */
-    margin:0 auto 0;
-    font-size:26px;
-    padding-top:10px;
-}
-
-div.object_rate
-{
-    font-family:"Samim";
-    background-color:rgb(255, 209, 23);
-    border-radius:8px;
-    padding:10px;
-    margin:0 auto 0;
-    text-align:center;
-}
-
-.rate_score:nth-of-type(1)
-{
-    padding-left:10px !important;
-}
-
-div.object_rate .star.icon
-{
-    font-size:17px;
-    position:relative;
-    bottom:3px;
-    color:rgb(165, 126, 0);
-}
-
-.real_rate, .total_rate, .number_of_rates
-{
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
-}
-
-.number_of_rates
-{
-    position:relative;
-    top:2px;
-}
-
-.total_rate
-{
-    font-size:15px;
-}
-
-.real_rate
-{
-    font-size:26px;
-    font-weight:900;
-}
-
-.technical_specifics, .descriptions
-{
-    width:100%;
-    /* background-color:gray; */
-    padding-top:17px;
-    direction:rtl;
-    margin-bottom:10px;
-}
-
-.technical_specifics
-{
-    float:right;
-    width:50%;
-}
-
-.descriptions
-{
-    clear:both;
-}
-
-h3.technical_header, h3.descriptions_header
-{
-    font-family:"Samim";
-    margin-bottom:0px;
-    padding-bottom:0px;
-    font-size:16px;
+    font-family:"Samim" !important;
+    margin-bottom:0px !important;
 }
 
 .just_border
 {
-    height:2px;
-    display:inline-block;
-    width:80px;
+    height:3px;
+    width:100px;
     margin-top:0px !important;
     margin-bottom:5px !important;
-    background-color:rgb(240, 23, 8) !important;
+    background-color:#ef394e !important;
+    border-radius:50px;
+    display:inline-block;
 }
 
-.technical_overall_text, .descriptions_text
+.each_feature
 {
-    font-family:"Samim";
-    font-size:12.5px;
-    padding-right:15px;
-    padding-left:20px;
-    /* background-color:cadetblue; */
-    width:90%;
-    direction:rtl;
-    text-align:justify;
-    color:rgb(119, 119, 119);
-    line-height:25px;
+    font-family:"Samim" !important;
+    direction:rtl !important;
+    padding-right:5px;
+    margin-bottom:10px;
+    color:rgb(66, 66, 66);
+    font-size:0.875rem;
+    /* background-color:blue; */
 }
 
-.technical_text .icon
-{
-    font-size:7px;
-    color:rgb(175, 175, 175);
-    position:relative;
-    top:1px;
-    margin-right:0px;
-}
-
-.price_sample_hour
-{
-    display:inline-block !important;
-    direction:ltr !important;
-    font-size:17px;
-    font-weight:900;
-    color:rgb(11, 145, 100);
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
-}
-
-.more_infos
-{
-    width:90%;
-    background-color:rgb(231, 231, 231);
-    border-radius:8px;
-    direction:rtl;
-    float:right;
-    padding:15px;
-    display:flex;
-    flex-wrap:wrap;
-}
-
-.made_in, .last_service, .construction_year
-{
-    margin:0 auto 0;
-    text-align:center;
-    /* background-color:purple; */
-}
-
-.construction_year
-{
-    width:220px;
-    border-left:2px solid rgb(207, 207, 207);
-    border-right:2px solid rgb(207, 207, 207);
-}
-
-.made_in_header, .last_service_header, .construction_year_header
-{
-    margin-bottom:7px;
-    font-size:16px;
-    font-family:"Samim";
-}
-
-.made_in_text, .last_service_text, .construction_year_text
-{
-    font-family:"Samim";
-    font-size:12.5px;
-    color:rgb(119, 119, 119);
-}
-
-.made_in_text .flag
+.each_feature .icon
 {
     position:relative;
-    top:1px;
-    margin:0px 0px 0px 3px !important;
-}
-/* ---------Product Introduction Ends------- */
-
-
-
-
-
-/* --------------Cards Begins----------- */
-.group_cards
-{
-    width:95%;
-    margin:30px auto 30px;
-    display:flex;
-    flex-wrap:wrap;
+    top:2px;
+    margin:0px !important;
 }
 
-/* .group_cards .ui.card:nth-of-type(1)
+.feature_name
 {
-    background:linear-gradient(87deg,#2dce89,#2dcecc);
+    font-size:0.975rem;
 }
 
-.group_cards .ui.card:nth-of-type(2)
-{
-    background: linear-gradient(87deg,#f5365c,#f56036);
-}
-
-.group_cards .ui.card:nth-of-type(3)
-{
-    background: linear-gradient(87deg,#11cdef,#1171ef);
-} */
-.card_seg .ui.card
-{   
-    border:none !important;
-    border-radius:8px !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    background-color:rgb(245, 245, 245) !important;
-}
-.card_seg
-{
-    margin:0 auto 0 !important;
-    max-width:290px !important;
-    width:90% !important;
-    border-radius:8px !important;
-    padding:10px !important;
-
-    -webkit-box-shadow: 0 2px 4px 0 rgb(34 36 38 / 12%), 0 2px 10px 0 rgb(34 36 38 / 15%);
-    box-shadow: 0 2px 4px 0 rgb(34 36 38 / 12%), 0 2px 10px 0 rgb(34 36 38 / 15%);
-}
-
-.card_seg
-{
-    /* background-color:rgb(109, 233, 196) !important; */
-}
-
-/* .groups_card .ui.card
-{
-    margin:0 auto 0 !important;
-    max-width:290px !important;
-    width:90% !important;
-
-    border:none !important;
-    border-radius:8px !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-} */
-
-.group_cards .ui.card:nth-of-type(1)
-{
-    /* border:2px solid rgb(115, 196, 23) !important; */
-    /* background-color:rgb(226, 255, 193) !important; */
-}
-
-/* .group_cards .ui.card:nth-of-type(2)
-{
-    max-width:550px !important;
-    width:350px !important;
-    border-right:2px solid rgb(207, 207, 207) !important;
-    border-left:2px solid rgb(207, 207, 207) !important;
-} */
-
-.group_cards .ui.card .content, .group_cards .ui.card .content .header
+.tool_description_payment
 {
     direction:rtl !important;
-    font-family: "Samim";
-    color:white !important;
+    margin-top:20px;
 }
 
-.group_cards .ui.card .content .header
+.tool_description, .tool_payment
 {
-    color:rgb(39, 124, 0) !important;
-    color:rgb(63, 63, 63) !important;
-    font-size:20px !important;
+    padding:7px 20px 7px 20px;
+    width:100%;
+    /* background-color:red; */
 }
 
-.group_cards .ui.card .content .meta
+.tool_payment
 {
-    margin-top:4px !important;
+    margin-top:15px;
 }
 
-.group_cards .ui.card .content .meta span, .group_cards .ui.card .content .header span
+.tool_description h3, .tool_payment h3
 {
-    direction:ltr !important;
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family:"Samim" !important;
+    margin-bottom:0px !important;
 }
 
-.group_cards .ui.card .content .icon
+.description_text
 {
-    font-size:20px;
-    position:relative;
-    bottom:5px;
-    color:rgb(0, 0, 0);
-}
-
-.group_cards .ui.card .content .dollar.icon
-{
-    background:linear-gradient(87deg,#2dce89,#2dcecc);
-    background:linear-gradient(87deg,#2dce89,#2dce42);
-    color:rgb(12, 104, 12);
-}
-
-.group_cards .ui.card .content .clock.icon
-{
-    background: linear-gradient(87deg,#f5365c,#f56036);
-    background: linear-gradient(87deg,#ff476c,#ff2c2c);
-    color:rgb(146, 30, 30);
-}
-
-.group_cards .ui.card .content .rocket.icon
-{
-    background: linear-gradient(87deg,#11cdef,#1171ef);
-}
-
-.group_cards .ui.card .content .description
-{
-    margin-top:35px !important;
+    font-family:"Samim" !important;
+    direction:rtl;
+    line-height:30px;
+    margin:0px !important;
+    color:rgb(66, 66, 66);
+    text-align:justify;
+    padding:0px 10px 0px 10px !important;
     font-size:13px;
+    /* background-color:orange; */
 }
 
-.group_cards .ui.card .content .description h3
+.display_none
 {
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
-    display:inline-block;
-    font-size:13px;
-    color:rgb(204, 38, 26) !important;
+    display:none !important;
 }
 
-.group_cards .ui.card .content .description h3 span
+.payment_table
 {
-    font-family: "Samim" !important;
+    /* background-color:red; */
+    width:100%;
 }
 
-.group_cards .ui.card .content .description
+.payment_row
 {
-    margin-top:35px !important;
-    font-size:13px;
-}
-
-
-
-/* ---Progress Bar Begins--- */
-.ui.progress .bar
-{
-    line-height: 1.1 !important;
-    /* height:8px !important; */
-}
-
-.ui.progress .bar>.progress
-{
-    color:white !important;
-}
-
-.progress_remain_money
-{
-    direction:ltr !important;
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
-}
-/* ---Progress Bar Begins--- */
-/* --------------Cards Ends----------- */
-
-
-
-
-
-/* --------------Main Form Begins----------- */
-.group_inputs
-{
+    width:100%;
+    /* background-color:orange; */
     display:flex;
     flex-wrap:wrap;
+    direction:rtl !important;
+    padding:15px 7px 15px 7px !important;
+    border-bottom:2px solid rgb(236, 236, 236);
+}
+
+.payment_row:last-of-type
+{
+    border-bottom:0px;
+}
+
+.payment_user
+{
+    color:rgb(10, 55, 68);
+
+    /* text-align:center; */
+    font-weight:700;
+    width:34%;
+    font-family:"Samim" !important;
+    direction:rtl !important;
+}
+
+.payment_hour_sample, .payment_price
+{
+    text-align:center;
+    width:33%;
+    font-family:"Samim" !important;
+    direction:rtl !important;
+}
+
+.payment_price span
+{
+    font-weight:700;
+    font-size:11px;
+}
+
+/* --------------Main Form Begins----------- */
+.tool_reservation
+{
+    padding:7px 20px 7px 20px;
+    width:100%;
+    margin-top:30px;
+    
+    direction:rtl !important;
+    /* background-color:red; */
+}
+
+.tool_reservation h3
+{
+    font-family:"Samim" !important;
+    margin-bottom:0px !important;
+}
+
+.reservation_text
+{
+    font-family:"Samim" !important;
+    direction:rtl;
+    line-height:30px;
+    margin:0px 0px 20px 0px!important;
+    color:rgb(66, 66, 66);
+    text-align:justify;
+    padding:0px 10px 0px 10px !important;
+    font-size:15px;
+    /* background-color:orange; */
+}
+
+.group_inputs
+{
+    display:flex !important;
+    flex-wrap:wrap !important;
     text-align:center;
     direction:rtl;
     font-family:"Samim" !important;
     
     width:100%;
-    margin:10px auto 0 !important;
+    margin:10 auto 0 !important;
 }
 
-.item1, .item2
+.item1
 {
-    width:220px !important;
-    margin:20px auto 0 !important;
+    width:270px !important;
     direction:rtl !important;
 }
 
-.item2
+.field label
 {
-    width:495px !important;
+    float:right;
+    padding-bottom:4px;
+    font-weight:700;
+    font-size:15px;
 }
 
 .individual_input
 {
-    font-family:"Samim" !important;
     width:100%;
-    padding:15px !important;
     direction:rtl !important;
     text-align:right !important;
-    border:none;
-    /* border-bottom:2px solid rgb(21, 180, 185); */
+
+    height: 3.4em !important;
+    padding: 15px 8px 15px 8px !important;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0.28571429rem !important;
     outline:none;
-    font-size:15px;
-    font-weight:700;
+    font-size:14px;
+}
+
+.individual_input:hover
+{
+    border-color:rgba(34, 36, 38, 0.35);
 }
 
 .ui.icon.input.item1 .icon
 {
-    /* color:rgb(134, 134, 134) !important; */
     opacity:1 !important;
     font-size:16px;
 }
@@ -889,8 +776,50 @@ input[name="calendar"]
     cursor:pointer;
 }
 
+.field
+{
+    margin:0 auto 32px;
+}
 
 /* --------Drop Down Begins ----- */
+.placeholder_text_color
+{
+    color: rgba(191,191,191,.87) !important;
+}
+
+.disabled_label
+{
+    opacity:0.4 !important;
+    font-weight:500 !important;
+    color:rgb(134, 134, 134) !important;
+}
+
+.disabled_label .icon
+{
+    color:rgb(134, 134, 134) !important;
+}
+
+.field_dropdown
+{
+    width:270px !important;
+    display:block !important;
+}
+
+.field_dropdown:nth-of-type(2) .clock.icon
+{
+    color:rgb(3, 146, 3);
+}
+
+.field_dropdown:nth-of-type(3) .clock.icon
+{
+    color:#f71e38;
+}
+
+.item_drop_down .dropdown.icon
+{
+    display:none;
+}
+
 .item_drop_down, div.item
 {
     direction:rtl !important;
@@ -899,16 +828,16 @@ input[name="calendar"]
 
 .item_drop_down
 {
-    width:220px !important;
-    margin:20px auto 0 !important;
-    height:50px !important;
-    border-radius: .28571429rem !important;
-
     font-family:"Samim";
+    display:block !important;
     outline:none;
     
-    padding:17px !important;
-
+    height: 3.4em !important;
+    padding: 15px 8px 15px 8px !important;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0.28571429rem !important;
+    outline:none;
+    font-size:14px;
 
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
@@ -947,334 +876,126 @@ input[name="end_time"] + .clock.icon
 {
     color:rgb(212, 22, 22);
 }
-
-.label_input
-{
-    position:relative;
-    bottom:40px;
-    left:100px;
-}
 /* --------Drop Down Ends ----- */
 
 /* --------------Main Form Ends----------- */
 
-/* ---------Chart Begins------------ */
-.wrapper2
+
+.div_bubbles
 {
-    width:50%;
-    display:block;
-    overflow:hidden;
-    margin:0 auto;
-    padding: 60px 50px;
-    /* background:red; */
-    border-radius:4px;
-    font-family:"Samim" !important;
-}
-
-canvas
-{
-    background:#fff;
-    height:250px;
-    font-family:"Samim" !important;
-}
-/* ---------Chart Ends------------ */
-
-
-
-
-
-/* --------Data Table Begins------- */
-.table_hours
-{
-    width:95%;
-    max-width:1100px;
-    margin:10px auto 0;
-    border:1px solid rgb(231, 231, 231);
-    border-radius:8px;
-}
-
-.table_headers, .each_data
-{
-    width:100%;
+    margin-top:20px;
     display:flex;
     flex-wrap:wrap;
-}
-
-.table_headers
-{
-    background-color:rgb(235, 235, 235);
-    border-top-right-radius:8px;
-    border-top-left-radius:8px;
-}
-
-.table_h1, .table_h2, .table_h3, .table_h4,
-.data1, .data2, .data3, .data4
-{
-    font-family:"Samim";
-    margin:0 auto 0 !important;
-    text-align:center;
+    justify-content: center;
+    /* row-gap: 0px; */
     direction:rtl;
-    width:33%;
 }
 
-.table_h1, .table_h2, .table_h3, .table_h4
+/* Each Bubble Begins */
+.each_bubble
 {
-    font-size:18px;
-    padding-bottom:15px;
-    padding-top:15px;
+    width:121px;
+    height:100.98px;
+    /* background-color:red; */
+    margin-top:20px;
 }
 
-.table_headers .clock.icon
+.right_line, .left_line, .center_line
 {
-    color:rgb(3, 87, 102);
+    float:right;
+    /* background-color:red; */
+    margin:0px;
 }
 
-.table_headers .question.icon
+.right_line, .left_line
 {
-    color:rgb(248, 118, 31);
+    width:24px;
+    height:92.98px;
+    padding-top:33px;
+    /* background-color:orange; */
 }
 
-.table_infos
+.right_line span, .left_line span
 {
-    width:100%;
+    display:block;
+    height:9px;
 }
 
-.each_data
+.reserved_color
 {
-    padding:22px;
-    padding-top:15px;
+    background-color: rgb(219, 219, 219);
+}
+
+.right_line span
+{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.right_line span.connected
+{
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+.left_line span
+{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.left_line span.connected
+{
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+
+.reserved_circle, .free_circle
+{
+    display:block;
+    border-radius:50%;
+    color:#fff;
+    background-color: rgb(219, 219, 219);
     font-family:"Samim";
-    border-top:2px solid rgb(240, 240, 240);
-}
-
-.each_data .x.icon
-{
-    background-color:rgb(255, 107, 107);
-    color:rgb(167, 0, 0);
-    position:relative;
-    left:5px;
-}
-/* new Added Begins */
-.each_data .reserve_icon .circle.icon
-{
-    color:rgb(240, 21, 21);
-    font-size:9px;
-    position:relative;
-    left:8px;
-}
-
-.each_data .free_icon .circle.icon
-{
-    color:rgb(20, 168, 20);
-    font-size:9px;
-    position:relative;
-    left:5px;
-}
-
-.reserve_icon
-{
-    padding-top:6px;
-    color:Red;
-}
-
-.free_icon
-{
-    padding-top:6px;
-    color:rgb(25, 158, 8);
-}
-/* new Added Ends */
-
-.each_data .check.icon
-{
-    background-color:rgb(89, 255, 89);
-    position:relative;
-    left:22px;
-}
-
-.data1, .data3
-{
-    padding-top:8px;
-}
-
-.data1, .data2, .data3
-{
-    font-size:14px;
-}
-
-.even_data
-{
-    background-color:rgb(243, 243, 243);
-}
-
-/* --------Data Table Ends------- */
-
-
-
-/* --------Time Card Begins------- */
-.time_cards
-{
-    width:95%;
-    max-width:1100px;
-    margin:10px auto 0;
-    border-radius:8px;
-
-    display:flex;
-    flex-wrap:wrap;
-    direction:ltr !important;
-}
-
-.each_card
-{
-    direction:rtl !important;
-    margin:18px auto 0 !important;
-    border-radius: 15px !important;
-    width:265px;
-
-    
-    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
-}
-
-.each_card_top
-{
-    background-color: #fc0;
-    /* background-color: #005b96; */
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    position: relative;
-
-    direction: rtl;
-    text-align: right;
-}
-
-.each_card_header
-{
-    font-family:"Samim" !important;
     text-align:center;
-    /* color:white !important; */
-
-    font-size: 18px !important;
-    line-height: 1.5;
-    min-height: 20px;
-    margin-bottom: 0;
-    padding: 10px !important;
-    font-weight: 700;
-    color: #000;
-    text-align: center;
+    padding-top:25px;
+    width:73px;
+    height:73px;
+    margin:0 auto 0;
 }
 
-.each_card_content
+.free_circle
 {
-    direction:rtl !important;
-    padding:10px !important;
+    padding-top:29px;
+    padding-right:3px;
+    /* background-color: #2C3E50;
+    color:white; */
+    background-color: rgb(255, 204, 0);
+    color:black;
+    font-weight:700;
+
+    transition-duration: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
 }
 
-.each_card_date, .each_card_state, .each_card_reserve
+.reserved_hour, .free_hour
 {
-    padding: 15px;
-    padding-left: 5px;
-    border-bottom: 2px solid rgb(218, 218, 218);
-}
-
-.each_card_reserve
-{
-    /* padding-bottom: 10px; */
-    padding: 15px 0px 10px 10px !important;
-    border-bottom: none;
-}
-
-@media (min-width: 992px)
-{
-    .mtn-h3, h3 {
-        font-size: 35px;
-    }
-}
-
-svg.card_curve
-{
-    overflow: hidden;
-    vertical-align: middle;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    /* margin: auto; */
-    width: 100%;
-    margin: 0 auto;
-}
-
-.each_card_header span
-{
+    display:block;
+    margin:0 auto 0;
+    width:73px;
+    text-align:center;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    color:rgb(194, 194, 194);
 }
 
-.each_card_content h4
+.free_hour
 {
-    font-family:"Samim" !important;
-    display: inline-block;
-    margin: 0px;
+    font-weight:700;
+    color:rgb(87, 87, 87);
 }
 
-.each_card_content h5
-{
-    font-family:"Samim" !important;
-    display: inline-block;
-    margin: 0px 10px 0px 0px !important;
-    font-size: 13px !important;
-    color:rgb(56, 56, 56);
-    position:relative;
-    top:1px;
-}
-
-.each_card_content h5.not_reserved
-{
-    color:green;
-    font-size:14px !important;
-    top:0px;
-}
-
-.each_card_content h5.is_reserved
-{
-    color:rgb(245, 8, 8);
-    font-size:14px !important;
-    top:0px;
-}
-
-.each_card_date .clock.icon
-{
-    color: goldenrod;
-    font-size: 18px;
-    position:relative;
-    top:2px;
-}
-
-.each_card_state .lightbulb.icon
-{
-    color: rgb(10, 72, 107);
-    font-size: 19px;
-    position:relative;
-    top:2px;
-}
-
-.each_card_reserve .ui.checkbox
-{
-    /* background-color:red !important; */
-    margin:0 auto 0 !important;
-    display:block !important;
-    width:70px !important;
-}
-
-.each_card_reserve .ui.checkbox label
-{
-    font-family:"Samim" !important;
-    font-size: 1.07142857rem !important;
-    line-height: 1.28571429em !important;
-    font-weight: 700 !important;
-}
-
-/* --------Time Card Ends------- */
 
 
 /* -------------------Main Content Ends------------------------ */

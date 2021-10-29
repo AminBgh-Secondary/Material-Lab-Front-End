@@ -422,6 +422,10 @@ input[name = "calendar"]
 
 
 /* -------------------Main Content Begins------------------------ */
+.display_none
+{
+    display:none;
+}
 
 .main-content
 {
@@ -502,10 +506,10 @@ input[name = "calendar"]
 
 .laboratory_div_body
 {
-    width:95%;
+    width:100%;
     max-width:1100px;
     /* background-color:red; */
-    margin:40px auto 0; 
+    margin:40px auto 0 !important; 
 }
 
 
@@ -515,8 +519,8 @@ input[name = "calendar"]
     direction:rtl !important;
     width:100%;
     /* background-color:orange; */
-    padding-bottom:35px;
-    margin-bottom:55px;
+    padding-bottom:15px;
+    margin-bottom:30px;
     border-bottom:2px dotted rgb(212, 212, 212);
     display:flex;
     flex-wrap:wrap;
@@ -533,19 +537,18 @@ input[name = "calendar"]
     justify-content:center;
     align-items:center;
     /* background-color:orange !important; */
-    width:35% !important;
 
 
     width:100% !important;
     margin:0 auto 0;
-    max-width:700px;
+    /* max-width:700px; */
 }
 
 .lab_img img
 {
     display:block !important;
     margin:0 auto 0 !important;
-    border-radius:12px;
+    border-radius:18px;
     /* width:250px !important; */
 
     padding: 5px;
@@ -557,12 +560,11 @@ input[name = "calendar"]
 
 .lab_description
 {
-    width:65%;
+    width:100%;
     /* background-color:blue !important; */
-    padding:20px 20px 10px 10px;
+    padding:10px;
 
     margin:0 auto 0;
-    width:100%;
 }
 
 h3.lab_name
@@ -578,44 +580,42 @@ h3.lab_name
 {
     /* background-color:yellow; */
     margin-bottom:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: right;
 }
 
 .lab_infos span
 {
-    display:inline-block;
-    margin-right:18px;
+    margin-left:15px;
     font-family:"Samim";
-    font-size:11px;
+    font-size:0.775rem;
     color:rgb(172, 172, 172);
-}
-
-.lab_infos span:nth-of-type(1)
-{
-    margin-right:0px;
+    padding-top:2px;
 }
 
 .lab_infos span .icon
 {
     font-size:17px;
-    margin-left:0px;
+    margin-left:0px !important;
+    color:rgb(124, 124, 124);
 }
 
-.lab_infos span .university.icon
+.lab_infos span .user.circle.icon
 {
-    /* color:rgb(20, 141, 70); */
-    color:rgb(124, 124, 124);
+    font-size:18px !important;
+}
+
+.lab_infos span:nth-of-type(2)
+{
+    padding-top:3px;
+    padding-right:2px;
 }
 
 .lab_infos span .user.icon
 {
-    font-size:18px;
-    color:rgb(124, 124, 124);
-}
-
-.lab_infos span .fire.icon
-{
-    /* color:rgb(39, 144, 185); */
-    color:rgb(124, 124, 124);
+    font-size:15px;
+    margin-left:2px;
 }
 
 .lab_text
@@ -627,15 +627,35 @@ h3.lab_name
     /* margin-bottom:25px; */
     direction:rtl !important;
     text-align:justify;
-    /* margin-bottom:55px; */
+    margin-bottom:12px;
+}
+
+
+.each_feature
+{
+    font-family:"Samim" !important;
+    direction:rtl !important;
+    padding-right:5px;
+    margin-bottom:10px;
+    color:rgb(161, 161, 161);
+    font-size:0.875rem;
+    /* background-color:blue; */
+}
+
+.each_feature .icon
+{
+    position:relative;
+    top:2px;
+    margin:0px !important;
+}
+
+.feature_name
+{
+    font-size:0.975rem;
+    font-weight:900;
 }
 
 .lab_bottom
-{
-    /* background-color:red; */
-}
-
-.each_lab_bottom, .lab_bottom
 {
     width:100%;
     /* background-color:yellow; */
@@ -644,30 +664,28 @@ h3.lab_name
     text-align:center;
 }
 
-.each_lab_bottom .ui.labeled.icon.button,
-.lab_bottom .ui.labeled.icon.button
+.lab_bottom .ui.button
 {
     font-family:"Samim" !important;
     padding-top:15px !important;
     padding-bottom:15px !important;
+    width:180px;
+    margin-top:10px;
 }
 
-.each_lab_bottom .ui.labeled.icon.button:nth-of-type(1),
 .lab_bottom .ui.labeled.icon.button:nth-of-type(1)
 {
-    background-color:rgb(252, 136, 136);
-    background-color:rgb(253, 174, 99);
     background-color:#fc0;
-    width:180px;
 }
 
-.each_lab_bottom .ui.labeled.icon.button:nth-of-type(2),
+/* .lab_bottom .ui.button:nth-of-type(2)
+{
+    font-weight:500;
+} */
+
 .lab_bottom .ui.labeled.icon.button:nth-of-type(2)
 {
-    background-color:rgb(172, 255, 95);
     background-color:rgb(142, 255, 37);
-    /* background-color:#fc0; */
-    width:180px;
 }
 /* --- Each Lab Ends --- */
 
@@ -676,19 +694,47 @@ h3.lab_name
 /* --- Laboratory Tools Begin --- */
 .laboratory_div_tools
 {
-    width:95%;
+    width:100%;
     max-width:1100px;
     /* background-color:red !important;    */
     text-align:center;
     margin:0 auto 20px !important;
 }
 
+.laboratory_tools_header, .laboratory_tools_header2
+{
+    font-family:"Samim" !important;
+}
+
+.laboratory_tools_header2
+{
+    direction:rtl !important;
+    font-size:12px;
+    margin:0px !important;
+    display:none;
+}
+
+.laboratory_tools_header2 .icon
+{
+    font-size:15px !important;
+}
+
+.just_border
+{
+    height:2px;
+    width:100px;
+    margin-top:0px !important;
+    margin-bottom:5px !important;
+    background-color:#ef394e !important;
+    border-radius:50px;
+    display:none;
+}
+
 .laboratory_tools_header img
 {
     display:inline-block !important;
-    width:40px;
-
-    width:75px;
+    width:50px;
+    /* width:75px; */
 }
 
 .laboratory_tools_header div
@@ -710,28 +756,166 @@ h3.lab_name
     transform: scaleX(-1);
 }
 
-.laboratory_tools_header
+
+
+
+.items_container
+{
+    width:100%;
+    direction:rtl !important;
+    margin-top:20px !important;
+    display:none;
+}
+/* Each Item Begins */
+.each_item
+{
+    /* background-color:red; */
+    direction:rtl !important;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+}
+
+.each_item .image
+{
+    width:120px !important;
+}
+
+.each_item .image img
+{
+    border-radius:4px;
+    display:inline-block;
+    width:100% !important;
+}
+
+.each_item .item_content
+{
+    width:calc(100% - 120px);
+    /* background-color:gray; */
+    padding-right:5px;
+    padding-left:5px;
+}
+
+.each_item .item_content .item_name, .each_item .item_content .item_faculty
 {
     font-family:"Samim" !important;
+    text-align:right !important;
+    direction:rtl !important; 
 }
+
+.each_item .item_content .item_name
+{
+    font-weight:700;
+    height:40px !important;
+    line-height:22px;
+    font-size:13px;
+}
+
+.each_item .item_content .item_faculty
+{
+    font-size:11px;
+    color:rgb(161, 161, 161);
+}
+
+.each_item .item_content .item_faculty .icon
+{
+    font-weight:100 !important;
+}
+
+.item_extra
+{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:right;
+    direction:rtl !important;
+
+    height:20px;
+    position:absolute;
+    bottom:9px;
+}
+
+.item_see
+{
+    direction:rtl !important;
+    text-align:right;
+    font-family: "Samim" !important;
+    margin-left:10px;
+    font-weight:700;
+    font-size:13px;
+    color:#ef394e !important;
+    margin-top:2px;
+}
+
+.item_see .angle.left.icon
+{
+    position:relative;
+    top:2px;
+    left:6px;
+}
+
+.item_rate
+{
+    direction:ltr !important;
+    text-align:right;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-size:14px;
+    font-weight:500;
+    position:relative;
+    top:2px;
+}
+
+.item_rate .star.icon
+{
+    color:rgb(238, 166, 10);
+    font-size:13px;
+    margin-right:0px;
+    position:relative;
+    bottom:2px;
+}
+
+.item_rate span:nth-of-type(1)
+{
+    color:rgb(56, 56, 56);
+}
+
+.item_rate span:nth-of-type(2)
+{
+    color:rgb(134, 134, 134);
+}
+/* Each Item Ends */
+.dotted_divider
+{
+    width:100%;
+    height:1px;
+    margin-top:10px;
+    margin-bottom:17px;
+    border-bottom:1px dotted rgb(212, 212, 212);
+}
+
+
+/* ------------------------------------- */
 
 .tools_container
 {
     width:100%;
     display:flex;
     flex-wrap:wrap;
+    justify-content: center !important;
     margin:0 auto 60px;
+    /* background-color:red; */
 }
-
 /* Each Tool Begins */
+.each_tool_container
+{
+    width:250px;
+    margin-top:10px;
+}
 
 .each_tool
 {
     width:240px !important;
-    margin:20px auto 0 !important;
-    /* flex: 1 0 25%; */
-    /* max-width: 25%; */
-    
+    margin:0 auto 0 !important;
 }
 
 .each_tool_image
@@ -765,7 +949,9 @@ h3.lab_name
 {
     margin-bottom:8px;
     font-size:14px;
-    height:36px !important;
+    height:45px !important;
+    line-height:22px;
+    /* background-color:red; */
 }
 
 .each_tool_faculty
@@ -824,8 +1010,8 @@ h3.lab_name
     width:95%;
     max-width:1100px;
     /* background-color:red !important;    */
+    margin:40px auto 20px !important;
     text-align:center;
-    margin-bottom:20px; 
 }
 
 .laboratory_div_bottom .ui.pagination.menu .item:before
@@ -867,4 +1053,129 @@ h3.lab_name
     display: none !important;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width:870px)
+{
+    .laboratory_tools_header div
+    {
+        font-size:15px;
+    }
+
+    .laboratory_tools_header img
+    {
+        width:40px;
+    }
+}
+
+@media screen and (max-width:550px)
+{
+    .laboratory_div
+    {
+        width:100%;
+    }
+
+    .laboratory_div_body
+    {
+        width:100%;
+    } 
+
+    .lab_img img
+    {
+        border-radius:0px;
+    }
+
+    .each_lab h3.lab_name
+    {
+        font-size:14px;
+    }
+
+    .each_lab .lab_infos span
+    {
+        font-size:0.675rem;
+    }
+
+    .each_lab .lab_infos span .icon
+    {
+        font-size:14px;
+    }
+
+    .each_lab .lab_infos span .user.circle.icon
+    {
+        font-size:15px !important;
+    }
+
+    .each_lab .lab_infos span:nth-of-type(2)
+    {
+        padding-top:3px;
+        padding-right:2px;
+    }
+
+    .each_lab .lab_infos span .user.icon
+    {
+        font-size:12px;
+        margin-left:2px;
+    }
+
+    .each_lab .lab_text
+    {
+        font-size:12px;
+    }
+
+    .lab_bottom .ui.button
+    {
+        font-size:12px;
+        padding-top:12px !important;
+        padding-bottom:12px !important;
+        width:150px;
+    }
+
+    .each_lab
+    {
+        border-bottom:1px dotted rgb(231, 231, 231);
+    }
+
+    .laboratory_div_tools
+    {
+        text-align:right;
+    }
+
+    .laboratory_tools_header
+    {
+        display:none;
+        
+    }
+
+    .laboratory_tools_header2
+    {
+        margin:0px 7px 0px 0px !important;
+        padding:0px !important;
+        display:block;
+    }
+
+    .just_border
+    {
+        margin-right:7px !important;
+        display:inline-block;
+    }
+}
+
+@media screen and (max-width:510px)
+{
+    .tools_container
+    {
+        display:none;
+    }
+
+    .items_container
+    {
+        width:97%;
+        margin:0 auto 0;
+        display:block;
+    }
+
+    .each_lab
+    {
+        padding-bottom:15px;
+        margin-bottom:15px;
+    }
+}

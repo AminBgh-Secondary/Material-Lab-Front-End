@@ -588,10 +588,6 @@ h3.lab_name
     font-family:"Samim";
     font-size:0.775rem;
     color:rgb(172, 172, 172);
-}
-
-.lab_infos span
-{
     padding-top:2px;
 }
 
@@ -682,10 +678,8 @@ h3.lab_name
     width:95%;
     max-width:1100px;
     /* background-color:red !important;    */
-    margin:0 auto 0;
+    margin:60px auto 0;
     text-align:center;
-    margin-top:60px;
-    margin-bottom:0px; 
 }
 
 .laboratory_div_bottom .ui.pagination.menu .item:before
