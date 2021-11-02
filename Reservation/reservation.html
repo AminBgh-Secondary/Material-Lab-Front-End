@@ -315,87 +315,98 @@
                             </div>
 
                             <!-- Inputs begin -->
-                            <div class="three fields group_inputs">
+                            <form>
+                                <div class="two fields group_inputs">
 
-                                <div class="field item1">
-                                    <label>
-                                        <i class="calendar alternate icon"></i>
-                                        تاریخ رزرو
-                                    </label>
-                                    <input type="text" data-jdp class="individual_input" name="calendar" placeholder="1400/8/6">
+                                    <div class="field item1">
+                                        <label>
+                                            <i class="calendar alternate icon"></i>
+                                            تاریخ رزرو
+                                        </label>
+                                        <input type="text" data-jdp class="individual_input" name="calendar" placeholder="1400/8/6">
+                                    </div>
+
+                                    <div class="field field_dropdown div_start_time">
+                                        <label class="disabled_label">
+                                            <i class="clock icon"></i>
+                                            ساعت شروع
+                                        </label>
+                                        <div class="clear_both"></div>
+                                        <select name="start_time" class="ui fluid disabled dropdown item_drop_down">
+                                            <option value="">انتخاب کنید</option>
+                                            <option value="1">از ساعت 8</option>
+                                            <option value="2">از ساعت 8:30</option>
+                                            <option value="3">از ساعت 9</option>
+                                            <option value="4">از ساعت 9:30</option>
+                                            <option value="5">از ساعت 10</option>
+                                            <option value="6">از ساعت 10:30</option>
+                                            <option value="7">از ساعت 11</option>
+                                            <option value="8">از ساعت 11:30</option>
+                                            <option value="9">از ساعت 12</option>
+                                            <option value="10">از ساعت 12:30</option>
+                                            <option value="11">از ساعت 13</option>
+                                            <option value="12">از ساعت 13:30</option>
+                                            <option value="13">از ساعت 14</option>
+                                            <option value="14">از ساعت 14:30</option>
+                                            <option value="15">از ساعت 15</option>
+                                            <option value="16">از ساعت 15:30</option>
+                                            <option value="17">از ساعت 16</option>
+                                            <option value="18">از ساعت 16:30</option>
+                                            <option value="19">از ساعت 17</option>
+                                            <option value="20">از ساعت 17:30</option>
+                                            <option value="21">از ساعت 18</option>
+                                            <option value="22">از ساعت 18:30</option>
+                                            <option value="23">از ساعت 19</option>
+                                            <option value="24">از ساعت 19:30</option>
+                                        </select>
+                                    </div>  
+                                    
+                                </div>
+                                    
+                                <div class="two fields group_inputs">
+
+                                    <div class="field field_dropdown div_end_time">
+                                        <label class="disabled_label">
+                                            <i class="clock icon"></i>
+                                            ساعت پایان
+                                        </label>
+                                        <div class="clear_both"></div>
+                                        <select name="end_time" class="ui fluid dropdown disabled item_drop_down">
+                                            <option value="">انتخاب کنید</option>
+                                            <option value="1">الی ساعت 8:30</option>
+                                            <option value="2">الی ساعت 9</option>
+                                            <option value="3">الی ساعت 9:30</option>
+                                            <option value="4">الی ساعت 10</option>
+                                            <option value="5">الی ساعت 10:30</option>
+                                            <option value="6">الی ساعت 11</option>
+                                            <option value="7">الی ساعت 11:30</option>
+                                            <option value="8">الی ساعت 12</option>
+                                            <option value="9">الی ساعت 12:30</option>
+                                            <option value="10">الی ساعت 13</option>
+                                            <option value="11">الی ساعت 13:30</option>
+                                            <option value="12">الی ساعت 14</option>
+                                            <option value="13">الی ساعت 14:30</option>
+                                            <option value="14">الی ساعت 15</option>
+                                            <option value="15">الی ساعت 15:30</option>
+                                            <option value="16">الی ساعت 16</option>
+                                            <option value="17">الی ساعت 16:30</option>
+                                            <option value="18">الی ساعت 17</option>
+                                            <option value="19">الی ساعت 17:30</option>
+                                            <option value="20">الی ساعت 18</option>
+                                            <option value="21">الی ساعت 18:30</option>
+                                            <option value="22">الی ساعت 19</option>
+                                            <option value="23">الی ساعت 19:30</option>
+                                            <option value="24">الی ساعت 20</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="ui disabled button field submit_btn">
+                                        رزرو
+                                    </button>
+                
                                 </div>
 
-                                <div class="field field_dropdown div_start_time">
-                                    <label class="disabled_label">
-                                        <i class="clock icon"></i>
-                                        ساعت شروع
-                                    </label>
-                                    <div class="clear_both"></div>
-                                    <select name="start_time" class="ui fluid disabled dropdown item_drop_down">
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">از ساعت 8</option>
-                                        <option value="2">از ساعت 8:30</option>
-                                        <option value="3">از ساعت 9</option>
-                                        <option value="4">از ساعت 9:30</option>
-                                        <option value="5">از ساعت 10</option>
-                                        <option value="6">از ساعت 10:30</option>
-                                        <option value="7">از ساعت 11</option>
-                                        <option value="8">از ساعت 11:30</option>
-                                        <option value="9">از ساعت 12</option>
-                                        <option value="10">از ساعت 12:30</option>
-                                        <option value="11">از ساعت 13</option>
-                                        <option value="12">از ساعت 13:30</option>
-                                        <option value="13">از ساعت 14</option>
-                                        <option value="14">از ساعت 14:30</option>
-                                        <option value="15">از ساعت 15</option>
-                                        <option value="16">از ساعت 15:30</option>
-                                        <option value="17">از ساعت 16</option>
-                                        <option value="18">از ساعت 16:30</option>
-                                        <option value="19">از ساعت 17</option>
-                                        <option value="20">از ساعت 17:30</option>
-                                        <option value="21">از ساعت 18</option>
-                                        <option value="22">از ساعت 18:30</option>
-                                        <option value="23">از ساعت 19</option>
-                                        <option value="24">از ساعت 19:30</option>
-                                    </select>
-                                </div>            
-
-                                <div class="field field_dropdown div_end_time">
-                                    <label class="disabled_label">
-                                        <i class="clock icon"></i>
-                                        ساعت پایان
-                                    </label>
-                                    <div class="clear_both"></div>
-                                    <select name="end_time" class="ui fluid dropdown disabled item_drop_down">
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">الی ساعت 8:30</option>
-                                        <option value="2">الی ساعت 9</option>
-                                        <option value="3">الی ساعت 9:30</option>
-                                        <option value="4">الی ساعت 10</option>
-                                        <option value="5">الی ساعت 10:30</option>
-                                        <option value="6">الی ساعت 11</option>
-                                        <option value="7">الی ساعت 11:30</option>
-                                        <option value="8">الی ساعت 12</option>
-                                        <option value="9">الی ساعت 12:30</option>
-                                        <option value="10">الی ساعت 13</option>
-                                        <option value="11">الی ساعت 13:30</option>
-                                        <option value="12">الی ساعت 14</option>
-                                        <option value="13">الی ساعت 14:30</option>
-                                        <option value="14">الی ساعت 15</option>
-                                        <option value="15">الی ساعت 15:30</option>
-                                        <option value="16">الی ساعت 16</option>
-                                        <option value="17">الی ساعت 16:30</option>
-                                        <option value="18">الی ساعت 17</option>
-                                        <option value="19">الی ساعت 17:30</option>
-                                        <option value="20">الی ساعت 18</option>
-                                        <option value="21">الی ساعت 18:30</option>
-                                        <option value="22">الی ساعت 19</option>
-                                        <option value="23">الی ساعت 19:30</option>
-                                        <option value="24">الی ساعت 20</option>
-                                    </select>
-                                </div>
-            
-                            </div>
+                            </form>
                             <!-- ----------End of Inputs-------- -->
                         </div>
                         <!-- End of Tool Reservation -->

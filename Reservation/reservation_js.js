@@ -35,10 +35,13 @@ function remove_class_disable(x)
     $(".div_start_time .menu .item").removeClass("active");
     $(".div_start_time .menu .item").removeClass("selected");
     $(".div_start_time .item_drop_down option[value='']").attr('selected', 'selected');
+    
 
     $(".div_start_time .item_drop_down .text").html('انتخاب کنید');
     $(".div_start_time .item_drop_down .text").addClass('placeholder_text_color');
     $(".div_start_time .ui.fluid.dropdown.item_drop_down").removeClass("font_bold");
+
+    $(".submit_btn").addClass('disabled');
   }
 
   else if(x == 2)
@@ -75,6 +78,8 @@ $(document).ready(function(){
   $(".div_end_time .ui.fluid.dropdown.item_drop_down").change(function(){
     $(".div_end_time .item_drop_down .text").removeClass('placeholder_text_color');
     $(this).addClass("font_bold");
+
+    $(".submit_btn").removeClass('disabled');
   });
 
   $("input[name='calendar']").change(function(){
@@ -102,6 +107,45 @@ $(document).ready(function(){
 
   $(".individual_input").blur(function() {
     $(this).css("border-color", "rgba(34,36,38,.15)");
+  });
+
+  $(".submit_btn").click(function() {
+    event.preventDefault();
+    var x = $('form').serialize();
+    console.log(x);
+
+    var allData=$("form").serializeArray();
+    console.log(allData[0])
+
+    // Ajax Begins
+    // $.ajax({
+    //   url:"http://api.hocshirazu.ir/api/registration/create",
+    //   method:"POST",
+    //   data:JSON.stringify(data),
+    //   contentType:"application/json",
+    //   dataType:"json",
+    //   success: function(response)
+    //   {
+    //     console.log(response);
+    //     $.ajax({
+
+    //       url:"http://api.hocshirazu.ir/api/payment/request",
+    //       method:"POST",
+    //       data:JSON.stringify({"national_code": response.national_code}),
+    //       contentType:"application/json",
+    //       dataType:"json",
+    //       success: function(response)
+    //       {
+    //           console.log(response);
+    //           //responseObject = new Response();
+    //           window.location.replace(response);
+    //           console.log("1");
+    //       }
+    //     });
+    //   }
+    // });
+    // Ajax Ends
+
   });
   
 });

@@ -724,7 +724,7 @@ input[name = "calendar"]
     font-family:"Samim" !important;
     
     width:100%;
-    margin:10 auto 0 !important;
+    margin:0 auto 0 !important;
 }
 
 .item1
@@ -778,7 +778,7 @@ input[name="calendar"]
 
 .field
 {
-    margin:0 auto 32px;
+    margin:0 auto 20px !important;
 }
 
 /* --------Drop Down Begins ----- */
@@ -810,7 +810,7 @@ input[name="calendar"]
     color:rgb(3, 146, 3);
 }
 
-.field_dropdown:nth-of-type(3) .clock.icon
+.field_dropdown:nth-of-type(1) .clock.icon
 {
     color:#f71e38;
 }
@@ -877,6 +877,40 @@ input[name="end_time"] + .clock.icon
     color:rgb(212, 22, 22);
 }
 /* --------Drop Down Ends ----- */
+
+
+.submit_btn
+{
+    font-family:"Samim" !important;
+    width:270px;
+    display:block !important;
+
+    position:relative;
+    top:24px;
+
+
+    border:none;
+    outline:none;
+    border-radius:5px;
+    height: 3.4em !important;
+    padding: 15px 8px 18px 8px !important;
+
+    cursor:pointer;
+    color:#ffffff !important;
+    font-weight:500 !important;
+    font-size:16px;
+    background-color:#52a7cc !important;
+    text-align:center !important;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+
+.submit_btn:hover
+{
+    background-color:#2d81a5 !important;
+}
 
 /* --------------Main Form Ends----------- */
 
