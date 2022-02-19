@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MateriaLab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="user_status_style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="jalalidatepicker.min.css" />
+        <script type="text/javascript" src="jalalidatepicker.min.js"></script>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="user_status_js.js"></script>
+    </head>
+
+
+
+    <body>
+
+        <!-- Modal Begins -->
+        <div class="ui modal" id="official_modal">
+            <div class="header">
+                فرم ارتقا به کاربر اداری
+            </div>
+            <div class="modal_body">
+                
+            </div>
+            <div class="actions">
+                <div class="ui negative left labeled icon button">
+                    انصراف
+                    <i class="x icon"></i>
+                </div>
+                <div class="ui positive right labeled icon button">
+                    ثبت
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Ends -->
+
+        <!-- ------------------ Fixed Menu Begins -->
+        <div class="fixed_menu">
+
+            <a class="fixed_menu_item home_fixed" href="">
+                <i class="home icon"></i>
+                خانه
+            </a>
+
+            <a class="fixed_menu_item labaratory_fixed" href="">
+                <i class="flask icon"></i>
+                آزمایشگاه‌ها
+            </a>
+
+            <a class="fixed_menu_item education_fixed" href="">
+                <i class="laptop icon"></i>
+                آموزش
+            </a>
+
+            <div class="fixed_menu_item dashboard_fixed active_fixed" href="">
+                <i class="map signs icon"></i>
+                داشبورد
+            </div>
+            
+        </div>
+        <!-- ------------------ Fixed Menu Ends -->
+
+
+        <!-------- sidebar Begins -------->
+        <div class="ui sidebar inverted right vertical menu sidebar-menu" id="sidebar">
+            
+            <div class="sidebar_user_image">
+                <img class="ui centered circular image" src="../Static/pic/user2.png">
+                <h4>
+                    دانشجو
+                </h4>
+                <h3>
+                    محمدامین باغبان باشی
+                </h3>
+            </div>
+
+            <!-- ----Accordion Begins---- -->
+            <div class="ui accordion">
+                <div class="title">
+                    <div href="#" class="item">
+                        <div>
+                            <i class="user icon"></i>
+                            اطلاعات کاربری
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="accordion_sub_item">
+                        <i class="id card icon"></i>
+                        <span class="acc_span_id_card">
+                            مشاهده و تغییر اطلاعات
+                        </span>
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="info circle icon"></i>
+                        وضعیت اداری
+                    </a>
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="paper plane icon"></i>
+                            پیام ها
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="accordion_sub_item">
+                        <i class="inbox icon"></i>
+                        صندوق ورودی
+                        <span class="message_number">3</span>
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="bell icon"></i>
+                        اطلاعیه ها
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="pencil alternate icon"></i>
+                        ارسال پیام
+                    </a>
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="calendar alternate icon"></i>
+                            رزرو
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    Hello
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="chart bar icon"></i>
+                            گزارش ها و آمار
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- Hello -->
+                </div>
+            
+            </div>
+            <!-- ----Accordion Ends---- -->
+
+            <!-- <div class="sidebar_metallogy">
+                <img src="../Static/pic/change_1.jpg" class="ui centered image sidebar_metallogy_logo">
+                <div>
+                    <span class="sidebar_sp1">مهندسی مواد و متالوژی</span>
+                </div>
+            </div> -->
+
+        </div>
+        <!-------- sidebar Ends -------->
+
+        <div class="pusher">
+
+            <!-- -----Begining of main content----- -->
+            <div class="main-content">
+
+                <div class="status_div">
+
+                    <div class="status_div_top">
+                        <div class="div_status_icon">
+                            <div class="div_status_icon_first">
+                                <i class="user icon"></i>
+                            </div>
+                            <div class="div_status_icon_second">
+                                اطلاعات کاربری
+                            </div>
+                        </div>
+                        <div class="div_status_headers">
+                            <h2>
+                                وضعیت اداری
+                            </h2>
+                            <h4>
+                                می‌توانید وضعیت اداری خود را مشاهده و تغییر دهید
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="clear_both"></div>
+
+                    <div class="status_div_body">
+                        <div class="status_div_content">
+                            <h3>
+                                <i class="info circle icon"></i>
+                                وضعیت
+                                <span class="two_dots">:</span>
+                                <span class="two_dots2">ثبت نام سیستم</span>
+                            </h3>
+
+                            <button class="ui button promote_official">
+                                <span>ارتقا به اداری</span>
+                                <i class="sort amount up icon"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="status_div_commitment">
+                            <h3>
+                                تعهدات دانشجو
+                            </h3>
+
+                            <div class="each_commitment">
+                                <div class="commitment_number">1</div>
+                                <div class="commitment_txt">
+                                    منشور کار در آزمایشگاه‌های بخش مهندسی مواد را به
+                                    دقت مطالعه نموده و متعهد به اجرای همه بندهای آن خواهم بود.
+                                </div>
+                            </div>
+
+                            <div class="ui divider"></div>
+
+                            <div class="each_commitment">
+                                <div class="commitment_number">2</div>
+                                <div class="commitment_txt">
+                                    کلیۀ مقررات آزمایشگاه را رعایت نموده و نهایت همکاری را با کارشناس آن آزمایشگاه به عمل آورم.
+                                </div>
+                            </div>
+
+                            <div class="ui divider"></div>
+
+                            <div class="each_commitment">
+                                <div class="commitment_number">3</div>
+                                <div class="commitment_txt">
+                                    در حفظ و نگهداری اموال دانشگاه نهایت تلاش خود را به عمل آورده و آزمایش‌های لازم را با هماهنگی
+                                    استاد راهنما، مدیریت آزمایشگاه‌ها و نظارت کارشناس آزمایشگاه به انجام رسانم.
+                                </div>
+                            </div>
+
+                            <div class="ui divider"></div>
+
+                            <div class="each_commitment">
+                                <span class="commitment_number">4</span>
+                                <div class="commitment_txt">
+                                    حقوق سایر دانشجویان حاضر در آزمایشگاه تحقیقاتی را محترم شمرده و رعایت نمایم.
+                                </div>
+                            </div>
+
+                            <div class="ui divider"></div>
+
+                            <div class="each_commitment">
+                                <span class="commitment_number">5</span>
+                                <div class="commitment_txt">
+                                    بلافاصله پس از اتمام پایان نامه، نسبت به عودت وسایل، امکانات
+                                    و تجهیزات دریافتی به کارشناس آزمایشگاه اقدام نمایم.
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- -----End of main content----- -->
+
+        </div>
+
+    </body>
+
+
+</html>
