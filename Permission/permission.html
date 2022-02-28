@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MateriaLab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="permission_style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="jalalidatepicker.min.css" />
+        <script type="text/javascript" src="jalalidatepicker.min.js"></script>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="permission_js.js"></script>
+    </head>
+
+
+
+    <body>
+
+        <!-- Modal Begins -->
+        <div class="ui modal" id="official_modal">
+            <div class="header">
+                فرم ارتقا به کاربر اداری
+            </div>
+            <div class="modal_body">
+                .each_
+            </div>
+            <div class="actions">
+                <div class="ui negative left labeled icon button">
+                    انصراف
+                    <i class="x icon"></i>
+                </div>
+                <div class="ui positive right labeled icon button">
+                    ثبت
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Ends -->
+
+        <!-- ------------------ Fixed Menu Begins -->
+        <div class="fixed_menu">
+
+            <a class="fixed_menu_item home_fixed" href="">
+                <i class="home icon"></i>
+                خانه
+            </a>
+
+            <a class="fixed_menu_item labaratory_fixed" href="">
+                <i class="flask icon"></i>
+                آزمایشگاه‌ها
+            </a>
+
+            <a class="fixed_menu_item education_fixed" href="">
+                <i class="laptop icon"></i>
+                آموزش
+            </a>
+
+            <div class="fixed_menu_item dashboard_fixed active_fixed" href="">
+                <i class="map signs icon"></i>
+                داشبورد
+            </div>
+            
+        </div>
+        <!-- ------------------ Fixed Menu Ends -->
+
+
+        <!-------- sidebar Begins -------->
+        <div class="ui sidebar inverted right vertical menu sidebar-menu" id="sidebar">
+            
+            <div class="sidebar_user_image">
+                <img class="ui centered circular image" src="../Static/pic/user2.png">
+                <h4>
+                    دانشجو
+                </h4>
+                <h3>
+                    محمدامین باغبان باشی
+                </h3>
+            </div>
+
+            <!-- ----Accordion Begins---- -->
+            <div class="ui accordion">
+                <div class="title">
+                    <div href="#" class="item">
+                        <div>
+                            <i class="user icon"></i>
+                            اطلاعات کاربری
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="accordion_sub_item">
+                        <i class="id card icon"></i>
+                        <span class="acc_span_id_card">
+                            مشاهده و تغییر اطلاعات
+                        </span>
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="info circle icon"></i>
+                        وضعیت اداری
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="edit icon"></i>
+                        عضویت
+                    </a>
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="paper plane icon"></i>
+                            پیام ها
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="accordion_sub_item">
+                        <i class="inbox icon"></i>
+                        صندوق ورودی
+                        <span class="message_number">3</span>
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="bell icon"></i>
+                        اطلاعیه ها
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="pencil alternate icon"></i>
+                        ارسال پیام
+                    </a>
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="calendar alternate icon"></i>
+                            رزرو
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    Hello
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="chart bar icon"></i>
+                            گزارش ها و آمار
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- Hello -->
+                </div>
+            
+            </div>
+            <!-- ----Accordion Ends---- -->
+
+        </div>
+        <!-------- sidebar Ends -------->
+
+        <div class="pusher">
+
+            <!-- -----Begining of main content----- -->
+            <div class="main-content">
+
+                <div class="permission_div">
+
+                    <div class="permission_div_top">
+                        <div class="div_permission_icon">
+                            <div class="div_permission_icon_first">
+                                <i class="user icon"></i>
+                            </div>
+                            <div class="div_permission_icon_second">
+                                اطلاعات کاربری
+                            </div>
+                        </div>
+                        <div class="div_permission_headers">
+                            <h2>
+                                عضویت
+                            </h2>
+                            <h4>
+                                درخواست عضویت اداری خود را از طریق فرم زیر ثبت کنید
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="clear_both"></div>
+
+                    <div class="permission_div_body">
+                        <div class="text_of_form">
+                            احتراماً به استحضار می‌رساند اینجانب
+                            <span class="persian_name">میلاد بارونی</span>
+                            به شماره دانشجویی 
+                            <span class="english_number">9632459</span>
+                            دانشجوی مقطع
+                            <span class="persian_name">کارشناسی ارشد</span>
+                            با مشخصات ذیل تقاضای استفاده از آزمایشگاه‌های بخش مهندسی مواد را دارم.
+                            لذا ضمن پذیرش تعهدات مندرج در این فرم، خواهشمند است در این خصوص اقدامات لازم را مبذول فرمایید.
+                        </div>
+
+                        <div class="form_container">
+                            <form class="ui form">
+                                <h4 class="ui dividing header">فرم زیر را تکمیل کنید</h4>
+                                
+                                <div class="two fields group_inputs mg_bottom">
+                                    <div class="field field_dropdown div_laboratory">
+                                        <label class="label_input">
+                                            <i class="flask icon"></i>
+                                            آزمایشگاه
+                                        </label>
+                                        <div class="clear_both"></div>
+                                        <select name="laboratory" class="ui fluid dropdown item_drop_down laboratory_dp">
+                                            <option value="">انتخاب کنید</option>
+                                            <option value="1">آزمایشگاه الکتروسرام</option>
+                                            <option value="2">آزمایشگاه 2</option>
+                                            <option value="3">آزمایشگاه سرامیک</option>
+                                            <option value="4">آزمایشگاه ریچارد فاینمن</option>
+                                            <option value="5">آزمایشگاه الکتروسرام</option>
+                                            <option value="6">آزمایشگاه الکتروسرام</option>
+                                            <option value="7">آزمایشگاه الکتروسرام</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="field item1">
+                                        <label class="label_input">
+                                            <i class="calendar alternate icon icon_date_to"></i>
+                                            تاریخ HSE
+                                        </label>
+                                        <input type="text" data-jdp class="individual_input" name="hse_calendar" placeholder="1400/8/6">
+                                    </div> 
+
+                                </div>
+
+                                <div class="ui button" tabindex="0">Submit Order</div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- -----End of main content----- -->
+
+        </div>
+
+    </body>
+
+
+</html>
