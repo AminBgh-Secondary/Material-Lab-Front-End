@@ -559,6 +559,12 @@ input[name = "hse_calendar"]
     margin-top:60px;
 }
 
+.ui.form
+{
+    text-align:right !important;
+    direction:rtl !important;
+}
+
 .form_container .ui.form .dividing.header
 {
     direction:rtl;
@@ -786,6 +792,22 @@ input[name="hse_calendar"]
 }
 /* --------Drop Down Ends ----- */
 
+.ui.form .ui.button
+{
+    font-family:"Samim" !important;
+    direction:rtl !important;
+    display:block !important;
+    width:50%;
+    margin:0 auto 0;
+    max-width:270px;
+    padding:14px;
+    background-color:rgb(219, 219, 219);
+}
+
+.ui.form .ui.button:hover
+{
+    background-color:rgb(196, 196, 196);
+}
 /* ---- Form Ends */
 
 /* -------------------Main Content Ends------------------------ */
