@@ -1,0 +1,933 @@
+
+@font-face
+{
+    font-family: 'Samim';
+    src: url(../Static/fonts/Samim/Samim.eot);
+    src: url(../Static/fonts/Samim/Samim.woff2) format('woff2'),
+            url(../Static/fonts/Samim/Samim.woff) format('woff');
+}
+
+::placeholder
+{
+    font-size:14px;
+    font-weight:lighter;
+    font-family:"Samim" !important;
+    color:rgb(212, 212, 212);
+}
+
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+body ::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+/* -----------Jalali Date Begins------------ */
+.jdp-years, .jdp-months, .jdp-days, .jdp-footer
+{
+    font-family:Samim !important;
+}
+
+.jdp-year
+{
+    padding-top: 5px !important;
+}
+
+jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-container .jdp-year select:hover, jdp-container .jdp-month:hover, jdp-container .jdp-month input:hover, jdp-container .jdp-month select:hover
+{
+    background-color:rgb(228, 228, 228) !important;
+}
+/* -----------Jalali Date Ends------------ */
+
+
+/* ------------------------------------------------------------------------------- fixed menu begins */
+
+.fixed_menu
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color:rgb(255, 255, 255);
+    z-index: 999;
+    padding:0px 100px 0px 100px;
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.fixed_menu_item
+{
+    margin-left:20px;
+    font-family:"Samim";
+    font-weight:900;
+    float:right;
+    height:100%;
+    width:110px;
+    text-align:center;
+    font-size:16px;
+    line-height:55px;
+    direction:rtl;
+    color:rgb(23, 19, 70);
+}
+
+.fixed_menu_item .icon
+{
+    margin-left:5px;
+}
+
+.material_logo
+{
+    float:left;
+    margin-right:30px;
+    height:60px !important;
+    cursor:pointer;
+}
+
+.labaratory_fixed
+{
+    width:130px;
+}
+
+.education_fixed
+{
+    width:140px;
+    padding-bottom:10px !important;
+}
+
+.login_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+    
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.sign_up_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+}
+
+.dashboard_fixed
+{
+    float:left !important;
+    width:140px;
+    display:block !important;
+
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.home_fixed .home.icon
+{
+    color:rgb(13, 121, 54) !important;
+    font-size:21px;
+}
+
+.labaratory_fixed .flask.icon
+{
+    color:goldenrod !important;
+    font-size:21px;
+}
+
+.education_fixed .laptop.icon
+{
+    color:rgb(19, 104, 110);
+    font-size:21px;
+}
+
+.login_fixed .sign-in
+{
+    color:#52a7cc;
+    font-size:26px;
+    position:relative;
+    top:5px;
+}
+
+.sign_up_fixed .user.plus
+{
+    color:crimson;
+    font-size:21px;
+    position:relative;
+}
+
+.dashboard_fixed .map.signs.icon
+{
+    color:#425c81;
+    font-size:23px;
+    position:relative;  
+}
+
+.active_fixed
+{
+    font-weight:600 !important;
+    color:black;
+    background-color:rgb(177, 211, 221);
+}
+
+/* ------------------------------------------------------------------------------- fixed menu ends */
+
+
+
+
+/* ------------------------ Side bar Begins ------------- */
+
+/* ----- Side bar user Begins ----- */
+
+.sidebar_user_image
+{
+    /* background-color:red; */
+    margin-top:10px;
+    text-align:center;
+}
+
+.sidebar_user_image img
+{
+    width:130px !important;
+}
+
+.sidebar_user_image h4
+{
+    font-family:"Samim" !important;
+    border-radius:4px;
+    position:relative;
+    bottom:25px;
+    background-color: #fc0;
+    padding:5px 15px 5px 15px;
+    font-size:13px;
+    display:inline-block;
+    text-align:center;
+    margin:0 auto 0 !important;
+}
+
+.sidebar_user_image h3
+{
+    font-family:"Samim" !important;
+    margin-top:0px !important;
+    margin-bottom:10px !important;
+    font-size:15px;
+    position:relative;
+    bottom:13px;
+}
+
+/* ----- Side bar user Ends ----- */
+
+.ui.vertical.menu.sidebar-menu
+{
+  margin-top: 60px !important;
+  max-height: calc(100% - 60px) !important;
+  height: calc(100% - 60px) !important;
+
+  direction:rtl !important;
+  width:250px;
+  box-shadow: 0px 0px 10px 3px #ececec;
+  background-color:#fff;
+}
+
+.ui.vertical.menu.sidebar-menu .item i.icon
+{
+  float: right;
+  margin: 0em 0.5em 0em 10px;
+}
+
+#sidebar div.item
+{
+    /* background-color:blue !important; */
+    padding:20px 5px 20px 0px;
+    font-family:"Samim" !important;
+    font-size:16px;
+    color:black;
+    border-top:2px solid rgb(247, 247, 247);
+
+    transition:0.4s !important;
+    -moz-transition:0.4s !important;
+    -o-transition:0.4s !important;
+    -webkit-transition: 0.4s !important;
+}
+
+#sidebar div.item:hover
+{
+    padding-right:20px;
+    background-color:rgb(214, 214, 214) !important;
+}
+
+#sidebar .user.icon
+{
+    color:rgb(8, 80, 121);
+}
+
+#sidebar .paper.icon
+{
+    color:#0088cc;
+}
+
+#sidebar .calendar.icon
+{
+    /* color:#ee4c7c; */
+    color:rgb(238, 12, 57);
+}
+
+#sidebar .chart.icon
+{
+    font-size:18px;
+    position:relative;
+    bottom:3px;
+    left:4px;
+    color:#41b3a3;
+}
+
+
+.sidebar_metallogy
+{
+    position: absolute;
+    bottom:10px;
+    width:100%;
+}
+
+.sidebar_metallogy_logo
+{
+    margin:0 auto 0 !important;
+    width:150px !important;
+}
+
+.sidebar_metallogy div
+{
+    font-size:15px !important;
+    text-align:center !important;
+    direction:rtl !important;
+    margin:0px auto 0 !important;
+    font-weight:900;
+}
+
+.sidebar_sp1
+{
+    font-family:"Samim" !important;
+}
+
+
+.ui.vertical.menu.sidebar-menu::-webkit-scrollbar
+{
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.ui.vertical.menu.sidebar-menu
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* ---------Accordion Begins----------- */
+.ui.accordion .title:not(.ui)
+{
+    padding:0px !important;
+}
+
+.ui.accordion:not(.styled) .accordion .title~.content:not(.ui),
+.ui.accordion:not(.styled) .title~.content:not(.ui)
+{
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+}
+
+.accordion_sub_item.transition.visible:hover
+{
+    padding-right:45px;
+}
+
+#sidebar .title.active div.item
+{
+    /* background-color:#14b1ff13; */
+    /* background-color:gray; */
+}
+
+.accordion_sub_item
+{
+    cursor:pointer;
+    display:block;
+    font-family:"Samim";
+    padding:11px 33px 11px 0px;
+    color:rgb(0, 0, 0) !important;
+    
+    transition:0.4s !important;
+    -moz-transition:0.4s !important;
+    -o-transition:0.4s !important;
+    -webkit-transition: 0.4s !important;
+
+    /* background-color:#14b1ff0a; */
+}
+
+.message_number
+{
+    float:left;
+    margin-left:10px;
+    padding-top:4px;
+
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+
+    border:1px solid #fce8e6;
+    background-color:#fce8e6;
+    color: #d93025;
+
+    width:30px !important;
+    height:30px !important;
+    border-radius:100%;
+    text-align:center !important;
+    position:relative;
+    bottom:5px;
+}
+
+
+
+
+.accordion_sub_item .icon
+{
+    font-size:15px;
+    margin: 0em 0.5em 0em 5px;
+}
+
+.accordion_sub_item .id.icon
+{
+    position:relative;
+    top:2px;
+    left:3px;
+    font-size:18px;
+    color:rgb(8, 103, 133);
+}
+
+.acc_span_id_card
+{
+    position:relative;
+    left:5px;
+}
+
+.accordion_sub_item .info.icon
+{
+    position:relative;
+    top:2px;
+    color:rgb(221, 173, 17);
+}
+
+.accordion_sub_item .inbox.icon
+{
+    color:#41b3a3;
+}
+
+.accordion_sub_item .bell.icon
+{
+    color:#e8a87c;
+}
+
+.accordion_sub_item .pencil.icon
+{
+    color:#659dbd;
+}
+/* ---------Accordion Ends----------- */
+  
+/* ------------------------Side bar Ends ------------- */
+
+
+
+/* -------------------Main Content Begins------------------------ */
+
+.main-content
+{
+    padding-top:90px;
+    padding-bottom:50px;
+    /* background: linear-gradient(87deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important; */
+}
+
+.report_div
+{
+    width:95%;
+    max-width:1100px;
+    margin:0 auto 0 !important;
+    /* background-color:red; */
+}
+
+.report_div_top
+{
+    direction:rtl !important;
+    /* background-color:orange; */
+}
+
+.div_report_icon
+{
+    /* background-color:red; */
+    float:right;
+}
+
+.div_report_icon_first
+{
+    /* background-color:gray !important; */
+    padding:5px 23px 5px 5px;
+    margin-bottom:2px;
+}
+
+.div_report_icon_first .icon
+{
+    font-size:26px;
+    margin-top:7px;
+    color:rgb(148, 148, 148);
+}
+
+.div_report_icon_second
+{
+    /* background-color:blue !important; */
+    padding:5px 5px 5px 19px;
+    font-family:"Samim" !important;
+    color:rgb(148, 148, 148);
+}
+
+.div_report_headers
+{
+    /* background-color:blue; */
+    border-right:2px solid rgb(226, 226, 226);
+    float:right;
+}
+
+.div_report_headers h2
+{
+    /* background-color:yellow; */
+    padding:5px 20px 5px 5px !important;
+    font-family:"Samim" !important;
+    margin:0px 0px 5px 0px!important;
+}
+
+.div_report_headers h4
+{
+    /* background-color:green; */
+    padding:5px 20px 5px 5px !important;
+    font-family:"Samim" !important;
+    margin:0px !important;
+}
+
+.clear_both
+{
+    clear:both;
+}
+
+.report_div_body
+{
+    width:95%;
+    max-width:1100px;
+    /* background-color:red; */
+    margin:40px auto 0; 
+}
+
+.middle_button_container
+{
+    text-align:center;
+}
+
+.middle_button_container .ui.button
+{
+    width:250px;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-family:"Samim" !important;
+}
+
+/* Modal Begins */
+.modal_header .ui.image
+{
+    display:block;
+    margin:0 auto 10px;
+}
+
+#reserve_modal, #tool_modal
+{
+    max-width:calc(270px + 270px + 160px);
+}
+
+#reserve_modal .modal_header, #tool_modal .modal_header
+{
+    font-family:"Samim" !important;
+    text-align:center;
+    padding:15px 20px 20px 20px!important;
+    background-color:rgb(247, 247, 247);
+    border-bottom:1px solid rgb(224, 224, 224);
+}
+
+#reserve_modal .modal_body, #tool_modal .modal_body
+{
+    padding:15px;
+}
+
+#reserve_modal .button, #tool_modal .button
+{
+    font-family:"Samim" !important;
+}
+
+
+
+/* --------------Main Form Begins----------- */
+.tool_reservation
+{
+    padding:7px 20px 7px 20px;
+    width:100%;
+    margin-top:30px;
+    
+    direction:rtl !important;
+    /* background-color:red; */
+}
+
+.tool_reservation h3
+{
+    font-family:"Samim" !important;
+    margin-bottom:0px !important;
+}
+
+.reservation_text
+{
+    font-family:"Samim" !important;
+    direction:rtl;
+    line-height:30px;
+    margin:0px 0px 20px 0px!important;
+    color:rgb(66, 66, 66);
+    text-align:justify;
+    padding:0px 10px 0px 10px !important;
+    font-size:15px;
+    /* background-color:orange; */
+}
+
+.mg_bottom
+{
+    margin-bottom:12px !important;
+}
+
+.group_inputs
+{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    text-align:center;
+    direction:rtl;
+    font-family:"Samim" !important;
+    
+    width:100%;
+    margin:0 auto 0;
+}
+
+.item1
+{
+    /* width:270px !important; */
+    width:50% !important;
+    padding:0px 5px 0px 5px;
+    direction:rtl !important;
+}
+
+.item2
+{
+    width:100% !important;
+    padding:0px 5px 0px 5px;
+    direction:rtl !important;
+}
+
+.field label
+{
+    float:right;
+    padding-bottom:7px;
+    font-weight:700;
+    font-size:15px;
+}
+
+.individual_input
+{
+    width:100%;
+    direction:rtl !important;
+    text-align:right !important;
+
+    height: 45px !important;
+    padding: 15px 8px 15px 8px !important;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0.28571429rem !important;
+    outline:none;
+
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.individual_input:hover
+{
+    border-color:rgba(34, 36, 38, 0.35);
+}
+
+.ui.icon.input.item1 .icon
+{
+    opacity:1 !important;
+    font-size:16px;
+}
+
+.icon_date_from
+{
+    color:#0a923e;
+}
+
+.icon_date_to
+{
+    color:rgb(210, 4, 45);
+}
+
+.users_icon_dp
+{
+    color:rgb(9, 8, 90);
+    font-size:17px !important;
+    margin-left:3px !important;
+}
+
+.id_card_icon
+{
+    color:rgb(17, 116, 146);
+    font-size:17px !important;
+    position:relative;
+    top:2px;
+}
+
+input[name="calendar1"], input[name="calendar2"],
+input[name="national_id"]
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    direction:ltr !important;
+    font-size:15px !important;
+}
+
+input[name="calendar1"], input[name="calendar2"]
+{
+    cursor:pointer;
+}
+
+.field
+{
+    margin:0 auto 20px !important;
+}
+
+
+/* --------Drop Down Begins ----- */
+.placeholder_text_color
+{
+    color: rgba(191,191,191,.87) !important;
+}
+
+.placeholder_text_color2
+{
+    color: rgba(0,0,0,.87) !important;
+}
+
+.disabled_label
+{
+    opacity:0.4 !important;
+    font-weight:500 !important;
+    color:rgb(134, 134, 134) !important;
+}
+
+.disabled_label .icon
+{
+    color:rgb(134, 134, 134) !important;
+}
+
+.field_dropdown
+{
+    /* background-color:red; */
+    display:block !important;
+
+    /* width:270px !important; */
+    width:50% !important;
+    padding:0px 5px 0px 5px !important;
+    direction:rtl !important;
+}
+
+.item_drop_down .dropdown.icon
+{
+    display:none;
+}
+
+.item_drop_down, div.item
+{
+    direction:rtl !important;
+    text-align:right !important;
+}
+
+.item_drop_down
+{
+    font-family:"Samim";
+    display:block !important;
+    outline:none;
+    
+    height: 45px !important;
+    padding: 15px 8px 15px 8px !important;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0.28571429rem !important;
+    outline:none;
+    font-size:14px;
+
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.item_multiple
+{
+    padding: 7px 8px 8px 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.student_dp, .default.text, .status_dp
+{
+    direction:rtl !important;
+    text-align:right !important;
+}
+
+.ui.multiple.search.dropdown>.text
+{
+    top:0 !important;
+    right:0 !important;
+}
+
+.student_dp .item, .status_dp .item
+{
+    background-color:white !important;
+}
+
+.student_dp .item:hover, .status_dp .item:hover
+{
+    background-color:rgb(236, 236, 236) !important;
+}
+
+.font_light
+{
+    font-weight:500 !important;
+}
+
+.font_bold
+{
+    font-weight:700 !important;
+}
+
+.item_drop_down .icon
+{
+    /* color:rgb(134, 134, 134) !important; */
+    opacity:1 !important;
+    font-size:16px;
+}
+
+.item_drop_down .icon
+{
+    position: relative;
+    left:8px;
+}
+
+.div_laboratory .flask.icon
+{
+    color:goldenrod;
+}
+
+.div_equipment .fire.icon
+{
+    color:rgb(68, 181, 216);
+}
+/* --------Drop Down Ends ----- */
+
+
+/* REport Bottom Begins */
+.download_bottom
+{
+    display:block !important;
+    font-family:"Samim" !important;
+    margin:0 auto 0 !important;
+    width:270px;
+}
+/* REport Bottom Ends */
+
+/* --------------Main Form Ends----------- */
+
+
+
+/* Modal Ends */
+
+#reserve_base, #tool_base
+{
+    background: #e0e1e2 none !important;
+}
+
+#reserve_base:hover, #tool_base:hover
+{
+    background: #cbcbcc none !important;
+}
+
+
+
+/* Table of Report Begins */
+.ui.celled.table
+{
+    width:900px;
+    margin:0 auto 0 !important;
+}
+
+.table_container
+{
+    margin:40px auto 40px !important;
+
+    overflow-x:auto !important;
+}
+
+.ui.celled.table, .ui.celled.table thead, .ui.celled.table tr,
+.ui.celled.table tbody,
+.ui.celled.table td
+{
+    direction:rtl;
+    text-align:right !important;
+    font-family:"Samim" !important;
+}
+
+.ui.table thead tr:first-child>th:last-child {
+    border-radius: 0.28571429rem 0 0 0 !important;
+}
+
+.ui.table thead tr:first-child>th:first-child {
+    border-radius: 0 0.28571429rem 0 0 !important;
+}
+
+.has_border {
+    border-left: 1px solid rgba(34,36,38,.1) !important;
+}
+
+.border_none {
+    border-left: 0px !important;
+}
+
+/* Table of Report Ends */
+
+
+
+
+
+/* -------------------Main Content Ends------------------------ */
+
+
+
+@media (min-width: 768px) {
+  .ui.vertical.menu.sidebar-menu {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .main-content {
+    /* margin-left: 15rem; */
+    margin-right:250px;
+  }
+  .sidebar-menu-toggler {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

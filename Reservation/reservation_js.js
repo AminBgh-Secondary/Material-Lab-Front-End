@@ -115,36 +115,7 @@ $(document).ready(function(){
     console.log(x);
 
     var allData=$("form").serializeArray();
-    console.log(allData[0])
-
-    // Ajax Begins
-    // $.ajax({
-    //   url:"http://api.hocshirazu.ir/api/registration/create",
-    //   method:"POST",
-    //   data:JSON.stringify(data),
-    //   contentType:"application/json",
-    //   dataType:"json",
-    //   success: function(response)
-    //   {
-    //     console.log(response);
-    //     $.ajax({
-
-    //       url:"http://api.hocshirazu.ir/api/payment/request",
-    //       method:"POST",
-    //       data:JSON.stringify({"national_code": response.national_code}),
-    //       contentType:"application/json",
-    //       dataType:"json",
-    //       success: function(response)
-    //       {
-    //           console.log(response);
-    //           //responseObject = new Response();
-    //           window.location.replace(response);
-    //           console.log("1");
-    //       }
-    //     });
-    //   }
-    // });
-    // Ajax Ends
+    console.log(allData[0]);
 
   });
   
