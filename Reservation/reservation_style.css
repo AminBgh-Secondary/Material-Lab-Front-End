@@ -15,6 +15,14 @@
     color:rgb(212, 212, 212);
 }
 
+textarea::placeholder
+{
+    font-size:13px;
+    font-weight:lighter;
+    font-family:"Samim" !important;
+    color:rgb(212, 212, 212);
+}
+
 
 body {
   font-family: var(--font-family) !important;
@@ -525,6 +533,7 @@ input[name = "calendar"]
 .tool_img
 {
     display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     align-items:center;
     /* background-color:orange !important; */
@@ -540,14 +549,39 @@ input[name = "calendar"]
 {
     display:block !important;
     margin:0 auto 0 !important;
-    border-radius:18px;
+    width:100% !important;
 
-
+    
+    border-radius:5px;
     padding: 5px;
+    /* border-radius:18px; */
     background-color: rgb(218, 218, 218) !important;
     box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
     -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
     -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+
+    /* padding: 5px 5px 0px 5px;
+    background-color: #e0e1e2 !important;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px; */
+}
+
+#calibration_button
+{
+    font-family:"Samim" !important;
+    background-color: rgb(218, 218, 218) !important;
+    display:block !important;
+    margin:10px auto 0 !important;
+    width:350px !important;
+    padding:16px;
+    /* border-top-left-radius:0px;
+    border-top-right-radius:0px; */
+    /* background-color:cadetblue !important; */
+}
+
+#calibration_button:hover
+{
+    background-color: rgb(192, 192, 192) !important;
 }
 
 .tool_features
@@ -588,7 +622,14 @@ input[name = "calendar"]
 {
     position:relative;
     top:2px;
-    margin:0px !important;
+    margin:0px 0px 0px 3px !important;
+}
+
+.each_feature .star.icon
+{
+    position:relative;
+    top:-1px;
+    color:goldenrod;
 }
 
 .feature_name
@@ -805,12 +846,12 @@ input[name="calendar"]
     display:block !important;
 }
 
-.field_dropdown:nth-of-type(2) .clock.icon
+.div_start_time .clock.icon
 {
     color:rgb(3, 146, 3);
 }
 
-.field_dropdown:nth-of-type(1) .clock.icon
+.div_end_time .clock.icon
 {
     color:#f71e38;
 }
@@ -865,16 +906,6 @@ input[name="calendar"]
 {
     position: relative;
     left:8px;
-}
-
-input[name="start_time"] + .clock.icon
-{
-    color:#3b945e;
-}
-
-input[name="end_time"] + .clock.icon
-{
-    color:rgb(212, 22, 22);
 }
 /* --------Drop Down Ends ----- */
 
@@ -1029,6 +1060,210 @@ input[name="end_time"] + .clock.icon
     font-weight:700;
     color:rgb(87, 87, 87);
 }
+
+
+
+/* --------------- Modal Begins --------------------- */
+.modal_header .ui.image
+{
+    display:block;
+    width:180px;
+    margin:0 auto 10px;
+}
+
+#calibration_modal
+{
+    max-width:calc(270px + 270px + 160px);
+}
+
+#calibration_modal .modal_header
+{
+    font-family:"Samim" !important;
+    text-align:center;
+    padding:15px 20px 20px 20px!important;
+    background-color:rgb(247, 247, 247);
+    border-bottom:1px solid rgb(224, 224, 224);
+}
+
+#calibration_modal .modal_body
+{
+    padding:15px;
+}
+
+#calibration_modal .button
+{
+    font-family:"Samim" !important;
+}
+
+
+
+/* --------------Modal Form Begins----------- */
+.mg_bottom
+{
+    margin-bottom:12px !important;
+}
+
+.item1_modal
+{
+    /* width:270px !important; */
+    width:50% !important;
+    padding:0px 5px 0px 5px;
+    direction:rtl !important;
+}
+
+.item2_modal
+{
+    width:100% !important;
+    padding:0px 5px 0px 5px;
+    direction:rtl !important;
+}
+
+.field_modal label
+{
+    float:right;
+    padding-bottom:7px;
+    font-weight:700;
+    font-size:15px;
+}
+
+.individual_input_modal
+{
+    width:100%;
+    direction:rtl !important;
+    text-align:right !important;
+
+    height: 45px;
+    padding: 15px 8px 15px 8px !important;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0.28571429rem !important;
+    outline:none;
+
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.textarea_modal
+{
+    font-family:"Samim" !important;
+    width:100%;
+    direction:rtl !important;
+    text-align:right !important;
+    font-size:13px !important;
+    line-height:20px;
+
+    padding: 8px !important;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0.28571429rem !important;
+    outline:none;
+
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.individual_input_modal:hover, .textarea_modal:hover
+{
+    border-color:rgba(34, 36, 38, 0.35);
+}
+
+input[name="calendar_modal"]
+{
+    cursor:pointer;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    direction:ltr !important;
+    font-size:15px !important;
+}
+
+/* -------- Modal Drop Down Begins ----- */
+
+.placeholder_text_color2
+{
+    color: rgba(0,0,0,.87) !important;
+}
+
+.field_dropdown_modal
+{
+    /* background-color:red; */
+    display:block !important;
+
+    /* width:270px !important; */
+    width:50% !important;
+    padding:0px 5px 0px 5px !important;
+    direction:rtl !important;
+}
+
+.item_drop_down_modal .dropdown.icon
+{
+    display:none;
+}
+
+.item_drop_down_modal, div.item
+{
+    direction:rtl !important;
+    text-align:right !important;
+}
+
+.item_drop_down_modal
+{
+    font-family:"Samim";
+    display:block !important;
+    outline:none;
+    
+    height: 45px !important;
+    padding: 15px 8px 15px 8px !important;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0.28571429rem !important;
+    outline:none;
+    font-size: 14px !important;
+
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.item_multiple
+{
+    padding: 7px 8px 8px 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.status_dp
+{
+    direction:rtl !important;
+    text-align:right !important;
+}
+
+.status_dp .item
+{
+    background-color:white !important;
+}
+
+.status_dp .item:hover
+{
+    background-color:rgb(236, 236, 236) !important;
+}
+
+.item_drop_down_modal .icon
+{
+    /* color:rgb(134, 134, 134) !important; */
+    opacity:1 !important;
+    font-size:16px;
+}
+
+.item_drop_down_modal .icon
+{
+    position: relative;
+    left:8px;
+}
+/* -- Modal Drop Down Ends -- */
+
+/* ---------Modal Form Ends------- */
+
+/* --------------Modal Ends----------- */
+
 
 
 

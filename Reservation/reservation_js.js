@@ -3,11 +3,16 @@ $(document).ready(function(){
   
   jalaliDatepicker.startWatch({
     minDate: "today",
-    maxDate: "attr"
+    maxDate: "attr",
+    zIndex: 99999
   });
-  var elm = $('input[name="calendar"]');
+  var elm1 = $('input[name="calendar"]');
   jalaliDatepicker.hide();
-  jalaliDatepicker.show(elm);
+  jalaliDatepicker.show(elm1);
+
+  var elm2 = $('input[name="calendar_modal"]');
+  jalaliDatepicker.hide();
+  jalaliDatepicker.show(elm2);
 
 });
 
@@ -61,11 +66,32 @@ function remove_class_disable(x)
 
 $(document).ready(function(){
 
+  $("#calibration_button").click(function(){
+    $('#calibration_modal').modal('show');
+  });
+  
   $('.ui.dropdown').dropdown('hide');
+
+  $('#calibrasion_modal .status_dp').dropdown({
+    useLabels: false,
+    message: {
+      count         : '{count} وسیله انتخاب  شد'
+    }
+  });
 
   $('.ui.accordion').accordion();
 
   $('.ui.checkbox').checkbox();
+
+  $(".ui.dropdown.item_drop_down_modal").click(function(){
+    var x = $(this).children("input").val();
+    if(x)
+    {
+      $(this).removeClass("font_light");
+      $(this).removeClass("font_bold");
+      $(this).addClass("font_bold");
+    }
+  });
 
   $(".div_start_time .ui.fluid.dropdown.item_drop_down").change(function(){
     $(".div_start_time .item_drop_down .text").removeClass('placeholder_text_color');

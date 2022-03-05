@@ -570,35 +570,6 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 
 
 /* --------------Main Form Begins----------- */
-.tool_reservation
-{
-    padding:7px 20px 7px 20px;
-    width:100%;
-    margin-top:30px;
-    
-    direction:rtl !important;
-    /* background-color:red; */
-}
-
-.tool_reservation h3
-{
-    font-family:"Samim" !important;
-    margin-bottom:0px !important;
-}
-
-.reservation_text
-{
-    font-family:"Samim" !important;
-    direction:rtl;
-    line-height:30px;
-    margin:0px 0px 20px 0px!important;
-    color:rgb(66, 66, 66);
-    text-align:justify;
-    padding:0px 10px 0px 10px !important;
-    font-size:15px;
-    /* background-color:orange; */
-}
-
 .mg_bottom
 {
     margin-bottom:12px !important;

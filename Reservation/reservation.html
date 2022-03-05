@@ -29,6 +29,66 @@
 
     <body>
 
+        <!-- Modal Begins -->
+        <div class="ui modal" id="calibration_modal">
+            <h3 class="modal_header">
+                <img class="ui image" src="../Static/pic/calendar.png">
+                تغییر کالیبراسیون
+            </h3>
+            <div class="modal_body">
+                <!-- Inputs begin -->
+                <form>
+                    <div class="two fields group_inputs mg_bottom">
+                        <div class="field field_modal item1_modal">
+                            <label>
+                                <!-- <i class="calendar alternate icon icon_date_from"></i> -->
+                                تاریخ آخرین سرویس
+                            </label>
+                            <input type="text" data-jdp class="individual_input_modal" name="calendar_modal" placeholder="1400/8/6">
+                        </div>
+                        <div class="field field_modal field_dropdown_modal div_status">
+                            <label class="">
+                                <!-- <i class="lightbulb outline icon"></i> -->
+                                وضعیت
+                            </label>
+                            <div class="clear_both"></div>
+                            <div class="ui fluid selection dropdown no label item_drop_down_modal status_dp font_light">
+                                <input type="hidden" name="status">
+                                <div class="default text">وضعیت را انتخاب کنید</div>
+                                <div class="menu">
+                                    <div class="item" data-value="0">خارج از دسترس</div>
+                                    <div class="item" data-value="1">قابل دسترس</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="two fields group_inputs mg_bottom">
+                        <div class="field field_modal item2_modal">
+                            <label>
+                                توضیحات بیشتر
+                            </label>
+                            <textarea rows="4" class="textarea_modal" placeholder="توضیحات بیشتر را در این قسمت اضافه کنید"></textarea>
+                        </div>
+                    </div>
+
+                </form>
+                <!-- ----------End of Inputs-------- -->          
+            </div>
+            <div class="actions">
+                <div class="ui negative left labeled icon button">
+                    انصراف
+                    <i class="x icon"></i>
+                </div>
+                <div class="ui positive right labeled icon button">
+                    ثبت
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Ends -->
+
+
         <!-- ------------------ Fixed Menu Begins -->
         <div class="fixed_menu">
 
@@ -170,6 +230,7 @@
                         <div class="tool_image_features">
                             <div class="tool_img">
                                 <img src="../Static/pic/5667450.jpg" class="ui centered image">
+                                <button class="ui button" id="calibration_button">تغییر وضعیت کالیبراسیون</button>
                             </div>
 
                             <div class="tool_features">
@@ -221,6 +282,15 @@
                                         آخرین سرویس :
                                     </span>
                                     17 مرداد 1400
+                                </div>
+                                <div class="each_feature">
+                                    <i class="star icon"></i>
+                                    <span class="feature_name">
+                                        امتیاز :
+                                    </span>
+                                    4
+                                    از
+                                    5
                                 </div>
                             </div>
                         </div>
