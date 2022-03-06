@@ -29,8 +29,7 @@ $(document).ready(function(){
     var rate3 = $('.star3').rating('get rating');
     $("input[name='rate3']").val(rate3);
 
-    // $('#rate_form').submit();
-    console.log($('#rate_form').serializeArray());
+    $('#rate_form').submit();
   });
   
 });
