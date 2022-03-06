@@ -717,6 +717,11 @@ input[name="calendar1"], input[name="calendar2"]
     direction:rtl !important;
 }
 
+.full_dropdown
+{
+    width:100% !important;
+}
+
 .item_drop_down .dropdown.icon
 {
     display:none;

@@ -39,8 +39,61 @@
                 مشاهده گزارش بر اساس دستگاه
             </h3>
             <div class="modal_body">
-                
+
+                <div class="two fields group_inputs mg_bottom">
+                    <div class="field field_dropdown div_laboratory">
+                        <label class="">
+                            <!-- <i class="flask icon"></i> -->
+                            آزمایشگاه
+                        </label>
+                        <div class="clear_both"></div>
+                        <select name="laboratory" class="ui fluid dropdown item_drop_down laboratory_dp">
+                            <option value="">انتخاب کنید</option>
+                            <option value="1">آزمایشگاه الکتروسرام</option>
+                            <option value="2">آزمایشگاه 2</option>
+                            <option value="3">آزمایشگاه سرامیک</option>
+                            <option value="4">آزمایشگاه ریچارد فاینمن</option>
+                            <option value="5">آزمایشگاه الکتروسرام</option>
+                            <option value="6">آزمایشگاه الکتروسرام</option>
+                            <option value="7">آزمایشگاه الکتروسرام</option>
+                        </select>
+                    </div>
+
+                    <div class="field field_dropdown div_equipment">
+                        <label class="disabled_label">
+                            <!-- <i class="fire icon"></i> -->
+                            دستگاه
+                        </label>
+                        <div class="clear_both"></div>
+                        <select multiple="" name="equipment" class="ui fluid selection dropdown no label disabled item_drop_down item_multiple equipment_dp">
+                            <option value="">انتخاب کنید</option>
+                            <option value="1">ارلن شیشه ای مدرج</option>
+                            <option value="2">کشش سطحی</option>
+                            <option value="3">کوره 2000 درجه</option>
+                            <option value="4">الکترودیسک چرخان</option>
+                        </select>
+                    </div>                 
+                </div>
+
+                <div class="two fields group_inputs">
+                    <div class="field field_dropdown full_dropdown div_status">
+                        <label class="">
+                            <!-- <i class="lightbulb outline icon"></i> -->
+                            وضعیت
+                        </label>
+                        <div class="clear_both"></div>
+                        <div multiple="" class="ui fluid multiple selection dropdown no label item_drop_down item_multiple status_dp">
+                            <input type="hidden" name="status">
+                            <div class="default text">وضعیت</div>
+                            <div class="menu">
+                                <div class="item" data-value="0">انجام شده</div>
+                                <div class="item" data-value="1">در حال انتظار</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="actions">
                 <div class="ui negative left labeled icon button">
                     انصراف

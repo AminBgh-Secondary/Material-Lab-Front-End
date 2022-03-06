@@ -33,6 +33,22 @@ function remove_class_disable_reserve()
   // $("#reserve_modal .div_equipment .equipment_dp .menu .item").removeClass("active");
 }
 
+function remove_class_disable_tool()
+{
+  $("#tool_modal .div_equipment label").removeClass("disabled_label");
+  $("#tool_modal .div_equipment .ui.fluid.item_multiple").removeClass("disabled");
+
+  $("#tool_modal .div_equipment .menu .item").removeClass("active");
+  $("#tool_modal .div_equipment .menu .item").removeClass("selected");
+  $("#tool_modal .div_equipment .item_drop_down option[value='']").attr('selected', 'selected');
+
+  $("#tool_modal .div_equipment .item_drop_down .text").html('انتخاب کنید');
+  $("#tool_modal .div_equipment .item_drop_down .text").addClass('placeholder_text_color');
+  $("#tool_modal .div_equipment .ui.fluid.item_multiple").removeClass("font_bold");
+
+  // $("#reserve_modal .div_equipment .equipment_dp .menu .item").removeClass("active");
+}
+
 
 $(document).ready(function(){
 
@@ -40,6 +56,13 @@ $(document).ready(function(){
   $('.ui.dropdown').dropdown('hide');
 
   $('#reserve_modal .equipment_dp').dropdown({
+    useLabels: false,
+    message: {
+      count         : '{count} وسیله انتخاب  شد'
+    }
+  });
+
+  $('#tool_modal .equipment_dp').dropdown({
     useLabels: false,
     message: {
       count         : '{count} وسیله انتخاب  شد'
@@ -54,6 +77,13 @@ $(document).ready(function(){
   });
 
   $('#reserve_modal .status_dp').dropdown({
+    useLabels: false,
+    message: {
+      count         : '{count} وضعیت انتخاب  شد'
+    }
+  });
+
+  $('#tool_modal .status_dp').dropdown({
     useLabels: false,
     message: {
       count         : '{count} وضعیت انتخاب  شد'
@@ -89,10 +119,27 @@ $(document).ready(function(){
     var x = $("#reserve_modal .div_laboratory .item_drop_down option:selected").val();
   });
 
+  $("#tool_modal .div_laboratory .ui.fluid.dropdown.item_drop_down").change(function(){
+    $("#tool_modal .div_laboratory .item_drop_down .text").removeClass('placeholder_text_color');
+    // $(this).addClass("font_bold");
+    remove_class_disable_tool();
+    var x = $("#tool_modal .div_laboratory .item_drop_down option:selected").val();
+  });
+
   $("#reserve_modal .div_equipment .ui.fluid.item_multiple").change(function(){
     $("#reserve_modal .div_equipment .item_drop_down .text").removeClass('placeholder_text_color');
     $(this).removeClass("font_bold");
     var x = $("#reserve_modal .div_equipment .ui.fluid.item_multiple option:selected").val();
+    if(x)
+    {
+      // $(this).addClass("font_bold");
+    }
+  });
+
+  $("#tool_modal .div_equipment .ui.fluid.item_multiple").change(function(){
+    $("#tool_modal .div_equipment .item_drop_down .text").removeClass('placeholder_text_color');
+    $(this).removeClass("font_bold");
+    var x = $("#tool_modal .div_equipment .ui.fluid.item_multiple option:selected").val();
     if(x)
     {
       // $(this).addClass("font_bold");
