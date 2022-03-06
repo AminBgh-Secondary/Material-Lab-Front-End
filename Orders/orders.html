@@ -29,6 +29,67 @@
 
     <body>
 
+
+        <!-- Modal Begins -->
+        <div class="ui modal" id="rating_modal">
+            <h3 class="modal_header">
+                <img class="ui small image" src="../Static/pic/star_rating.png">
+                نظرسنجی
+            </h3>
+
+            <div class="modal_body">
+                <form method="POST" id="rate_form" action="">
+                    <div class="each_question">
+                        <h3 class="each_question_text">
+                            نحوه برخورد کارشناس آزمایشگاه (احترام، توجه، نحوه پاسخگویی) را چگونه ارزیابی می‌کنید؟
+                        </h3>
+                        <input type="hidden" name="rate1">
+                        <div class="rating_container">
+                            <div class="ui huge star rating star1"></div>
+                        </div>
+                    </div>
+
+                    <div class="ui divider"></div>
+
+                    <div class="each_question">
+                        <h3 class="each_question_text">
+                            میزان راهنمایی و ارائه توضیحات لازم توسط کارشناس
+                            جهت آماده‌سازی نمونه و انجام آزمون را چگونه ارزیابی می‌‌کنید؟
+                        </h3>
+                        <input type="hidden" name="rate2">
+                        <div class="rating_container">
+                            <div class="ui huge star rating star2"></div>
+                        </div>
+                    </div>
+
+                    <div class="ui divider"></div>
+
+                    <div class="each_question">
+                        <h3 class="each_question_text">
+                            ارزيابی شما از به روز بودن و میزان دانش اپراتور چگونه است؟
+                        </h3>
+                        <input type="hidden" name="rate3">
+                        <div class="rating_container">
+                            <div class="ui huge star rating star3"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="actions">
+                <div class="ui negative left labeled icon button">
+                    انصراف
+                    <i class="x icon"></i>
+                </div>
+                <div class="ui positive right labeled icon button submit_btn">
+                    ثبت
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Ends -->
+
+
         <!-- ------------------ Fixed Menu Begins -->
         <div class="fixed_menu">
 
@@ -191,7 +252,7 @@
                                 </div>
                             </div>
                             <div class="extra content">
-                                <button class="ui red button">
+                                <button class="ui red button poll_btn">
                                     نظرسنجی
                                 </button>
                                 <button class="ui teal button">
@@ -259,7 +320,7 @@
                                 </div>
                             </div>
                             <div class="extra content">
-                                <button class="ui red button">
+                                <button class="ui red button poll_btn">
                                     ثبت دیدگاه
                                 </button>
                                 <button class="ui teal button">

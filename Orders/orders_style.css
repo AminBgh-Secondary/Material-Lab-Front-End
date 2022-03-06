@@ -596,6 +596,78 @@ input[name = "calendar"]
 }
 /* Each Order Ends */
 
+
+
+
+/* Modal Begins */
+.modal_header .ui.image
+{
+    display:block;
+    margin:0 auto 10px;
+}
+
+#rating_modal
+{
+    max-width:calc(270px + 270px + 160px);
+}
+
+#rating_modal .modal_header
+{
+    font-family:"Samim" !important;
+    text-align:center;
+    padding:15px 20px 20px 20px!important;
+    background-color:rgb(247, 247, 247);
+    border-bottom:1px solid rgb(224, 224, 224);
+}
+
+#rating_modal .modal_body
+{
+    padding:15px;
+}
+
+#rating_modal .button
+{
+    font-family:"Samim" !important;
+}
+
+.each_question
+{
+    padding:0px 10px 0px 10px !important;
+}
+
+.each_question_text
+{
+    font-family:"Samim" !important;
+    font-size:14px;
+    line-height:22px !important;
+    direction:rtl !important;
+    text-align:right !important;
+}
+
+.commitment_number
+{
+    font-weight:700;
+    display:inline-block;
+    margin:5px !important;
+    padding:6px 13px 6px 13px!important;
+    border-radius:100%;
+    background-color:rgb(219, 219, 219);
+}
+
+.each_question .rating_container
+{
+    width:100%;
+    text-align:center;
+    margin:0 auto 0 !important;
+}
+
+.ui.divider
+{
+    margin-top:20px !important;
+    margin-bottom:20px !important;
+}
+
+
 /* -------------------Main Content Ends------------------------ */
 
 
