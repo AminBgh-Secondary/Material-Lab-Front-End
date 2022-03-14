@@ -508,12 +508,14 @@ input[name = "calendar"]
     margin:20px auto 0 !important; 
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
 }
 
 /* Each Order Begins */
 .each_order
 {
-    margin:20px auto 0 !important;
+    /* margin:20px auto 0 !important; */
     width:280px !important;
 }
 

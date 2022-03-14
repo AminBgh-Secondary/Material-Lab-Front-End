@@ -135,14 +135,14 @@ $(document).ready(function(){
     $(this).css("border-color", "rgba(34,36,38,.15)");
   });
 
-  $(".submit_btn").click(function() {
-    event.preventDefault();
-    var x = $('form').serialize();
-    console.log(x);
+  // $(".submit_btn").click(function() {
+  //   event.preventDefault();
+  //   var x = $('form').serialize();
+  //   console.log(x);
 
-    var allData=$("form").serializeArray();
-    console.log(allData[0]);
+  //   var allData=$("form").serializeArray();
+  //   console.log(allData[0]);
 
-  });
+  // });
   
 });
