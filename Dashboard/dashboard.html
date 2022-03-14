@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="https://use.fontawesome.com/your-embed-code.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="dashboard_js.js"></script>
     </head>
 
@@ -28,38 +29,55 @@
 
     <body>
 
-        <!-- ------------------ Fixed Menu Begins -->
-        <div class="fixed_menu">
+        <!-- -------------------Responsive Sidebar Begins-->
+        <div class="ui right demo vertical inverted sidebar labeled icon menu" id="sidebar2">
 
-            <a class="fixed_menu_item home_fixed" href="">
-                <i class="home icon"></i>
-                خانه
-            </a>
-
-            <a class="fixed_menu_item labaratory_fixed" href="">
-                <i class="flask icon"></i>
-                آزمایشگاه‌ها
-            </a>
-
-            <a class="fixed_menu_item education_fixed" href="">
-                <i class="laptop icon"></i>
-                آموزش
-            </a>
-
-            <div class="fixed_menu_item dashboard_fixed active_fixed" href="">
-                <i class="map signs icon"></i>
-                داشبورد
+            <div class="sidebar_user_image">
+                <img class="ui centered circular image" src="../Static/pic/user2.png">
+                <h4>
+                    دانشجو
+                </h4>
+                <h3>
+                    محمدامین باغبان باشی
+                </h3>
             </div>
-            
-        </div>
-        <!-- ------------------ Fixed Menu Ends -->
-
-
-        <!-------- sidebar Begins -------->
-        <div class="ui sidebar inverted right vertical menu sidebar-menu" id="sidebar">
 
             <!-- ----Accordion Begins---- -->
             <div class="ui accordion">
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="home icon"></i>
+                            خانه
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="map signs icon"></i>
+                            داشبورد
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="flask icon"></i>
+                            آزمایشگاه ها
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
                 <div class="title">
                     <div href="#" class="item">
                         <div>
@@ -69,7 +87,6 @@
                     </div>
                 </div>
                 <div class="content">
-                    Hello
                 </div>
 
                 <div class="title">
@@ -84,6 +101,7 @@
                     <a class="accordion_sub_item">
                         <i class="inbox icon"></i>
                         صندوق ورودی
+                        <span class="message_number">3</span>
                     </a>
                     <a class="accordion_sub_item">
                         <i class="bell icon"></i>
@@ -122,29 +140,148 @@
             </div>
             <!-- ----Accordion Ends---- -->
 
-            <!-- <div class="ui segment inverted">
-                <div class="ui tiny olive inverted progress">
-                    <div class="bar" style="width: 54%"></div>
-                    <div class="label">Monthly Bandwidth</div>
-                </div>
-
-                <div class="ui tiny teal inverted progress">
-                    <div class="bar" style="width:78%"></div>
-                    <div class="label">Disk Usage</div>
-                </div>
+            <!-- <div class="sidebar_bottom">
+                <img src="" class="ui centered image">
+                <h4>
+                    بخش مهندسی مواد دانشگاه شیراز
+                </h4>
             </div> -->
 
-            <div class="sidebar_metallogy">
-                <img src="../Static/pic/change_1.jpg" class="ui centered image sidebar_metallogy_logo">
-                <div>
-                    <span class="sidebar_sp1">مهندسی مواد و متالوژی</span>
+        </div>
+        <!-- -------------------Responsive Sidebar Ends -->
+
+        
+
+        <div class="pusher">
+            <!-- ------------------ Fixed Menu Begins -->
+            <div class="fixed_menu">
+
+                <div class="fixed_menu_item image_fixed" href="">
+                    <img class="ui huge image" src="../Static/pic/shirazuni_material.jpg">
                 </div>
+                
+                <a class="fixed_menu_item bars_fixed">
+                    <i class="bars icon"></i>
+                    منو
+                </a>
+
+                <a class="fixed_menu_item home_fixed" href="">
+                    <i class="home icon"></i>
+                    خانه
+                </a>
+
+                <a class="fixed_menu_item labaratory_fixed" href="">
+                    <i class="flask icon"></i>
+                    آزمایشگاه‌ها
+                </a>
+
+                <!-- <a class="fixed_menu_item education_fixed" href="">
+                    <i class="laptop icon"></i>
+                    آموزش
+                </a> -->
+
+                <div class="fixed_menu_item login_fixed selected_fixed" href="">
+                    <i class="sign-in icon"></i>
+                    ورود
+                </div>
+
+                <a class="fixed_menu_item sign_up_fixed" href="">
+                    <i class="user plus icon"></i>
+                    ثبت‌نام
+                </a>
+
+                <a class="fixed_menu_item dashboard_fixed" href="">
+                    <i class="map signs icon"></i>
+                    داشبورد
+                </a>
+                
             </div>
+            <!-- ------------------ Fixed Menu Ends -->
+
+
+            <!-------- sidebar Begins -------->
+            <div class="ui sidebar inverted right vertical menu sidebar-menu" id="sidebar">
+                
+                <div class="sidebar_user_image">
+                    <img class="ui centered circular image" src="../Static/pic/user2.png">
+                    <h4>
+                        دانشجو
+                    </h4>
+                    <h3>
+                        محمدامین باغبان باشی
+                    </h3>
+                </div>
+
+                <!-- ----Accordion Begins---- -->
+                <div class="ui accordion">
+                    <div class="title">
+                        <div href="#" class="item">
+                            <div>
+                                <i class="user icon"></i>
+                                اطلاعات کاربری
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Hello
+                    </div>
+
+                    <div class="title">
+                        <div class="item">
+                            <div>
+                                <i class="paper plane icon"></i>
+                                پیام ها
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a class="accordion_sub_item">
+                            <i class="inbox icon"></i>
+                            صندوق ورودی
+                            <span class="message_number">3</span>
+                        </a>
+                        <a class="accordion_sub_item">
+                            <i class="bell icon"></i>
+                            اطلاعیه ها
+                        </a>
+                        <a class="accordion_sub_item">
+                            <i class="pencil alternate icon"></i>
+                            ارسال پیام
+                        </a>
+                    </div>
+
+                    <div class="title">
+                        <div class="item">
+                            <div>
+                                <i class="calendar alternate icon"></i>
+                                رزرو
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Hello
+                    </div>
+
+                    <div class="title">
+                        <div class="item">
+                            <div>
+                                <i class="chart bar icon"></i>
+                                گزارش ها و آمار
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <!-- Hello -->
+                    </div>
+                
+                </div>
+                <!-- ----Accordion Ends---- -->
+            </div>
+            <!-------- sidebar Ends -------->
 
         </div>
-        <!-------- sidebar Ends -------->
+
 
     </body>
-
 
 </html>
