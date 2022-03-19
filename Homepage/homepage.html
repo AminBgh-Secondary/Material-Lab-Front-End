@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MateriaLab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="homepage_style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="jalalidatepicker.min.css" />
+        <script type="text/javascript" src="jalalidatepicker.min.js"></script>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="homepage_js.js"></script>
+    </head>
+
+
+
+    <body>
+
+        <!-- -------------------Responsive Sidebar Begins-->
+        <div class="ui right demo vertical inverted sidebar labeled icon menu" id="sidebar2">
+
+            <div class="sidebar_user_image">
+                <img class="ui centered circular image" src="../Static/pic/user2.png">
+                <h4>
+                    دانشجو
+                </h4>
+                <h3>
+                    محمدامین باغبان باشی
+                </h3>
+            </div>
+
+            <!-- ----Accordion Begins---- -->
+            <div class="ui accordion">
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="home icon"></i>
+                            خانه
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="map signs icon"></i>
+                            داشبورد
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="flask icon"></i>
+                            آزمایشگاه ها
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
+                <div class="title">
+                    <div href="#" class="item">
+                        <div>
+                            <i class="user icon"></i>
+                            اطلاعات کاربری
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="paper plane icon"></i>
+                            پیام ها
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="accordion_sub_item">
+                        <i class="inbox icon"></i>
+                        صندوق ورودی
+                        <span class="message_number">3</span>
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="bell icon"></i>
+                        اطلاعیه ها
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="pencil alternate icon"></i>
+                        ارسال پیام
+                    </a>
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="calendar alternate icon"></i>
+                            رزرو
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    Hello
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="chart bar icon"></i>
+                            گزارش ها و آمار
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- Hello -->
+                </div>
+            
+            </div>
+            <!-- ----Accordion Ends---- -->
+        </div>
+        <!-- -------------------Responsive Sidebar Ends -->
+
+        
+
+        <div class="pusher">
+            <!-- ------------------ Fixed Menu Begins -->
+            <div class="fixed_menu">
+
+                <div class="fixed_menu_item image_fixed" href="">
+                    <img class="ui huge image" src="../Static/pic/shirazuni_material.png">
+                </div>
+                
+                <a class="fixed_menu_item bars_fixed">
+                    <i class="bars icon"></i>
+                    منو
+                </a>
+
+                <a class="fixed_menu_item home_fixed" href="">
+                    <i class="home icon"></i>
+                    خانه
+                </a>
+
+                <a class="fixed_menu_item labaratory_fixed" href="">
+                    <i class="flask icon"></i>
+                    آزمایشگاه‌ها
+                </a>
+
+                <!-- <a class="fixed_menu_item education_fixed" href="">
+                    <i class="laptop icon"></i>
+                    آموزش
+                </a> -->
+
+                <div class="fixed_menu_item login_fixed selected_fixed" href="">
+                    <i class="sign-in icon"></i>
+                    ورود
+                </div>
+
+                <a class="fixed_menu_item sign_up_fixed" href="">
+                    <i class="user plus icon"></i>
+                    ثبت‌نام
+                </a>
+
+                <a class="fixed_menu_item dashboard_fixed" href="">
+                    <i class="map signs icon"></i>
+                    داشبورد
+                </a>
+                
+            </div>
+            <!-- ------------------ Fixed Menu Ends -->
+
+            <!-- Container of Page Begins -->
+            <div class="main-content">
+                
+                <div class="primary_image_container">
+                    <img class="ui image primary_image_img primary_image_img1" src="../Static/pic/laboratory_background1.jpg">
+                    <img class="ui image primary_image_img primary_image_img2" src="../Static/pic/laboratory_background2.jpg">
+                    <img class="ui image primary_image_img primary_image_img3" src="../Static/pic/laboratory_background3.jpg">
+                    <div class="primary_image_div">
+                        <h2>
+                            سیستم رزرو آنلاین آزمایشگاه
+                        </h2>
+                        <h3>
+                            بخش مهندسی مواد، دانشگاه شیراز
+                        </h3>
+                        <div class="primary_image_buttons">
+                            <button class="ui red button">
+                                <i class="user plus icon"></i>
+                                ثبت‌نام
+                            </button>
+                            <button class="ui teal button">
+                                <i class="sign-in icon"></i>
+                                <span>ورود</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="curve_container">
+                        <div class="curve_container_div">
+                            <!-- Desktop -->
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="25px" viewBox="0 0 1366 25" xml:space="preserve" preserveAspectRatio="none" class="svg_desktop">
+                                <path d="M683.1,23.9C386.6,23.9,129.2,14.1,0,0v25h1366V0C1236.7,14.1,979.4,23.9,683.1,23.9z" class="svg_fill_white"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui three column stackable center aligned grid container rtl_content introduction_div">
+                    <div class="column">
+                        <img class="ui centered image" src="../Static/pic/intro1.jpg">
+                        <h2 class="ui header rtl_content">معرفی</h2>
+                        <p class="rtl_content">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                            و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                            رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                            سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد...
+                        </p>
+                        <div class="ui animated fade button" tabindex="0">
+                            <div class="visible content">مشاهده جزئیات</div>
+                            <div class="hidden content">
+                                <i class="angle double left icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dotted_divider"></div>
+
+                    <div class="column">
+                        <img class="ui centered image" src="../Static/pic/intro2.jpg">
+                        <h2 class="ui header rtl_content">اهداف</h2>
+                        <p class="rtl_content">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                            و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                            رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                            سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد...
+                        </p>
+                        <div class="ui animated fade button" tabindex="0">
+                            <div class="visible content">مشاهده جزئیات</div>
+                            <div class="hidden content">
+                                <i class="angle double left icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dotted_divider"></div>
+
+                    <div class="column">
+                        <img class="ui centered image" src="../Static/pic/intro3.jpg">
+                        <h2 class="ui header rtl_content">کاتالوگ</h2>
+                        <p class="rtl_content">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                            و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                            رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                            سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد...
+                        </p>
+                        <div class="ui animated fade button" tabindex="0">
+                            <div class="visible content">مشاهده جزئیات</div>
+                            <div class="hidden content">
+                                <i class="angle double left icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dotted_divider2"></div>
+
+                <!-- Best Laboratories Section Begins -->
+                <div class="laboratory_div_tools">
+                        
+                    <h3 class="laboratory_tools_header">
+                        <img src="../Static/pic/atom_logo.jpg" class="ui image">
+                        <div>پراستفاده ترین تجهییزات</div>
+                        <img src="../Static/pic/atom_logo.jpg" class="ui image">
+                    </h3>
+
+                    <h3 class="laboratory_tools_header2">
+                        <i class="thermometer half icon"></i>
+                        پراستفاده ترین تجهییزات
+                    </h3>
+                    <div class="just_border"></div>
+
+                    <!-- items in small scale -->
+                    <div class="items_container">
+                        <!-- Each Item Begins -->
+                        <div class="each_item">
+                            <div class="image">
+                                <img src="../Static/pic/5147539.jpg">
+                            </div>
+                            <div class="item_content">
+                                <div class="item_name">
+                                    دستگاه کشش با نرخ کرنش پائین (SSRT)
+                                </div>
+                                <div class="item_faculty">
+                                    <!-- <i class="university icon"></i>
+                                    دانشکده مهندسی مواد -->
+                                    <i class="clock icon"></i>
+                                    <span>123</span>
+                                    ساعت رزرو
+                                    <br>
+                                    <i class="flask icon"></i>
+                                    آزمایشگاه جوشکاری و بررسی های غیر مخرب
+                                </div>
+                                <div class="item_extra">
+                                    <div class="item_see">
+                                        <a href="#top">
+                                            مشاهده
+                                            <i class="angle left icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item_rate">
+                                        <i class="star icon"></i>
+                                        <span>4.3</span>
+                                        &nbsp
+                                        <span>(4012)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dotted_divider"></div>
+                        <!-- Each Item Ends -->
+
+                        <!-- Each Item Begins -->
+                        <div class="each_item">
+                            <div class="image">
+                                <img src="../Static/pic/5667450.jpg">
+                            </div>
+                            <div class="item_content">
+                                <div class="item_name">
+                                    دستگاه کشش با نرخ کرنش پائین (SSRT)
+                                </div>
+                                <div class="item_faculty">
+                                    <i class="clock icon"></i>
+                                    <span>123</span>
+                                    ساعت رزرو
+                                    <br>
+                                    <i class="flask icon"></i>
+                                    آزمایشگاه جوشکاری و بررسی های غیر مخرب
+                                </div>
+                                <div class="item_extra">
+                                    <div class="item_see">
+                                        <a href="#top">
+                                            مشاهده
+                                            <i class="angle left icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item_rate">
+                                        <i class="star icon"></i>
+                                        <span>4.3</span>
+                                        &nbsp
+                                        <span>(4012)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dotted_divider"></div>
+                        <!-- Each Item Ends -->
+                    </div>
+
+                    <!-- items in big scale -->
+                    <div class="tools_container">
+                        <!-- Each Tool Begins -->
+                        <div class="each_tool_container">
+                            <div class="ui card each_tool">
+                                <div class="each_tool_image">
+                                    <img src="../Static/pic/list_1.jpg">
+                                </div>
+                                <div class="each_tool_content">
+                                    <h3 class="each_tool_header">
+                                        دستگاه کشش با نرخ کرنش پائین (SSRT)  
+                                    </h3>
+                                    <div class="each_tool_faculty">
+                                        دانشکده مهندسی مواد آزمایشگاه جوشکاری و بررسی های غیر مخرب
+                                    </div>
+                                    <div class="each_tool_rate">
+                                        <div class="div_rate1">
+                                            <i class="star icon"></i>
+                                            <span>4.3</span>
+                                            &nbsp
+                                            <span>(4012)</span>
+                                        </div>
+                                        <div class="div_rate2">
+                                            <span>124</span>
+                                            <span>ساعت رزرو</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="each_tool_bottom">
+                                    <div class="ui animated button" tabindex="0">
+                                        <div class="visible content">مشاهده</div>
+                                        <div class="hidden content">
+                                            <i class="right arrow icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Each Tool Ends -->
+
+                        <!-- Each Tool Begins -->
+                        <div class="each_tool_container">
+                            <div class="ui card each_tool">
+                                <div class="each_tool_image">
+                                    <img src="../Static/pic/5125820.jpg">
+                                </div>
+                                <div class="each_tool_content">
+                                    <h3 class="each_tool_header">
+                                        همزن مغناطیسی و نرم‌افزار آنالیز تصاویر   
+                                    </h3>
+                                    <div class="each_tool_faculty">
+                                        دانشکده مهندسی مواد آزمایشگاه جوشکاری و بررسی های غیر مخرب
+                                    </div>
+                                    <div class="each_tool_rate">
+                                        <div class="div_rate1">
+                                            <i class="star icon"></i>
+                                            <span>4.3</span>
+                                            &nbsp
+                                            <span>(4012)</span>
+                                        </div>
+                                        <div class="div_rate2">
+                                            <span>124</span>
+                                            <span>ساعت رزرو</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="each_tool_bottom">
+                                    <div class="ui animated button" tabindex="0">
+                                        <div class="visible content">مشاهده</div>
+                                        <div class="hidden content">
+                                            <i class="right arrow icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Each Tool Ends -->
+
+                        <!-- Each Tool Begins -->
+                        <div class="each_tool_container">
+                            <div class="ui card each_tool">
+                                <div class="each_tool_image">
+                                    <img src="../Static/pic/list_2.png">
+                                </div>
+                                <div class="each_tool_content">
+                                    <h3 class="each_tool_header">
+                                        دوربین دیجیتال
+                                    </h3>
+                                    <div class="each_tool_faculty">
+                                        دانشکده مهندسی مواد آزمایشگاه جوشکاری و بررسی های غیر مخرب
+                                    </div>
+                                    <div class="each_tool_rate">
+                                        <div class="div_rate1">
+                                            <i class="star icon"></i>
+                                            <span>4.3</span>
+                                            &nbsp
+                                            <span>(4012)</span>
+                                        </div>
+                                        <div class="div_rate2">
+                                            <span>124</span>
+                                            <span>ساعت رزرو</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="each_tool_bottom">
+                                    <div class="ui animated button" tabindex="0">
+                                        <div class="visible content">مشاهده</div>
+                                        <div class="hidden content">
+                                            <i class="right arrow icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Each Tool Ends -->
+
+                        <!-- Each Tool Begins -->
+                        <div class="each_tool_container">
+                            <div class="ui card each_tool">
+                                <div class="each_tool_image">
+                                    <img src="../Static/pic/change_1.jpg">
+                                </div>
+                                <div class="each_tool_content">
+                                    <h3 class="each_tool_header">
+                                        منبع تغذیه در محدوده جریان و ولتاژهای مختلف
+                                    </h3>
+                                    <div class="each_tool_faculty">
+                                        دانشکده مهندسی مواد آزمایشگاه جوشکاری و بررسی های غیر مخرب
+                                    </div>
+                                    <div class="each_tool_rate">
+                                        <div class="div_rate1">
+                                            <i class="star icon"></i>
+                                            <span>4.3</span>
+                                            &nbsp
+                                            <span>(4012)</span>
+                                        </div>
+                                        <div class="div_rate2">
+                                            <span>124</span>
+                                            <span>ساعت رزرو</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="each_tool_bottom">
+                                    <div class="ui animated button" tabindex="0">
+                                        <div class="visible content">مشاهده</div>
+                                        <div class="hidden content">
+                                            <i class="right arrow icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Each Tool Ends -->
+                    </div>
+                </div>
+                <!-- Best Laboratories Section Ends -->
+                
+                <div class="statistics_div rtl_content">
+                    <div class="each_statistics">
+                        <div class="icon_container">
+                            <div class="icon_sub_container">
+                                <i class="users icon"></i>
+                            </div>
+                        </div>
+                        <div class="details_container">
+                            <h4 class="statistics_number">
+                                13
+                                <span>هزار</span>
+                            </h4>
+                            <h4 class="statistics_description">تعداد رزرو ها</h4>
+                        </div>
+                        <div class="clear_both"></div>
+                    </div>
+
+                    <div class="clear_both"></div>
+
+                    <div class="each_statistics">
+                        <div class="icon_container">
+                            <div class="icon_sub_container">
+                                <i class="flask icon"></i>
+                            </div>
+                        </div>
+                        <div class="details_container">
+                            <h4 class="statistics_number">
+                                25
+                            </h4>
+                            <h4 class="statistics_description">تعداد آزمایشگاه ها</h4>
+                        </div>
+                        <div class="clear_both"></div>
+                    </div>
+
+                    <div class="clear_both"></div>
+
+                    <div class="each_statistics">
+                        <div class="icon_container">
+                            <div class="icon_sub_container">
+                                <i class="fire icon"></i>
+                            </div>
+                        </div>
+                        <div class="details_container">
+                            <h4 class="statistics_number">
+                                78
+                            </h4>
+                            <h4 class="statistics_description">تعداد دستگاه ها</h4>
+                        </div>
+                        <div class="clear_both"></div>
+                    </div>
+
+                    <div class="clear_both"></div>
+
+                    <div class="each_statistics">
+                        <div class="icon_container">
+                            <div class="icon_sub_container">
+                                <i class="leaf icon"></i>
+                            </div>
+                        </div>
+                        <div class="details_container">
+                            <h4 class="statistics_number">
+                                159
+                                <span>هزار</span>
+                            </h4>
+                            <h4 class="statistics_description">تعداد نمونه ها</h4>
+                        </div>
+                        <div class="clear_both"></div>
+                    </div>
+                    
+                    <div class="clear_both"></div>
+                </div>
+                
+                <div style="height:1px;"></div>
+                
+
+            </div>
+            <!-- Container of Page Ends -->
+        </div>
+
+    </body>
+
+</html>

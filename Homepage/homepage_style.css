@@ -1,0 +1,1351 @@
+
+@font-face
+{
+    font-family: 'Samim';
+    src: url(../Static/fonts/Samim/Samim.eot);
+    src: url(../Static/fonts/Samim/Samim.woff2) format('woff2'),
+            url(../Static/fonts/Samim/Samim.woff) format('woff');
+}
+
+::placeholder
+{
+    font-size:14px;
+    font-weight:lighter;
+    font-family:"Samim" !important;
+    color:rgb(212, 212, 212);
+}
+
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+body ::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+/* -----------Jalali Date Begins------------ */
+.jdp-years, .jdp-months, .jdp-days, .jdp-footer
+{
+    font-family:Samim !important;
+}
+
+.jdp-year
+{
+    padding-top: 5px !important;
+}
+
+jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-container .jdp-year select:hover, jdp-container .jdp-month:hover, jdp-container .jdp-month input:hover, jdp-container .jdp-month select:hover
+{
+    background-color:rgb(228, 228, 228) !important;
+}
+
+input[name = "calendar"]
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    direction:ltr !important;
+}
+/* -----------Jalali Date Ends------------ */
+
+/* --------------Responsive Sidabar Begins */
+.sidebar_bottom
+{
+    position: absolute;
+    bottom:10px;
+    width:100%;
+}
+
+.sidebar_bottom img
+{
+    margin:0 auto 0 !important;
+    width:87px !important;
+}
+
+.sidebar_bottom h4
+{
+    font-size:12px !important;
+    text-align:center !important;
+    direction:rtl !important;
+    margin:0px auto 0 !important;
+    font-family:"Samim" !important;
+}
+/* --------------Responsive Sidabar Ends */
+
+
+
+/* ------------------------------------------------------------------------------- fixed menu begins */
+
+.fixed_menu
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color:rgba(0, 0, 0, 0.425);
+    transition: background-color 200ms linear;
+    z-index: 999;
+    padding:0px 100px 0px 100px;
+    
+    /* background-color:rgb(255, 255, 255);
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.1); */
+
+}
+
+.fixed_menu_item
+{
+    margin-left:20px;
+    display:block !important;
+    font-family:"Samim";
+    font-weight:900;
+    float:right;
+    height:100%;
+    width:80px;
+    text-align:center;
+    font-size:16px;
+    line-height:55px;
+    direction:rtl;
+    color:rgb(23, 19, 70);
+}
+
+.fixed_menu_item .icon
+{
+    margin-left:5px;
+}
+
+.image_fixed
+{
+    margin-right:30px;
+    float:left !important;
+    width:210px !important;
+}
+
+.bars_fixed
+{
+    display:none !important;
+    cursor:pointer;
+    width:90px;
+    padding-top:10px !important;
+    line-height:30px;
+}
+
+.labaratory_fixed
+{
+    width:130px;
+}
+
+.education_fixed
+{
+    width:95px;
+    padding-bottom:10px !important;
+}
+
+.login_fixed
+{
+    width:90px;
+    padding-top:9px !important;
+    line-height:28px;
+}
+
+.sign_up_fixed
+{
+    width:100px;
+    padding-top:9px !important;
+    line-height:35px;
+}
+
+.dashboard_fixed
+{
+    width:110px;
+    padding-top:9px !important;
+    line-height:30px;
+}
+
+.selected_fixed
+{
+    width:140px !important;
+    font-weight:600 !important;
+    color:black;
+    /* background-color:rgb(235, 235, 235); */
+    transition: background-color 200ms linear;
+}
+
+.home_fixed .home.icon
+{
+    color:rgb(13, 121, 54) !important;
+    font-size:21px;
+}
+
+.labaratory_fixed .flask.icon
+{
+    color:goldenrod !important;
+    font-size:21px;
+}
+
+.education_fixed .laptop.icon
+{
+    color:rgb(19, 104, 110);
+    font-size:21px;
+}
+
+.bars_fixed .bars.icon
+{
+    font-size:20px;
+    position:relative;
+    top:4px;
+}
+
+.login_fixed .sign-in.icon
+{
+    color:#52a7cc;
+    font-size:23px;
+    position:relative;
+    top:5px;
+}
+
+.sign_up_fixed .user.plus.icon
+{
+    color:crimson;
+    font-size:21px;
+    position:relative;
+}
+
+.dashboard_fixed .map.signs.icon
+{
+    color:#425c81;
+    font-size:23px;
+    position:relative;  
+}
+
+/* ------------------------------------------------------------------------------- fixed menu ends */
+
+
+
+
+/* ------------------------ Side bar Begins ------------- */
+
+/* ----- Side bar user Begins ----- */
+
+.sidebar_user_image
+{
+    /* background-color:red; */
+    margin-top:10px;
+    text-align:center;
+}
+
+.sidebar_user_image img
+{
+    width:130px !important;
+    height:130px !important;
+}
+
+.sidebar_user_image h4
+{
+    font-family:"Samim" !important;
+    border-radius:4px;
+    position:relative;
+    bottom:25px;
+    background-color: #fc0;
+    padding:5px 15px 5px 15px;
+    font-size:13px;
+    display:inline-block;
+    text-align:center;
+    margin:0 auto 0 !important;
+}
+
+.sidebar_user_image h3
+{
+    font-family:"Samim" !important;
+    margin-top:0px !important;
+    margin-bottom:10px !important;
+    font-size:15px;
+    position:relative;
+    bottom:13px;
+}
+
+/* ----- Side bar user Ends ----- */
+
+#sidebar
+{
+  margin-top: 60px !important;
+  max-height: calc(100% - 60px) !important;
+  height: calc(100% - 60px) !important;
+
+  direction:rtl !important;
+  width:250px;
+  box-shadow: 0px 0px 10px 3px #ececec;
+  background-color:#fff;
+}
+
+#sidebar2
+{
+  height:100% !important;
+
+  direction:rtl !important;
+  max-width:270px;
+  min-width:240px;
+  width:80%;
+  background-color:#fff;
+}
+
+#sidebar .item i.icon, #sidebar2 .item i.icon
+{
+  float: right;
+  margin: 0em 0.5em 0em 10px;
+}
+
+#sidebar div.item, #sidebar2 div.item
+{
+    /* background-color:blue !important; */
+    padding:20px 5px 20px 0px;
+    font-family:"Samim" !important;
+    font-size:16px;
+    color:black;
+    border-top:2px solid rgb(247, 247, 247);
+
+    transition:0.4s !important;
+    -moz-transition:0.4s !important;
+    -o-transition:0.4s !important;
+    -webkit-transition: 0.4s !important;
+}
+
+#sidebar div.item:hover, #sidebar2 div.item:hover
+{
+    padding-right:20px;
+    background-color:rgb(214, 214, 214) !important;
+}
+
+#sidebar .user.icon
+{
+    color:rgb(8, 80, 121);
+}
+
+#sidebar2 .user.icon
+{
+    color:rgb(85, 85, 85);
+}
+
+#sidebar .paper.icon, #sidebar2 .paper.icon
+{
+    color:#0088cc;
+}
+
+#sidebar .calendar.icon, #sidebar2 .calendar.icon
+{
+    color:rgb(238, 12, 57);
+}
+
+#sidebar .chart.icon, #sidebar2 .chart.icon
+{
+    font-size:18px;
+    position:relative;
+    bottom:3px;
+    left:4px;
+    color:#41b3a3;
+}
+
+#sidebar2 .flask.icon
+{
+    color:goldenrod !important;
+    position:relative;
+    bottom:3px;
+    font-size:17px;
+}
+
+#sidebar2 .home.icon
+{
+    color:rgb(13, 121, 54) !important;
+    position:relative;
+    bottom:3px;
+    font-size:19px;
+}
+
+#sidebar2 .map.signs.icon
+{
+    color:#425c81;
+    position:relative;
+    bottom:3px;
+    font-size:19px;
+}
+
+#sidebar::-webkit-scrollbar, #sidebar2::-webkit-scrollbar
+{
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+#sidebar, #sidebar2
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* ---------Accordion Begins----------- */
+.ui.accordion .title:not(.ui)
+{
+    padding:0px !important;
+}
+
+#sidebar2 .ui.accordion, #sidebar2 .ui.accordion .title,
+#sidebar2 .ui.accordion .title .item,
+#sidebar2 .ui.accordion .content
+{
+    text-align:right !important;
+    direction:rtl !important;
+}
+
+.ui.accordion:not(.styled) .accordion .title~.content:not(.ui),
+.ui.accordion:not(.styled) .title~.content:not(.ui)
+{
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+}
+
+.accordion_sub_item.transition.visible:hover
+{
+    padding-right:45px;
+}
+
+.accordion_sub_item
+{
+    cursor:pointer;
+    display:block;
+    font-family:"Samim";
+    padding:11px 33px 11px 0px;
+    color:rgb(0, 0, 0) !important;
+    
+    transition:0.4s !important;
+    -moz-transition:0.4s !important;
+    -o-transition:0.4s !important;
+    -webkit-transition: 0.4s !important;
+}
+
+.message_number
+{
+    float:left;
+    margin-left:10px;
+    padding-top:4px;
+
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+
+    border:1px solid #fce8e6;
+    background-color:#fce8e6;
+    color: #d93025;
+
+    width:30px !important;
+    height:30px !important;
+    border-radius:100%;
+    text-align:center !important;
+    position:relative;
+    bottom:5px;
+}
+
+.accordion_sub_item .icon
+{
+    font-size:15px;
+    margin: 0em 0.5em 0em 5px;
+}
+
+.accordion_sub_item .inbox.icon
+{
+    color:#41b3a3;
+}
+
+.accordion_sub_item .bell.icon
+{
+    color:#e8a87c;
+}
+
+.accordion_sub_item .pencil.icon
+{
+    color:#659dbd;
+}
+/* ---------Accordion Ends----------- */
+  
+/* ------------------------Side bar Ends ------------- */
+.fixed_menu .fixed_menu_item
+{
+    color:rgb(52, 95, 145);
+}
+
+.fixed_menu .selected_fixed
+{
+    background-color:rgba(0, 0, 0, 0.452);
+}
+
+.fixed_menu_scrolled .fixed_menu_item
+{
+    color:black;
+}
+
+.fixed_menu a.fixed_menu_item:hover
+{
+    color:rgb(38, 118, 209);
+}
+
+.fixed_menu_scrolled
+{
+    background-color:rgb(255, 255, 255);
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.selected_fixed_ease_50
+{
+    transition: background-color 50ms ease-in-out !important;
+}
+
+.fixed_menu_scrolled .selected_fixed
+{
+    background-color:rgb(235, 235, 235);
+}
+
+
+
+
+
+
+
+.main-content
+{
+    width:100%;
+}
+
+.primary_image_container
+{
+    position: relative;
+    text-align: center;
+    width:100%;
+}
+
+.primary_image_img
+{
+    width:100%;
+    filter: brightness(25%);
+}
+
+.primary_image_img2, .primary_image_img3
+{
+    display:none !important;
+}
+
+.primary_image_div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+}
+
+.primary_image_div h2
+{
+    font-size:34px !important;
+}
+
+.primary_image_div, .primary_image_div h2,
+.primary_image_div h3
+{
+    font-family:"Samim" !important;
+    color:white;
+}
+
+.primary_image_buttons
+{
+    margin-top:30px;
+}
+
+.primary_image_buttons button
+{
+    font-family:"Samim" !important;
+    width:135px !important;
+    height:45px;
+    padding:12px 15px 16px 12px!important;
+}
+
+.primary_image_buttons span
+{
+    position:relative;
+    bottom:2px;
+}
+
+.primary_image_buttons .user.plus.icon
+{
+    font-size:16px;
+    position:relative;
+    top:1px;
+    right:3px;
+}
+
+.primary_image_buttons .sign-in.icon
+{
+    font-size:18px;
+    position:relative;
+    top:2px;
+    right:3px;
+}
+
+
+/* ---- Curve ---- */
+.curve_container
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25px;
+    z-index: 2 !important;
+}
+
+.curve_container_div
+{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: transparent;
+}
+
+/* @media screen and (min-width: 575px)
+{
+    .svg_desktop
+    {
+        display: block;
+    }
+} */
+
+.svg_desktop
+{
+    width: 100%;
+    display: block;
+    z-index: 3;
+}
+
+svg
+{
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.svg_fill_white
+{
+    z-index: 2;
+    background-color: #FFFFFF;
+    fill: #fff;
+}
+
+
+.rtl_content
+{
+    font-family:"Samim" !important;
+    direction:rtl !important;
+}
+
+.introduction_div
+{
+    margin-top:20px !important;
+}
+
+.introduction_div h2
+{
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+}
+
+.introduction_div img
+{
+    width:130px;
+}
+
+.introduction_div .column p
+{
+    text-align:justify;
+    line-height:25px;
+}
+
+.introduction_div .column .ui.button
+{
+    font-family:"Samim" !important;
+}
+
+.dotted_divider, .dotted_divider2
+{
+    width:95%;
+    height:1px;
+    display:none;
+    margin:15px auto 15px;
+    border-bottom:1px dotted rgb(212, 212, 212);
+}
+
+.dotted_divider2
+{
+    display:block;
+    margin:30px auto 30px;
+}
+
+
+
+
+
+/* --- Laboratory Tools Begin --- */
+.laboratory_div_tools
+{
+    width:100%;
+    max-width:1100px;
+    /* background-color:red !important;    */
+    text-align:center;
+    margin:0 auto 20px !important;
+}
+
+.laboratory_tools_header, .laboratory_tools_header2
+{
+    font-family:"Samim" !important;
+}
+
+.laboratory_tools_header2
+{
+    direction:rtl !important;
+    font-size:12px;
+    margin:0px !important;
+    display:none;
+}
+
+.laboratory_tools_header2 .icon
+{
+    font-size:15px !important;
+}
+
+.just_border
+{
+    height:2px;
+    width:100px;
+    margin-top:0px !important;
+    margin-bottom:5px !important;
+    background-color:#ef394e !important;
+    border-radius:50px;
+    display:none;
+}
+
+.laboratory_tools_header img
+{
+    display:inline-block !important;
+    width:50px;
+    /* width:75px; */
+}
+
+.laboratory_tools_header div
+{
+    direction:rtl !important;
+    display:inline-block;
+}
+
+.laboratory_tools_header img:nth-of-type(1)
+{
+    margin-right:20px;
+    /* transform:rotate(-14deg); */
+}
+
+.laboratory_tools_header img:nth-of-type(2)
+{
+    margin-left:20px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+
+
+.items_container
+{
+    width:100%;
+    direction:rtl !important;
+    margin-top:20px !important;
+    display:none;
+}
+/* Each Item Begins */
+.each_item
+{
+    /* background-color:red; */
+    direction:rtl !important;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+}
+
+.each_item .image
+{
+    width:120px !important;
+}
+
+.each_item .image img
+{
+    border-radius:4px;
+    display:inline-block;
+    width:100% !important;
+}
+
+.each_item .item_content
+{
+    width:calc(100% - 120px);
+    /* background-color:gray; */
+    padding-right:5px;
+    padding-left:5px;
+}
+
+.each_item .item_content .item_name, .each_item .item_content .item_faculty
+{
+    font-family:"Samim" !important;
+    text-align:right !important;
+    direction:rtl !important; 
+}
+
+.each_item .item_content .item_name
+{
+    font-weight:700;
+    height:40px !important;
+    line-height:22px;
+    font-size:13px;
+}
+
+.each_item .item_content .item_faculty
+{
+    font-size:11px;
+    color:rgb(161, 161, 161);
+}
+
+.each_item .item_content .item_faculty span
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+
+.each_item .item_content .item_faculty .icon
+{
+    font-weight:100 !important;
+}
+
+.item_extra
+{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:right;
+    direction:rtl !important;
+
+    height:20px;
+    position:absolute;
+    bottom:9px;
+}
+
+.item_see
+{
+    direction:rtl !important;
+    text-align:right;
+    font-family: "Samim" !important;
+    margin-left:10px;
+    font-weight:700;
+    font-size:13px;
+    color:#ef394e !important;
+    margin-top:2px;
+}
+
+.item_see .angle.left.icon
+{
+    position:relative;
+    top:2px;
+    left:6px;
+}
+
+.item_rate
+{
+    direction:ltr !important;
+    text-align:right;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-size:14px;
+    font-weight:500;
+    position:relative;
+    top:2px;
+}
+
+.item_rate .star.icon
+{
+    color:rgb(238, 166, 10);
+    font-size:13px;
+    margin-right:0px;
+    position:relative;
+    bottom:2px;
+}
+
+.item_rate span:nth-of-type(1)
+{
+    color:rgb(56, 56, 56);
+}
+
+.item_rate span:nth-of-type(2)
+{
+    color:rgb(134, 134, 134);
+}
+/* Each Item Ends */
+.dotted_divider
+{
+    width:100%;
+    height:1px;
+    margin-top:10px;
+    margin-bottom:17px;
+    border-bottom:1px dotted rgb(212, 212, 212);
+}
+
+
+/* ------------------------------------- */
+
+.tools_container
+{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center !important;
+    margin:0 auto 60px;
+}
+/* Each Tool Begins */
+.each_tool_container
+{
+    /* background-color:Red; */
+    width:250px;
+    margin-top:10px;
+}
+
+.each_tool
+{
+    width:240px !important;
+    margin:0 auto 0 !important;
+}
+
+.each_tool_image
+{
+    border-bottom:1px solid rgb(240, 240, 240);
+    height:200px !important;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.each_tool_image img
+{
+    width:200px !important;
+    border-radius:8px;
+}
+
+.each_tool_content
+{
+    padding:10px 15px 10px 15px;
+}
+
+.each_tool_header, .each_tool_faculty
+{
+    font-family:"Samim" !important;
+    text-align:right;
+    direction:rtl !important;
+}
+
+.each_tool_header
+{
+    margin-bottom:8px;
+    font-size:14px;
+    height:45px !important;
+    line-height:22px;
+    /* background-color:red; */
+}
+
+.each_tool_faculty
+{
+    margin-bottom:8px;
+    font-size:11px;
+    color:rgb(161, 161, 161);
+    height:38px !important;
+}
+
+.each_tool_rate
+{
+    margin-top:10px;
+    direction:rtl !important;
+    text-align:right;
+}
+
+.each_tool_rate .div_rate1
+{
+    float:left;
+    /* background-color:red; */
+    direction:ltr !important;
+    text-align:left;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:500;
+}
+
+.each_tool_rate .div_rate2
+{
+    float:right;
+    /* background-color:blue; */
+    direction:rtl !important;
+    text-align:right;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:500;
+    padding-left:5px;
+    /* border-left:1px solid rgb(233, 233, 233); */
+}
+
+.each_tool_rate .div_rate2 span:nth-of-type(2)
+{
+    font-family: "Samim" !important;
+    font-size:12px;
+}
+
+.each_tool_rate .star.icon
+{
+    color:rgb(238, 166, 10);
+    font-size:18px;
+    margin-right:0px;
+    position:relative;
+    top:1px;
+}
+
+.each_tool_rate span:nth-of-type(1)
+{
+    color:rgb(56, 56, 56);
+}
+
+.each_tool_rate span:nth-of-type(2)
+{
+    color:rgb(134, 134, 134);
+}
+
+.each_tool_bottom .button
+{
+    width:100%;
+    border-radius:0px !important;
+    font-family:"Samim" !important;
+    background-color:rgb(221, 221, 221);
+    background-color:rgb(255, 204, 0);
+    padding:15px 12px 15px 12px !important;
+    cursor:pointer;
+}
+/* Each Tool Ends */
+
+
+@media screen and (max-width:870px)
+{
+    .laboratory_tools_header div
+    {
+        font-size:15px;
+    }
+
+    .laboratory_tools_header img
+    {
+        width:40px;
+    }
+}
+
+@media screen and (max-width:550px)
+{
+    .laboratory_div_tools
+    {
+        text-align:right;
+    }
+
+    .laboratory_tools_header
+    {
+        display:none;
+        
+    }
+
+    .laboratory_tools_header2
+    {
+        margin:0px 7px 0px 0px !important;
+        padding:0px !important;
+        display:block;
+    }
+
+    .just_border
+    {
+        margin-right:7px !important;
+        display:inline-block;
+    }
+}
+
+@media screen and (max-width:520px)
+{
+    .tools_container
+    {
+        display:none;
+    }
+
+    .items_container
+    {
+        width:97%;
+        margin:0 auto 0;
+        display:block;
+    }
+
+    .each_lab
+    {
+        padding-bottom:15px;
+        margin-bottom:15px;
+    }
+}
+/* --- Laboratory Tools End --- */
+
+
+
+
+
+
+/* ----Statistics Begins--- */
+.statistics_div
+{
+    width:90%;
+    background-color: #eef2f7;
+    border-radius: 16px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    /* gap:40px; */
+    padding: 20px 12px 20px 12px;
+    margin:40px auto 30px !important;
+}
+
+.each_statistics
+{
+    display:inline-block;
+    width:206px !important;
+    /* background-color:cadetblue; */
+    padding-left:9px;
+    margin:0 auto 0 !important;
+}
+
+.icon_container
+{
+    /* background-color:red; */
+    float:right;
+    padding:4px 9px 4px 12px;
+}
+
+.icon_sub_container
+{
+    padding:15px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #bfcede;
+}
+
+.icon_sub_container .icon
+{
+    font-size:30px;
+    margin:0px !important;
+}
+
+.icon_sub_container .users.icon
+{
+    color:#345654;
+    position:relative;
+    top:3px;
+    left:1px;
+}
+
+.icon_sub_container .flask.icon
+{
+    color:#345654;
+    position:relative;
+    top:3px;
+    right:1px;
+}
+
+.icon_sub_container .fire.icon
+{
+    color:#345654;
+    position:relative;
+    top:4px;
+}
+
+.icon_sub_container .leaf.icon
+{
+    color:#345654;
+    position:relative;
+    top:3px;
+    right:2px;
+}
+
+.details_container
+{
+    float:right;
+}
+
+.statistics_number, .statistics_description
+{
+    padding-top:7px !important;
+    margin:0px !important;
+}
+
+.statistics_number
+{
+    margin-top:3px !important;
+    color: #344456;
+    /* background-color:orange; */
+}
+
+.statistics_number span
+{
+    font-family:"Samim" !important;
+}
+
+.statistics_description
+{
+    font-family:"Samim" !important;
+    color: #008c8c;
+    /* background-color:teal; */
+}
+/* ----Statistics Ends--- */
+
+.clear_both
+{
+    clear:both;
+}
+
+
+
+
+@media (min-width: 770px) {
+    #sidebar {
+      visibility: visible;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+
+    .main-content {
+      margin-right:250px;
+    }
+
+    .sidebar-menu-toggler {
+      display: none !important;
+    }
+}
+
+@media screen and (max-width:1000px)
+{
+    .fixed_menu
+    {
+        padding-right:20px !important;
+        padding-left:20px !important;
+    }
+    
+    .tools_container
+    {
+        width:749px;
+    }
+}
+
+@media screen and (max-width:950px)
+{
+    .each_statistics
+    {
+        width:50% !important;
+    }
+}
+
+@media screen and (max-width:850px)
+{
+    .primary_image_div h2
+    {
+        font-size:28px !important;
+    }
+
+    .primary_image_div h2
+    {
+        font-size:22px !important;
+    }
+
+    .primary_image_div h3
+    {
+        font-size:15px !important;
+    }
+
+    .primary_image_img1
+    {
+        display:none !important;
+    }
+
+    .primary_image_img2
+    {
+        display:block !important;
+    }
+}
+
+@media screen and (max-width:835px)
+{
+    .fixed_menu
+    {
+        padding-right:10px !important;
+        padding-left:10px !important;
+    }
+
+    .image_fixed
+    {
+        margin-top:6px;
+        width:170px !important;
+    }
+}
+
+@media screen and (max-width:770px)
+{
+    .fixed_menu_item
+    {
+        display:none !important;
+    }
+
+    .image_fixed, .bars_fixed
+    {
+        display:block !important;
+    }
+    
+    .dotted_divider
+    {
+        display:block;
+    }
+}
+
+@media screen and (max-width:745px)
+{
+    .tools_container
+    {
+        width:100%;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .primary_image_img2
+    {
+        display:none !important;
+    }
+
+    .primary_image_img3
+    {
+        display:block !important;
+    }
+
+    .each_statistics
+    {
+        width:100% !important;
+    }
+}
+
+@media screen and (max-width:450px)
+{
+    .image_fixed
+    {
+        margin-top:8px;
+        margin-right:15px;
+        width:150px !important;
+    }
+}
