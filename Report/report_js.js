@@ -52,6 +52,12 @@ function remove_class_disable_tool()
 
 $(document).ready(function(){
 
+  $(".bars_fixed").click(function(){
+    $('.demo.sidebar')
+        .sidebar('setting', 'transition', 'overlay')
+        .sidebar('toggle');
+  });
+
   // $('#reserve_modal .laboratory_dp').dropdown('hide');
   $('.ui.dropdown').dropdown('hide');
 

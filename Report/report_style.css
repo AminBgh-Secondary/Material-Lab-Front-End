@@ -40,7 +40,39 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 {
     background-color:rgb(228, 228, 228) !important;
 }
+
+input[name = "calendar"]
+{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    font-weight:700 !important;
+    direction:ltr !important;
+}
 /* -----------Jalali Date Ends------------ */
+
+/* --------------Responsive Sidabar Begins */
+.sidebar_bottom
+{
+    position: absolute;
+    bottom:10px;
+    width:100%;
+}
+
+.sidebar_bottom img
+{
+    margin:0 auto 0 !important;
+    width:87px !important;
+}
+
+.sidebar_bottom h4
+{
+    font-size:12px !important;
+    text-align:center !important;
+    direction:rtl !important;
+    margin:0px auto 0 !important;
+    font-family:"Samim" !important;
+}
+/* --------------Responsive Sidabar Ends */
+
 
 
 /* ------------------------------------------------------------------------------- fixed menu begins */
@@ -62,11 +94,12 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 .fixed_menu_item
 {
     margin-left:20px;
+    display:block !important;
     font-family:"Samim";
     font-weight:900;
     float:right;
     height:100%;
-    width:110px;
+    width:80px;
     text-align:center;
     font-size:16px;
     line-height:55px;
@@ -79,12 +112,20 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     margin-left:5px;
 }
 
-.material_logo
+.image_fixed
 {
-    float:left;
     margin-right:30px;
-    height:60px !important;
+    float:left !important;
+    width:210px !important;
+}
+
+.bars_fixed
+{
+    display:none !important;
     cursor:pointer;
+    width:90px;
+    padding-top:10px !important;
+    line-height:30px;
 }
 
 .labaratory_fixed
@@ -94,35 +135,37 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 
 .education_fixed
 {
-    width:140px;
+    width:95px;
     padding-bottom:10px !important;
 }
 
 .login_fixed
 {
-    float:left !important;
-    width:140px;
-    display:block !important;
-    
+    width:90px;
     padding-top:9px !important;
-    line-height:30px;
+    line-height:28px;
 }
 
 .sign_up_fixed
 {
-    float:left !important;
-    width:140px;
-    display:block !important;
+    width:100px;
+    padding-top:9px !important;
+    line-height:35px;
 }
 
 .dashboard_fixed
 {
-    float:left !important;
-    width:140px;
-    display:block !important;
-
+    width:110px;
     padding-top:9px !important;
     line-height:30px;
+}
+
+.selected_fixed
+{
+    width:140px !important;
+    font-weight:600 !important;
+    color:black;
+    background-color:rgb(235, 235, 235);
 }
 
 .home_fixed .home.icon
@@ -143,15 +186,22 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     font-size:21px;
 }
 
-.login_fixed .sign-in
+.bars_fixed .bars.icon
+{
+    font-size:20px;
+    position:relative;
+    top:4px;
+}
+
+.login_fixed .sign-in.icon
 {
     color:#52a7cc;
-    font-size:26px;
+    font-size:23px;
     position:relative;
     top:5px;
 }
 
-.sign_up_fixed .user.plus
+.sign_up_fixed .user.plus.icon
 {
     color:crimson;
     font-size:21px;
@@ -163,13 +213,6 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     color:#425c81;
     font-size:23px;
     position:relative;  
-}
-
-.active_fixed
-{
-    font-weight:600 !important;
-    color:black;
-    background-color:rgb(177, 211, 221);
 }
 
 /* ------------------------------------------------------------------------------- fixed menu ends */
@@ -191,6 +234,7 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 .sidebar_user_image img
 {
     width:130px !important;
+    height:130px !important;
 }
 
 .sidebar_user_image h4
@@ -219,7 +263,7 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 
 /* ----- Side bar user Ends ----- */
 
-.ui.vertical.menu.sidebar-menu
+#sidebar
 {
   margin-top: 60px !important;
   max-height: calc(100% - 60px) !important;
@@ -231,13 +275,24 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
   background-color:#fff;
 }
 
-.ui.vertical.menu.sidebar-menu .item i.icon
+#sidebar2
+{
+  height:100% !important;
+
+  direction:rtl !important;
+  max-width:270px;
+  min-width:240px;
+  width:80%;
+  background-color:#fff;
+}
+
+#sidebar .item i.icon, #sidebar2 .item i.icon
 {
   float: right;
   margin: 0em 0.5em 0em 10px;
 }
 
-#sidebar div.item
+#sidebar div.item, #sidebar2 div.item
 {
     /* background-color:blue !important; */
     padding:20px 5px 20px 0px;
@@ -252,7 +307,7 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     -webkit-transition: 0.4s !important;
 }
 
-#sidebar div.item:hover
+#sidebar div.item:hover, #sidebar2 div.item:hover
 {
     padding-right:20px;
     background-color:rgb(214, 214, 214) !important;
@@ -263,18 +318,22 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     color:rgb(8, 80, 121);
 }
 
-#sidebar .paper.icon
+#sidebar2 .user.icon
+{
+    color:rgb(85, 85, 85);
+}
+
+#sidebar .paper.icon, #sidebar2 .paper.icon
 {
     color:#0088cc;
 }
 
-#sidebar .calendar.icon
+#sidebar .calendar.icon, #sidebar2 .calendar.icon
 {
-    /* color:#ee4c7c; */
     color:rgb(238, 12, 57);
 }
 
-#sidebar .chart.icon
+#sidebar .chart.icon, #sidebar2 .chart.icon
 {
     font-size:18px;
     position:relative;
@@ -283,42 +342,37 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     color:#41b3a3;
 }
 
-
-.sidebar_metallogy
+#sidebar2 .flask.icon
 {
-    position: absolute;
-    bottom:10px;
-    width:100%;
+    color:goldenrod !important;
+    position:relative;
+    bottom:3px;
+    font-size:17px;
 }
 
-.sidebar_metallogy_logo
+#sidebar2 .home.icon
 {
-    margin:0 auto 0 !important;
-    width:150px !important;
+    color:rgb(13, 121, 54) !important;
+    position:relative;
+    bottom:3px;
+    font-size:19px;
 }
 
-.sidebar_metallogy div
+#sidebar2 .map.signs.icon
 {
-    font-size:15px !important;
-    text-align:center !important;
-    direction:rtl !important;
-    margin:0px auto 0 !important;
-    font-weight:900;
+    color:#425c81;
+    position:relative;
+    bottom:3px;
+    font-size:19px;
 }
 
-.sidebar_sp1
-{
-    font-family:"Samim" !important;
-}
-
-
-.ui.vertical.menu.sidebar-menu::-webkit-scrollbar
+#sidebar::-webkit-scrollbar, #sidebar2::-webkit-scrollbar
 {
     display: none;
 }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-.ui.vertical.menu.sidebar-menu
+#sidebar, #sidebar2
 {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -329,6 +383,14 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 .ui.accordion .title:not(.ui)
 {
     padding:0px !important;
+}
+
+#sidebar2 .ui.accordion, #sidebar2 .ui.accordion .title,
+#sidebar2 .ui.accordion .title .item,
+#sidebar2 .ui.accordion .content
+{
+    text-align:right !important;
+    direction:rtl !important;
 }
 
 .ui.accordion:not(.styled) .accordion .title~.content:not(.ui),
@@ -343,12 +405,6 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     padding-right:45px;
 }
 
-#sidebar .title.active div.item
-{
-    /* background-color:#14b1ff13; */
-    /* background-color:gray; */
-}
-
 .accordion_sub_item
 {
     cursor:pointer;
@@ -361,8 +417,6 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     -moz-transition:0.4s !important;
     -o-transition:0.4s !important;
     -webkit-transition: 0.4s !important;
-
-    /* background-color:#14b1ff0a; */
 }
 
 .message_number
@@ -385,35 +439,10 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     bottom:5px;
 }
 
-
-
-
 .accordion_sub_item .icon
 {
     font-size:15px;
     margin: 0em 0.5em 0em 5px;
-}
-
-.accordion_sub_item .id.icon
-{
-    position:relative;
-    top:2px;
-    left:3px;
-    font-size:18px;
-    color:rgb(8, 103, 133);
-}
-
-.acc_span_id_card
-{
-    position:relative;
-    left:5px;
-}
-
-.accordion_sub_item .info.icon
-{
-    position:relative;
-    top:2px;
-    color:rgb(221, 173, 17);
 }
 
 .accordion_sub_item .inbox.icon
@@ -433,6 +462,71 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 /* ---------Accordion Ends----------- */
   
 /* ------------------------Side bar Ends ------------- */
+
+@media (min-width: 770px) {
+    #sidebar {
+      visibility: visible;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+
+    .main-content {
+      margin-right:250px;
+    }
+
+    .sidebar-menu-toggler {
+      display: none !important;
+    }
+}
+
+@media screen and (max-width:1000px)
+{
+    .fixed_menu
+    {
+        padding-right:20px !important;
+        padding-left:20px !important;
+    }
+
+}
+
+@media screen and (max-width:835px)
+{
+    .fixed_menu
+    {
+        padding-right:10px !important;
+        padding-left:10px !important;
+    }
+
+    .image_fixed
+    {
+        margin-top:6px;
+        width:170px !important;
+    }
+}
+
+@media screen and (max-width:770px)
+{
+    .fixed_menu_item
+    {
+        display:none !important;
+    }
+
+    .image_fixed, .bars_fixed
+    {
+        display:block !important;
+    }
+}
+
+@media screen and (max-width:450px)
+{
+    .image_fixed
+    {
+        margin-top:8px;
+        margin-right:15px;
+        width:150px !important;
+    }
+}
+/* Dashboard Ends */
 
 
 
@@ -510,6 +604,14 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
     margin:0px !important;
 }
 
+.small_h4
+{
+    font-family:"Samim" !important;
+    display:none;
+    line-height:27px;
+    padding:0px 5px 0px 5px;
+}
+
 .clear_both
 {
     clear:both;
@@ -530,6 +632,7 @@ jdp-container .jdp-year:hover, jdp-container .jdp-year input:hover, jdp-containe
 
 .middle_button_container .ui.button
 {
+    margin-top:10px;
     width:250px;
     padding-top:15px;
     padding-bottom:15px;
@@ -846,14 +949,13 @@ input[name="calendar1"], input[name="calendar2"]
 /* Table of Report Begins */
 .ui.celled.table
 {
-    width:900px;
+    width:900px !important;
     margin:0 auto 0 !important;
 }
 
 .table_container
 {
     margin:40px auto 40px !important;
-
     overflow-x:auto !important;
 }
 
@@ -907,3 +1009,38 @@ input[name="calendar1"], input[name="calendar2"]
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width:905px)
+{
+    .div_report_headers h2
+    {
+        padding:13px 20px 7px 5px !important;
+    }
+
+    .div_report_headers h4
+    {
+        display:none;
+    }
+
+    .div_report_icon_first
+    {
+        padding:5px 23px 0px 5px;
+        margin-bottom:0px;
+    }
+
+    .div_report_icon_first .icon
+    {
+        margin-top:1px;
+        font-size:22px;
+    }
+
+    .div_report_icon_second
+    {
+        padding:0px 5px 5px 19px;
+    }
+
+    .small_h4
+    {
+        display:block;
+    }
+}

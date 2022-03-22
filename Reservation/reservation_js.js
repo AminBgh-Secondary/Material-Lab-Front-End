@@ -66,6 +66,12 @@ function remove_class_disable(x)
 
 $(document).ready(function(){
 
+  $(".bars_fixed").click(function(){
+    $('.demo.sidebar')
+        .sidebar('setting', 'transition', 'overlay')
+        .sidebar('toggle');
+  });
+
   $("#calibration_button").click(function(){
     $('#calibration_modal').modal('show');
   });
