@@ -663,23 +663,22 @@ input[name = "calendar"]
 
 .tool_img img
 {
-    display:block !important;
+    /* display:block !important; */
     margin:0 auto 0 !important;
     width:100% !important;
 
     
     border-radius:5px;
     padding: 5px;
-    /* border-radius:18px; */
     background-color: rgb(218, 218, 218) !important;
     box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
     -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
     -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
 
-    /* padding: 5px 5px 0px 5px;
-    background-color: #e0e1e2 !important;
-    border-top-left-radius:8px;
-    border-top-right-radius:8px; */
+.ratio_2_1
+{
+    display:none !important;
 }
 
 #calibration_button
@@ -690,9 +689,6 @@ input[name = "calendar"]
     margin:10px auto 0 !important;
     width:350px !important;
     padding:16px;
-    /* border-top-left-radius:0px;
-    border-top-right-radius:0px; */
-    /* background-color:cadetblue !important; */
 }
 
 #calibration_button:hover
@@ -752,6 +748,31 @@ input[name = "calendar"]
 {
     font-size:0.975rem;
 }
+
+
+
+/* New Image and Feature Responsive Begins */
+.responsive_tool_image_features
+{
+    display:none;
+    direction:rtl !important;
+    margin-top:20px;
+}
+
+.responsive_tool_features
+{
+    width:100%;
+    padding:7px 20px 7px 20px;
+}
+
+.responsive_tool_features h3
+{
+    font-family:"Samim" !important;
+    margin-bottom:0px !important;
+}
+/* New Image and Feature Responsive Ends */
+
+
 
 .tool_description_payment
 {
@@ -1405,6 +1426,52 @@ input[name="calendar_modal"]
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width:900px)
+{
+    .tool_features
+    {
+        display:none;
+    }
+
+    .responsive_tool_image_features
+    {
+        display:block;
+    }
+
+    .tool_img
+    {
+        width:95%;
+        max-width:650px !important;
+    }
+
+    .ratio_2_1
+    {
+        display:block !important;
+    }
+
+    .ratio_1_1
+    {
+        display:none !important;
+    }
+
+    #calibration_button
+    {
+        width:100% !important;
+    }
+}
+
+
+@media screen and (max-width:770px)
+{
+    .tool_features, .responsive_tool_features,
+    .tool_description, .tool_payment, .tool_reservation
+    {
+        padding:7px 5px 7px 5px !important;
+    }
+}
+
 
 @media screen and (max-width:470px)
 {
