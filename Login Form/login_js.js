@@ -3,6 +3,12 @@
 
 $(document).ready(function(){
 
+    $(".bars_fixed").click(function(){
+        $('.demo.sidebar')
+            .sidebar('setting', 'transition', 'overlay')
+            .sidebar('toggle');
+    });
+
     $('.message .close').on('click', function(){
         $(this).closest('.message').transition('fade');
     });
@@ -26,5 +32,8 @@ $(document).ready(function(){
 
     });
     
+    var $the_pusher = $(".pusher");
+    var $the_body = $("body");
+    $the_pusher.height($the_body.height());
 
 });

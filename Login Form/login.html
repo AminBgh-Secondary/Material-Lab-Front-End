@@ -29,85 +29,219 @@
 
     <body>
 
-        <!-- ------------------ Fixed Menu Begins -->
-        <div class="fixed_menu">
+        <!-- -------------------Responsive Sidebar Begins-->
+        <div class="ui right demo vertical inverted sidebar labeled icon menu" id="sidebar2">
 
-            <div class="fixed_menu_item home_fixed active_fixed">
-                <i class="home icon"></i>
-                خانه
+            <div class="sidebar_user_image">
+                <img class="ui centered circular image" src="../Static/pic/user2.png">
+                <h4>
+                    دانشجو
+                </h4>
+                <h3>
+                    محمدامین باغبان باشی
+                </h3>
             </div>
 
-            <a class="fixed_menu_item labaratory_fixed" href="">
-                <i class="flask icon"></i>
-                آزمایشگاه‌ها
-            </a>
-    
-            <a class="fixed_menu_item education_fixed" href="">
-                <i class="laptop icon"></i>
-                آموزش
-            </a>
+            <!-- ----Accordion Begins---- -->
+            <div class="ui accordion">
 
-            <a class="fixed_menu_item login_fixed" href="">
-                <i class="sign-in icon"></i>
-                ورود
-            </a>
-    
-            <a class="fixed_menu_item sign_up_fixed" href="">
-                <i class="user plus icon"></i>
-                ثبت‌نام
-            </a>
-            
-        </div>
-        <!-- ------------------ Fixed Menu Ends -->
-
-
-        <div class="ui middle aligned center grid main_div">
-
-            <div class="form_picture">
-                <div class="form_picture_container">
-                    <img class="ui medium image" src="../Static/pic/change_1.jpg">
-                    <h3 class="ui header">
-                        بخش مهندسی مواد و متالوژی دانشگاه شیراز
-                    </h3>
-                    <div class="form_text">
-                        به حساب کاربری خود وارد شوید
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="home icon"></i>
+                            خانه
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="content">
+                </div>
 
-
-            <div class="form_container column">
-                
-                <div class="ui success message">
-                    <i class="close icon"></i>
-                    <div class="header">
-                        ثبت نام با موفقیت انجام شد  
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="map signs icon"></i>
+                            داشبورد
+                        </div>
                     </div>
-                  </div>
+                </div>
+                <div class="content">
+                </div>
 
-                <form action="">
-                    <div class="group_inputs">
-                        <div class="ui labeled icon input field item2">
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="flask icon"></i>
+                            آزمایشگاه ها
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                </div>
+
+                <div class="title">
+                    <div href="#" class="item">
+                        <div>
                             <i class="user icon"></i>
-                            <input type="text" class="individual_input" name="username" placeholder="نام کاربری">
+                            اطلاعات کاربری
                         </div>
                     </div>
+                </div>
+                <div class="content">
+                </div>
 
-                    <div class="group_inputs">
-                        <div class="ui labeled icon input field item2">
-                            <i class="lock icon"></i>
-                            <input type="password" class="individual_input" name="password" placeholder="رمز عبور">
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="paper plane icon"></i>
+                            پیام ها
                         </div>
                     </div>
+                </div>
+                <div class="content">
+                    <a class="accordion_sub_item">
+                        <i class="inbox icon"></i>
+                        صندوق ورودی
+                        <span class="message_number">3</span>
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="bell icon"></i>
+                        اطلاعیه ها
+                    </a>
+                    <a class="accordion_sub_item">
+                        <i class="pencil alternate icon"></i>
+                        ارسال پیام
+                    </a>
+                </div>
 
-                    <button type="submit" class="submit_btn">
-                        ورود
-                    </button>
-                </form>
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="calendar alternate icon"></i>
+                            رزرو
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    Hello
+                </div>
+
+                <div class="title">
+                    <div class="item">
+                        <div>
+                            <i class="chart bar icon"></i>
+                            گزارش ها و آمار
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- Hello -->
+                </div>
+            
+            </div>
+            <!-- ----Accordion Ends---- -->
+
+            <!-- <div class="sidebar_bottom">
+                <img src="" class="ui centered image">
+                <h4>
+                    بخش مهندسی مواد دانشگاه شیراز
+                </h4>
+            </div> -->
+
+        </div>
+        <!-- -------------------Responsive Sidebar Ends -->
+
+
+        <div class="pusher">
+
+            <!-- ------------------ Fixed Menu Begins -->
+            <div class="fixed_menu">
+
+                <div class="fixed_menu_item image_fixed" href="">
+                    <img class="ui huge image" src="../Static/pic/shirazuni_material.png">
+                </div>
+                
+                <a class="fixed_menu_item bars_fixed">
+                    <i class="bars icon"></i>
+                    منو
+                </a>
+
+                <a class="fixed_menu_item home_fixed" href="">
+                    <i class="home icon"></i>
+                    خانه
+                </a>
+
+                <a class="fixed_menu_item labaratory_fixed" href="">
+                    <i class="flask icon"></i>
+                    آزمایشگاه‌ها
+                </a>
+
+                <div class="fixed_menu_item login_fixed selected_fixed" href="">
+                    <i class="sign-in icon"></i>
+                    ورود
+                </div>
+
+                <a class="fixed_menu_item sign_up_fixed" href="">
+                    <i class="user plus icon"></i>
+                    ثبت‌نام
+                </a>
+
+                <a class="fixed_menu_item dashboard_fixed" href="">
+                    <i class="map signs icon"></i>
+                    داشبورد
+                </a>
                 
             </div>
-        
-        
+            <!-- ------------------ Fixed Menu Ends -->
+
+
+            <div class="ui middle aligned center grid main_div">
+
+                <div class="form_picture">
+                    <div class="form_picture_container">
+                        <img class="ui medium image" src="../Static/pic/change_1.jpg">
+                        <h3 class="ui header">
+                            بخش مهندسی مواد و متالوژی دانشگاه شیراز
+                        </h3>
+                        <div class="form_text">
+                            به حساب کاربری خود وارد شوید
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form_container column">
+                    
+                    <div class="ui success message">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            ثبت نام با موفقیت انجام شد  
+                        </div>
+                    </div>
+
+                    <form action="">
+                        <div class="group_inputs">
+                            <div class="ui labeled icon input field item2">
+                                <i class="user icon"></i>
+                                <input type="text" class="individual_input" name="username" placeholder="نام کاربری">
+                            </div>
+                        </div>
+
+                        <div class="group_inputs">
+                            <div class="ui labeled icon input field item2">
+                                <i class="lock icon"></i>
+                                <input type="password" class="individual_input" name="password" placeholder="رمز عبور">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit_btn">
+                            ورود
+                        </button>
+                    </form>
+                    
+                </div>
+            
+            </div>
+            
         </div>
 
 
