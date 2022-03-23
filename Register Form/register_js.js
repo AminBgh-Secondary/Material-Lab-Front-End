@@ -42,6 +42,12 @@ function dist_email(str)
 
 $(document).ready(function(){
 
+    $(".bars_fixed").click(function(){
+        $('.demo.sidebar')
+            .sidebar('setting', 'transition', 'overlay')
+            .sidebar('toggle');
+    });
+
     $("input[name='email']").keyup(function(){
 
         var email_addr = $(this).val();
