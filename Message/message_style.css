@@ -660,14 +660,12 @@ input[name = "calendar"]
 .item3
 {
     width:420px !important;
-    /* background-color:red; */
 }
 
 .item4
 {
     width:120px !important;
     padding-top:7px;
-    /* background-color:green; */
 }
 
 .individual_input
@@ -932,3 +930,82 @@ input[name = "file_uploads"]
         display:block;
     }
 }
+
+
+@media (max-width: 971px)
+{
+    .message_div_body
+    {
+        width:100%;
+    }
+
+    .group_inputs
+    {
+        width:97% !important;
+    }
+} 
+
+@media (max-width: 900px)
+{
+    .group_inputs
+    {
+        width:500px !important;
+    }
+
+    .item2
+    {
+        width:500px !important;
+    }
+
+    .item1
+    {
+        width:280px !important;
+    }
+
+    .item_drop_down
+    {
+        width:220px !important;
+    }
+
+    .item3
+    {
+        margin-left:20px !important;
+        width:384px !important;
+    }
+
+    .item4
+    {
+        width:96px !important;
+    }
+
+} 
+
+@media (max-width: 900px)
+{
+    .group_inputs
+    {
+        width:95% !important;
+        margin-top:0px !important;
+    }
+
+    .item1, .item2, .item_drop_down,
+    .item3, .item4
+    {
+        width:100% !important;
+        margin-top:15px !important;
+    }
+
+    .item3
+    {
+        margin-left:0px !important;
+    }
+
+    .priority
+    {
+        padding-top:0px !important;
+        text-align:right;
+    }
+} 
+
+
+
