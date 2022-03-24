@@ -1103,3 +1103,34 @@ input[name = "file_uploads"]
         display:block;
     }
 }
+
+
+
+@media (max-width: 950px)
+{
+    .item3
+    {
+        padding-left:10px !important;
+    }
+
+} 
+
+@media (max-width: 550px)
+{
+    .group_inputs
+    {
+        margin-top:0px !important;
+    }
+
+    .item2, .item3, .item4
+    {
+        width:100% !important;
+        margin-top:15px !important;
+    }
+
+    .item3
+    {
+        padding-left:0px !important;
+    }
+
+} 
