@@ -233,8 +233,11 @@ input[name = "calendar"]
 
 .sidebar_user_image img
 {
-    width:130px !important;
-    height:130px !important;
+    width:150px !important;
+    height:150px !important;
+    object-fit: scale-down;
+    padding:3px;
+    background-color:rgb(230, 230, 230) !important;
 }
 
 .sidebar_user_image h4

@@ -276,8 +276,11 @@ body > .grid {
 
 .sidebar_user_image img
 {
-    width:130px !important;
-    height:130px !important;
+    width:150px !important;
+    height:150px !important;
+    object-fit: scale-down;
+    padding:3px;
+    background-color:rgb(230, 230, 230) !important;
 }
 
 .sidebar_user_image h4
@@ -514,7 +517,8 @@ body > .grid {
     /* background-color:red; */
     max-width:750px !important;
     margin:0 auto 0 !important;
-    padding-top:90px !important;
+    /* padding-top:90px !important; */
+    height:100vh !important;
 }
 
 .the_column
@@ -540,6 +544,21 @@ h2
     text-align:center;
     line-height:40px !important;
     /* color:rgb(173, 173, 173) !important; */
+}
+
+@media screen and (max-height: 450px)
+{
+    .ui.medium.image
+    {
+        max-width:320px !important;
+        width:100% !important;
+    }
+
+    .main_div
+    {
+        padding-top:60px !important;
+        height:auto !important;
+    }
 }
 
 
