@@ -116,7 +116,9 @@ input[name = "calendar"]
 {
     margin-right:30px;
     float:left !important;
-    width:210px !important;
+    /* width:210px !important; */
+    margin-top:3px;
+    width:192px !important;
 }
 
 .bars_fixed
