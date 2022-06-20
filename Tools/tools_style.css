@@ -236,8 +236,12 @@ input[name = "calendar"]
 
 .sidebar_user_image img
 {
-    width:130px !important;
-    height:130px !important;
+    width:150px !important;
+    height:150px !important;
+    object-fit: scale-down;
+    padding:1px;
+    border:3px solid rgb(230, 230, 230);
+    background-color:rgb(255, 255, 255) !important;
 }
 
 .sidebar_user_image h4
@@ -854,8 +858,8 @@ h3.lab_name
 .laboratory_tools_header img
 {
     display:inline-block !important;
-    width:50px;
-    /* width:75px; */
+    /* width:50px; */
+    width:65px;
 }
 
 .laboratory_tools_header div

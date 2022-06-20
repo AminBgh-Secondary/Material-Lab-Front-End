@@ -239,8 +239,12 @@ input[name = "calendar"]
 
 .sidebar_user_image img
 {
-    width:130px !important;
-    height:130px !important;
+    width:150px !important;
+    height:150px !important;
+    object-fit: scale-down;
+    padding:1px;
+    border:3px solid rgb(230, 230, 230);
+    background-color:rgb(255, 255, 255) !important;
 }
 
 .sidebar_user_image h4
@@ -508,6 +512,44 @@ input[name = "calendar"]
 
 
 
+/* Modal Begins */
+
+.modal_header .ui.image
+{
+    display:block;
+    margin:0 auto 10px;
+}
+
+#introduce_modal .modal_header, #goals_modal .modal_header,
+#catalog_modal .modal_header
+{
+    font-family:"Samim" !important;
+    text-align:center;
+    padding:15px 20px 20px 20px!important;
+    background-color:rgb(247, 247, 247);
+    border-bottom:1px solid rgb(224, 224, 224);
+}
+
+#introduce_modal .modal_body, #goals_modal .modal_body,
+#catalog_modal .modal_body
+{
+    font-family:"Samim" !important;
+    direction:rtl;
+    text-align:justify;
+    line-height:25px;
+    padding:5px 20px 15px 20px;
+}
+
+#introduce_modal .button, #goals_modal .button,
+#catalog_modal .button
+{
+    font-family:"Samim" !important;
+}
+
+/* Modal Ends */
+
+
+
 
 
 .main-content
@@ -734,8 +776,8 @@ svg
 .laboratory_tools_header img
 {
     display:inline-block !important;
-    width:50px;
-    /* width:75px; */
+    /* width:50px; */
+    width:65px;
 }
 
 .laboratory_tools_header div
@@ -1094,13 +1136,43 @@ svg
         padding-bottom:15px;
         margin-bottom:15px;
     }
+
+
+
+
+    .icon_sub_container
+    {
+        padding:10px !important;
+    }
+
+    .details_container
+    {
+        position:relative;
+        bottom:2px;
+    }
+
+    .icon_sub_container .icon
+    {
+        font-size:27px !important;
+    }
+
+    .statistics_number, .statistics_description
+    {
+        font-size:13px !important;
+    }
 }
 /* --- Laboratory Tools End --- */
 
 
 
 
-
+/* Footer Begins */
+.footer
+{
+    width:100%;
+    background-color: #eef2f7;
+    padding-bottom:8px;
+}
 
 /* ----Statistics Begins--- */
 .statistics_div
@@ -1114,7 +1186,7 @@ svg
     align-items:center;
     /* gap:40px; */
     padding: 20px 12px 20px 12px;
-    margin:40px auto 30px !important;
+    margin:40px auto 0px !important;
 }
 
 .each_statistics
@@ -1122,7 +1194,7 @@ svg
     display:inline-block;
     width:213px !important;
     /* width:206px !important; */
-    /* background-color:cadetblue; */
+    /* background-color:red; */
     padding-left:9px;
     margin:0 auto 0 !important;
 }
@@ -1210,10 +1282,79 @@ svg
 }
 /* ----Statistics Ends--- */
 
+.dotted_divider3
+{
+    max-width:250px;
+    height:1px;
+    margin:0px auto 8px !important;
+    border-top:2px solid #dde3eb;
+}
+
+.footer_infos
+{
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+
+.footer_infos_c1, .footer_infos_c2
+{
+    direction:rtl;
+    font-family:"Samim" !important;
+    border:none !important;
+    font-weight:700;
+    padding:10px 40px 10px 40px !important;
+    /* color: #008c8c; */
+}
+
+.footer_infos_c2
+{
+    border-left:2px solid #dde3eb !important;
+    text-align:left;
+}
+
+.footer_infos_c1 .infos_en, .footer_infos_c2 .infos_en
+{
+    font-weight:900;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+
+.footer_infos_c1 .icon, .footer_infos_c2 .icon
+{
+    /* color:#345654; */
+    font-size:20px;
+    margin-left:3px !important;
+}
+
+.footer_infos2
+{
+    display:none !important;
+}
+
+.footer_infos2 .footer_infos_c1, .footer_infos2 .footer_infos_c2
+{
+    text-align:center;
+}
+
+.footer_infos2 .footer_infos_c1 span, .footer_infos2 .footer_infos_c2 span
+{
+    display:block;
+    margin-top:7px;
+}
+
+.footer_infos2 .envelope.icon
+{
+    position:relative;
+    left:3px;
+}
+
+/* Footer Ends */
+
 .clear_both
 {
     clear:both;
 }
+
+
 
 
 
@@ -1325,12 +1466,24 @@ svg
     }
 }
 
+@media screen and (max-width:650px)
+{
+    .footer_infos1
+    {
+        display:none !important;
+    }
+
+    .footer_infos2
+    {
+        display:flex !important;
+    }
+}
+
 @media screen and (max-width:550px)
 {
-    .each_statistics
+    .statistics_div
     {
-        width:100% !important;
-        margin-bottom:10px !important;
+        width:100%;
     }
 
     .each_statistics:nth-last-child(2)
@@ -1354,6 +1507,12 @@ svg
 
 @media screen and (max-width:450px)
 {
+    .each_statistics
+    {
+        width:100% !important;
+        margin-bottom:10px !important;
+    }
+
     .image_fixed
     {
         margin-top:8px;

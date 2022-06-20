@@ -281,8 +281,9 @@ body > .grid {
     width:150px !important;
     height:150px !important;
     object-fit: scale-down;
-    padding:3px;
-    background-color:rgb(230, 230, 230) !important;
+    padding:1px;
+    border:3px solid rgb(230, 230, 230);
+    background-color:rgb(255, 255, 255) !important;
 }
 
 .sidebar_user_image h4
