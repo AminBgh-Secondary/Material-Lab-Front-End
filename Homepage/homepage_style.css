@@ -1278,7 +1278,6 @@ svg
 {
     font-family:"Samim" !important;
     color: #008c8c;
-    /* background-color:teal; */
 }
 /* ----Statistics Ends--- */
 
@@ -1320,7 +1319,6 @@ svg
 
 .footer_infos_c1 .icon, .footer_infos_c2 .icon
 {
-    /* color:#345654; */
     font-size:20px;
     margin-left:3px !important;
 }

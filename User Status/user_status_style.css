@@ -757,9 +757,11 @@ input[name = "calendar"]
 .commitment_number
 {
     font-weight:700;
+    font-size:15px;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
     display:inline-block;
     margin:5px !important;
-    padding:13px 18px 12px 17px!important;
+    padding:11px 18px 11px 17px !important;
     border-radius:100%;
     background-color:rgb(157, 206, 207);
 }
